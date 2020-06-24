@@ -77,5 +77,5 @@ Ogni azione dei client avviene mediante degli **smart contract** scritti ad-hoc.
 
 **Marcello Politi**,
 **Samir Salman**,
-**Simone Giorgioni**,
+**Simone Giorgioni**
 
