@@ -1,11 +1,8 @@
 # Honey-Chain-MMORPG-Blockchain-based-game
-An MMORPG Blockchain based game
+
 
 <img src="https://github.com/samirsalman/-Honey-Chain-MMORPG-Blockchain-based-game-/blob/master/honeychain%402x.png"/>
-
-*Marcello Politi*,
-*Samir Salman*,
-*Simone Giorgioni*
+An MMORPG Blockchain based game
 
 ## Descrizione progetto
 
@@ -73,3 +70,12 @@ La parte di SDC sarà quella di progettare e realizzare una Validation Authority
 
 La parte di progetto di SCRS consisterà nella gestione di una rete Hyperledger Fabric che ci permetterà di gestire il concetto di acquisto e scambio di oggetti di gioco tramite transazioni, inoltre ci permetterà di avere un utenza trusted grazie alla caratteristica **Permissioned** di Hyperledger Fabric. Ogni utente costituisce un nodo all'interno della rete.
 Ogni azione dei client avviene mediante degli **smart contract** scritti ad-hoc.
+
+
+## Creators
+
+
+**Marcello Politi**
+**Samir Salman**
+**Simone Giorgioni**
+
