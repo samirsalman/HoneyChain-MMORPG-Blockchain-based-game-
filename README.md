@@ -75,7 +75,7 @@ Ogni azione dei client avviene mediante degli **smart contract** scritti ad-hoc.
 ## Creators
 
 
-**Marcello Politi**
-**Samir Salman**
-**Simone Giorgioni**
+**Marcello Politi**,
+**Samir Salman**,
+**Simone Giorgioni**,
 
