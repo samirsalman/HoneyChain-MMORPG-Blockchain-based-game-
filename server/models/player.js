@@ -1,5 +1,5 @@
 class Player {
-  constructor(name, x, y, direction, type, force, money, honey) {
+  constructor(name, x, y, direction, type, force, money, honey, level) {
     this.name = name;
     this.x = x;
     this.y = y;
@@ -8,7 +8,8 @@ class Player {
     this.force = force;
     this.money = money;
     this.honey = honey;
+    this.level = level;
   }
 }
 
-module.exports = News;
+module.exports = Player;
