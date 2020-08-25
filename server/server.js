@@ -71,4 +71,7 @@ app.use("/user/register", registerRoute);
 const loginRoute = require("./api/user/login/loginUser.js");
 app.use("/user/login", loginRoute);
 
+const responseRoute = require("./api/response.js");
+app.use("/response", responseRoute);
+
 // sends each client its current sequence number

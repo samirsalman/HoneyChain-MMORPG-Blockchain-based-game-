@@ -10,28 +10,16 @@ router.post("/", async (req, res, next) => {
 else return error
 
 */
-  var isGood = false;
-
-  isGood = await database.isEmailGood(req.body.email).catch((error) => {
-    res.send(error);
+  var user = new User(
+    req.body.email,
+    hash(req.body.password),
+    req.body.name,
+    req.body.years
+  );
+  await database.createUser(user).catch((err) => {
+    console.error(err);
   });
-
-  console.log(isGood);
-
-  if (isGood != null && isGood) {
-    var user = new User(
-      req.body.email,
-      hash(req.body.password),
-      req.body.name,
-      req.body.years
-    );
-    await database.createUser(user).catch((err) => {
-      console.error(err);
-    });
-    res.send(user);
-  } else {
-    res.send("Not good email");
-  }
+  res.send(user);
 });
 
 module.exports = router;
