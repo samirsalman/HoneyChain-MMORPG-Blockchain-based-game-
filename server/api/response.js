@@ -3,22 +3,22 @@ const router = express.Router();
 
 router.get("/login/success", async (req, res, next) => {
   res.statusCode = 200;
-  res.send("Login Effettuato");
+  res.sendStatus(200);
 });
 
 router.get("/login/error", async (req, res, next) => {
   res.statusCode = 500;
-  res.send("Login Non Effettuato");
+  res.sendStatus(500);
 });
 
 router.get("/registration/success", async (req, res, next) => {
   res.statusCode = 200;
-  res.send("Registrazione Effettuata");
+  res.sendStatus(200);
 });
 
 router.get("/registration/error", async (req, res, next) => {
   res.statusCode = 500;
-  res.send("Registrazione Non Effettuata");
+  res.sendStatus(500);
 });
 
 module.exports = router;
