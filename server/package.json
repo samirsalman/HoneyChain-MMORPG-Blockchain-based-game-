@@ -9,6 +9,7 @@
   "author": "Samir Salman, Marcello Politi, Simone Giorgioni",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "cookies": "^0.8.0",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
