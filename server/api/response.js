@@ -32,7 +32,7 @@ router.get("/registration/success", async (req, res, next) => {
   }
   console.log(res.getHeaders());
 
-  axios.default.get(`${HOST}?username=${req.query.email}`).then((res) => {
+  axios.default.get(`${HOST}?username=${req.query.email}`).then(() => {
     res.sendStatus(200);
   });
 });

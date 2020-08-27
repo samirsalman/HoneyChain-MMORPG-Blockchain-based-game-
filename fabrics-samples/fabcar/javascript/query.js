@@ -71,7 +71,7 @@ async function main(username) {
 router.get("/", (req, res, next) => {
   main(req.query.username)
     .then((response) => {
-      res.send(response);
+      res.json(JSON.parse(response.toString()));
     })
     .catch((e) => res.send(e));
 });
