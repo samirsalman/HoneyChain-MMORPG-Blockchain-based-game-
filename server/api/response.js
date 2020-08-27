@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const axios = require("axios");
+const HOST = "http://localhost:3001/registerUser";
 
 router.get("/login/success", async (req, res, next) => {
   res.statusCode = 200;
@@ -29,7 +31,10 @@ router.get("/registration/success", async (req, res, next) => {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  res.sendStatus(200);
+
+  axios.default.get(`${HOST}?username=${req.query.email}`).then((res) => {
+    res.sendStatus(200);
+  });
 });
 
 router.get("/registration/error", async (req, res, next) => {

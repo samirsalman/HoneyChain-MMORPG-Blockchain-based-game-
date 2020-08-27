@@ -16,10 +16,6 @@ app.listen(PORT, function () {
   console.log("Im tening on port : , PORT");
 });
 
-app.get("/windows", async (req, res, next) => {
-  console.log("ciao");
-});
-
 app.get("/", async (req, res, next) => {
   try {
     var userName = req.query.username;
@@ -85,3 +81,6 @@ app.get("/", async (req, res, next) => {
 
 const registerRoute = require("./registerUser.js");
 app.use("/registerUser", registerUser);
+
+const queryRoute = require("./query.js");
+app.use("/query", queryRoute);

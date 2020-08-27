@@ -64,13 +64,6 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-/*Let's define the other routes to access to our server*/
-const registerRoute = require("./api/user/register/registerUser.js");
-app.use("/user/register", registerRoute);
-
-const loginRoute = require("./api/user/login/loginUser.js");
-app.use("/user/login", loginRoute);
-
 const responseRoute = require("./api/response.js");
 app.use("/response", responseRoute);
 
