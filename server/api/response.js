@@ -7,7 +7,11 @@ router.get("/login/success", async (req, res, next) => {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  res.sendStatus(200);
+  res.send({
+    name: req.query.name,
+    years: req.query.years,
+    email: req.query.email,
+  });
 });
 
 router.get("/login/error", async (req, res, next) => {
