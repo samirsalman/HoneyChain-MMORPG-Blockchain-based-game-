@@ -68,7 +68,7 @@ async function main(username) {
   }
 }
 
-router.get("/", async (req, res, next) => {
+router.get("/", (req, res, next) => {
   main(req.query.username)
     .then((response) => {
       res.send(response);
