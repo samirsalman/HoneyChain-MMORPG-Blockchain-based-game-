@@ -64,13 +64,13 @@ app.get("/", async (req, res, next) => {
     // Submit the specified transaction.
     // createCar transaction - requires 5 argument, ex: ('createCar', 'CAR12', 'Honda', 'Accord', 'Black', 'Tom')
     //changeHoneyOwner transaction - requires 2 args , ex: ('changeHoneyOwner', 'HONEY0', 'Marcello')
-    await contract.submitTransaction(
+    /*await contract.submitTransaction(
       "changeHoneyOwner",
       req.query.honeyNumber,
       req.query.owner
     );
     console.log("Transaction has been submitted");
-
+*/
     // Disconnect from the gateway.
     await gateway.disconnect();
   } catch (error) {
