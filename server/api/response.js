@@ -3,16 +3,22 @@ const router = express.Router();
 const axios = require("axios");
 const HOST = "http://localhost:3001/registerUser";
 
-var knex = require("knex")({
-  client: "mysql",
-  connection: {
-    host: "127.0.0.1",
-    user: "root",
-    password: "password",
-    database: "honey",
-    options: { port: 3306 },
-  },
+var mysql = require("mysql");
+var connection = mysql.createConnection({
+  host: "127.0.0.1",
+  user: "root",
+  password: "password",
+  database: "honey",
 });
+
+connection.connect();
+
+connection.query("SELECT * FROM USER", function (error, results, fields) {
+  if (error) throw error;
+  console.log("The solution is: ", results[0].solution);
+});
+
+connection.end();
 
 router.get("/login/success", async (req, res, next) => {
   if (req.query.email !== undefined && req.query.email !== null) {
@@ -33,6 +39,7 @@ router.get("/login/success", async (req, res, next) => {
 
   try {
     var userRes = await knex("user").where("email", req.query.email);
+
     res.send(userRes);
   } catch (error) {
     res.send(error);
