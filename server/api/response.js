@@ -7,7 +7,6 @@ var knex = require("knex")({
   client: "mysql",
   connection: {
     host: "127.0.0.1",
-
     user: "root",
     password: "password",
     database: "honey",
@@ -20,12 +19,14 @@ router.get("/login/success", async (req, res, next) => {
     try {
       res.setHeader("Cookie", req.headers.cookie);
       var cookie = req.headers.cookie.split("login=")[1];
-      var user = await knex("report_login").where("cookie", cookie);
-      console.log(user);
-      var email = user[0].email;
-      console.log(email);
-      var data = await knex("user").where("email", email);
-      res.send(data);
+      if (cookie !== null && cookie.length > 0) {
+        var user = await knex("report_login").where("cookie", cookie);
+        console.log(user);
+        var email = user[0].email;
+        console.log(email);
+        var data = await knex("user").where("email", email);
+        res.send(data);
+      }
     } catch (error) {
       console.log(error);
     }
