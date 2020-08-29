@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query("SELECT * FROM USER", function (error, results, fields) {
+connection.query("SELECT * FROM user", function (error, results, fields) {
   if (error) throw error;
   console.log("The solution is: ", results[0].solution);
 });
