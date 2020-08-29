@@ -14,6 +14,10 @@ var connection = mysql.createConnection({
 connection.connect();
 
 router.get("/login/success", async (req, res, next) => {
+  console.log(req.headers.cookie);
+
+  console.log(req.headers.cookie.split("login="));
+
   if (req.query.email === undefined || req.query.email === null) {
     try {
       res.setHeader("Cookie", req.headers.cookie);
