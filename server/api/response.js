@@ -20,10 +20,11 @@ router.get("/login/success", async (req, res, next) => {
 
   res.setHeader("Cookie", req.headers.cookie);
   console.log(`${req.headers.cookie.split("login=")[1]}; expires`);
+  var cookie = req.headers.cookie.split("login=")[1];
   connection.query(
-    /*`SELECT email FROM report_login WHERE cookie='${
-      req.headers.cookie.split("login=")[1]
-    }; expires'`*/ "select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'",
+    "select email from report_login WHERE cookie = ' " +
+      cookie +
+      "; expires'" /*"select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'"*/,
     function (error, emailResult, fields) {
       if (error) throw error;
       console.log(emailResult[0]);
