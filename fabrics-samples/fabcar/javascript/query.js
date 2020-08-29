@@ -76,7 +76,7 @@ router.get("/", (req, res, next) => {
     .catch((e) => res.send(e));
 });
 
-async function changeOwner(email) {
+async function changeOwner(email, id) {
   try {
     // load the network configuration
     const ccpPath = path.resolve(
@@ -97,7 +97,7 @@ async function changeOwner(email) {
     console.log(`Wallet path: ${walletPath}`);
 
     // Check to see if we've already enrolled the user.
-    const identity = await wallet.get(req.query.email);
+    const identity = await wallet.get(email);
     if (!identity) {
       console.log(
         'An identity for the user "appUser" does not exist in the wallet'
@@ -110,7 +110,7 @@ async function changeOwner(email) {
     const gateway = new Gateway();
     await gateway.connect(ccp, {
       wallet,
-      identity: req.query.email,
+      identity: email,
       discovery: { enabled: true, asLocalhost: true },
     });
 
@@ -123,11 +123,7 @@ async function changeOwner(email) {
     // Submit the specified transaction.
     // createCar transaction - requires 5 argument, ex: ('createCar', 'CAR12', 'Honda', 'Accord', 'Black', 'Tom')
     //changeHoneyOwner transaction - requires 2 args , ex: ('changeHoneyOwner', 'HONEY0', 'Marcello')
-    await contract.submitTransaction(
-      "changeHoneyOwner",
-      req.query.id,
-      req.query.email
-    );
+    await contract.submitTransaction("changeHoneyOwner", id, email);
     console.log("Transaction has been submitted");
 
     // Disconnect from the gateway.
@@ -139,7 +135,7 @@ async function changeOwner(email) {
 }
 
 router.get("/transaction", (req, res, next) => {
-  changeOwner(req.query.email)
+  changeOwner(req.query.email, req.query.id)
     .then(() => {
       res.sendCode(200);
     })
