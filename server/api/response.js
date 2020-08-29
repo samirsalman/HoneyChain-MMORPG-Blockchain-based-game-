@@ -22,7 +22,7 @@ router.get("/login/success", async (req, res, next) => {
     knex("report_login")
       .where("cookie", cookie)
       .then((result) => {
-        var email = res.send(result[0].email);
+        var email = result[0].email;
         knex("user")
           .where("email", email)
           .then((result) => {
