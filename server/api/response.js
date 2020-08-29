@@ -14,22 +14,20 @@ var knex = require("knex")({
   },
 });
 
-router.get("/login/success", (req, res, next) => {
+router.get("/login/success", async (req, res, next) => {
   if (req.headers.cookie !== undefined && req.headers.cookie !== null) {
-    res.setHeader("Cookie", req.headers.cookie);
-    var cookie = req.headers.cookie.split("login=")[1];
-    knex("report_login")
-      .where("cookie", cookie)
-      .then((result) => {
-        var email = result[0].email;
-        knex("user")
-          .where("email", email)
-          .then((emailRes) => {
-            res.send(emailRes[0]);
-          })
-          .catch((err) => res.send(err));
-      })
-      .catch((err) => res.send(err));
+    try {
+      res.setHeader("Cookie", req.headers.cookie);
+      var cookie = req.headers.cookie.split("login=")[1];
+      var user = await knex("report_login").where("cookie", cookie);
+      var email = user[0].email;
+      console.log(user);
+      console.log(email);
+      var data = await knex("user").where("email", email);
+      res.send(data);
+    } catch (error) {
+      console.log(error);
+    }
   }
   console.log(res.getHeaders());
 
