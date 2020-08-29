@@ -18,13 +18,26 @@ router.get("/login/success", async (req, res, next) => {
   res.statusCode = 200;
   if (req.headers.cookie !== undefined) {
     res.setHeader("Cookie", req.headers.cookie);
+    var cookie = req.headers.cookie.split("login=")[1];
+    knex("report_login")
+      .where("cookie", cookie)
+      .then((result) => {
+        var email = res.send(result[0].email);
+        knex("user")
+          .where("email", email)
+          .then((result) => {
+            res.send(result[0]);
+          })
+          .catch((err) => res.send(err));
+      })
+      .catch((err) => res.send(err));
   }
   console.log(res.getHeaders());
 
   knex("user")
     .where("email", req.query.email)
     .then((result) => {
-      res.send(result[0]);
+      res.send(result);
     })
     .catch((err) => res.send(err));
   /*
