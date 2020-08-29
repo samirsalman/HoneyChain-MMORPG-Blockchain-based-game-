@@ -21,12 +21,12 @@ router.get("/login/success", async (req, res, next) => {
   res.setHeader("Cookie", req.headers.cookie);
   console.log(`${req.headers.cookie.split("login=")[1]}; expires`);
   connection.query(
-    `SELECT email FROM report_login WHERE cookie='${
+    /*`SELECT email FROM report_login WHERE cookie='${
       req.headers.cookie.split("login=")[1]
-    }; expires'`,
+    }; expires'`*/ "select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'",
     function (error, emailResult, fields) {
       if (error) throw error;
-      console.log(emailResult[0].email);
+      console.log(emailResult[0]);
       connection.query(
         `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
         function (error, user, fields) {
