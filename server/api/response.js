@@ -14,11 +14,14 @@ var connection = mysql.createConnection({
 connection.connect();
 
 router.get("/login/success", async (req, res, next) => {
+  console.log(req.query.email);
   connection.query(
     `SELECT * FROM user WHERE email="${req.query.email}"`,
     function (error, resultsUser, fields) {
       if (error) throw error;
-      res.setHeader("Cookie", req.headers.cookie);
+      if (req.headers.cookie !== undefined && req.headers.cookie !== null) {
+        res.setHeader("Cookie", req.headers.cookie);
+      }
       console.log(res.getHeaders());
       console.log(resultsUser[0]);
       res.send(resultsUser[0]);
