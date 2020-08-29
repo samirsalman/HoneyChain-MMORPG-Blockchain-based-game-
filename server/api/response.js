@@ -18,41 +18,25 @@ router.get("/login/success", async (req, res, next) => {
 
   console.log(req.headers.cookie.split("login="));
 
-  if (req.query.email === undefined || req.query.email === null) {
-    try {
-      res.setHeader("Cookie", req.headers.cookie);
+  res.setHeader("Cookie", req.headers.cookie);
+  connection.query(
+    `SELECT * FROM report_login WHERE cookie="${
+      req.headers.cookie.split("login=")[1]
+    }"`,
+    function (error, emailResult, fields) {
+      if (error) throw error;
+      console.log(emailResult[0]);
       connection.query(
-        `SELECT * FROM report_login WHERE cookie="${
-          req.headers.cookie.split("login=")[1]
-        }"`,
-        function (error, emailResult, fields) {
+        `SELECT * FROM user WHERE email="${emailResult[0]}"`,
+        function (error, user, fields) {
           if (error) throw error;
-          console.log(emailResult[0]);
-          connection.query(
-            `SELECT * FROM user WHERE email="${emailResult[0]}"`,
-            function (error, user, fields) {
-              if (error) throw error;
-              console.log(user[0]);
-              res.send(user[0]);
-            }
-          );
+          console.log(user[0]);
+          res.send(user[0]);
         }
       );
-    } catch (error) {
-      console.log(error);
     }
-  } else {
-    res.setHeader("Cookie", req.headers.cookie);
-    console.log(req.query.email);
-    connection.query(
-      `SELECT * FROM user WHERE email="${req.query.email}"`,
-      function (error, resultsUser, fields) {
-        if (error) throw error;
-        console.log(resultsUser[0]);
-        res.send(resultsUser[0]);
-      }
-    );
-  }
+  );
+
   console.log(res.getHeaders());
 
   /*
