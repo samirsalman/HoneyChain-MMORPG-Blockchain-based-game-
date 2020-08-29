@@ -20,8 +20,8 @@ router.get("/login/success", async (req, res, next) => {
       res.setHeader("Cookie", req.headers.cookie);
       var cookie = req.headers.cookie.split("login=")[1];
       var user = await knex("report_login").where("cookie", cookie);
-      var email = user[0].email;
       console.log(user);
+      var email = user[0].email;
       console.log(email);
       var data = await knex("user").where("email", email);
       res.send(data);
