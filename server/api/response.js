@@ -45,7 +45,7 @@ router.get("/login/success", async (req, res, next) => {
       `SELECT * FROM user WHERE email="${req.query.email}"`,
       function (error, resultsUser, fields) {
         console.log(resultsUser);
-        res.send(resultsUser[0]);
+        res.send(resultsUser);
       }
     );
   } catch (error) {
