@@ -21,6 +21,11 @@ router.get("/login/success", async (req, res, next) => {
   res.setHeader("Cookie", req.headers.cookie);
   console.log(`${req.headers.cookie.split("login=")[1]}; expires`);
   var cookie = req.headers.cookie.split("login=")[1];
+
+  console.log(
+    "select email from report_login WHERE cookie = ' " + cookie + "; expires'"
+  );
+
   connection.query(
     "select email from report_login WHERE cookie = ' " +
       cookie +
