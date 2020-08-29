@@ -15,7 +15,7 @@ connection.connect();
 
 connection.query("SELECT * FROM user", function (error, results, fields) {
   if (error) throw error;
-  console.log("The solution is: ", results);
+  console.log("The solution is: ", results[0].email);
 });
 
 connection.end();
