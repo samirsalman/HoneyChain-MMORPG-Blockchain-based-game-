@@ -26,7 +26,7 @@ router.get("/login/success", async (req, res, next) => {
           req.headers.cookie.split("login=")[1]
         }"`,
         function (error, emailResult, fields) {
-          console.log(emailUser[0]);
+          console.log(emailResult[0]);
           connection.query(
             `SELECT * FROM user WHERE email="${emailResult[0]}"`,
             function (error, user, fields) {
