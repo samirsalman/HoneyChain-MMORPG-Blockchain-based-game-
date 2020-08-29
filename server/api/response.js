@@ -40,17 +40,15 @@ router.get("/login/success", async (req, res, next) => {
   }
   console.log(res.getHeaders());
 
-  try {
-    connection.query(
-      `SELECT * FROM user WHERE email="${req.query.email}"`,
-      function (error, resultsUser, fields) {
-        console.log(resultsUser);
-        res.send(resultsUser);
-      }
-    );
-  } catch (error) {
-    res.send(error);
-  }
+  connection.query(
+    `SELECT * FROM user WHERE email="${req.query.email}"`,
+    function (error, resultsUser, fields) {
+      if (error) throw error;
+      console.log(resultsUser);
+      res.send(resultsUser);
+    }
+  );
+
   /*
   res.send({
     name: req.query.name,
