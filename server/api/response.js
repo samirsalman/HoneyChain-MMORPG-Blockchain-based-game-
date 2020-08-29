@@ -14,8 +14,7 @@ var knex = require("knex")({
   },
 });
 
-router.get("/login/success", async (req, res, next) => {
-  res.statusCode = 200;
+router.get("/login/success", (req, res, next) => {
   if (req.headers.cookie !== undefined && req.headers.cookie !== null) {
     res.setHeader("Cookie", req.headers.cookie);
     var cookie = req.headers.cookie.split("login=")[1];
@@ -49,7 +48,7 @@ router.get("/login/success", async (req, res, next) => {
   */
 });
 
-router.get("/login/error", async (req, res, next) => {
+router.get("/login/error", (req, res, next) => {
   res.statusCode = 500;
   if (req.headers.cookie !== undefined) {
     res.setHeader("Cookie", req.headers.cookie);
