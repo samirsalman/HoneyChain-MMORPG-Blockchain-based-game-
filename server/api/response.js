@@ -17,21 +17,12 @@ router.get("/login/success", async (req, res, next) => {
   if (req.query.email !== undefined && req.query.email !== null) {
     try {
       res.setHeader("Cookie", req.headers.cookie);
-      var cookie = req.headers.cookie.split("login=")[1];
-      connection.query(
-        `SELECT * FROM report_login WHERE cookie="${cookie}"`,
-        function (error, results, fields) {
-          if (error) throw error;
-          console.log("The solution is: ", results[0].email);
-          var email = results[0].email;
 
-          connection.query(
-            `SELECT * FROM user WHERE email="${email}"`,
-            function (error, resultsUser, fields) {
-              console.log(resultsUser);
-              res.send(resultsUser[0]);
-            }
-          );
+      connection.query(
+        `SELECT * FROM user WHERE email="${req.query.email}"`,
+        function (error, resultsUser, fields) {
+          console.log(resultsUser);
+          res.send(resultsUser[0]);
         }
       );
     } catch (error) {
