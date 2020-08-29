@@ -6,11 +6,10 @@ const HOST = "http://localhost:3001/registerUser";
 var knex = require("knex")({
   client: "mysql",
   connection: {
-    host: "127.0.0.1",
+    host: "127.0.0.1:3306",
     user: "root",
     password: "password",
     database: "honey",
-    options: { port: 3306 },
   },
 });
 
