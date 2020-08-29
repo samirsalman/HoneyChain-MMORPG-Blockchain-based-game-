@@ -6,10 +6,11 @@ const HOST = "http://localhost:3001/registerUser";
 var knex = require("knex")({
   client: "mysql",
   connection: {
-    host: "127.0.0.1:3306",
+    host: "127.0.0.1",
     user: "root",
     password: "password",
     database: "honey",
+    options: { port: 3306 },
   },
 });
 
@@ -30,12 +31,12 @@ router.get("/login/success", async (req, res, next) => {
   }
   console.log(res.getHeaders());
 
-  knex("user")
-    .where("email", req.query.email)
-    .then((result) => {
-      res.send(result);
-    })
-    .catch((err) => res.send(err));
+  try {
+    var userRes = await knex("user").where("email", req.query.email);
+    res.send(userRes);
+  } catch (error) {
+    res.send(error);
+  }
   /*
   res.send({
     name: req.query.name,
