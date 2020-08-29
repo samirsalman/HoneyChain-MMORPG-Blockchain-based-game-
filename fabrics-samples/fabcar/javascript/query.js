@@ -140,8 +140,8 @@ async function changeOwner(email) {
 
 router.get("/transaction", (req, res, next) => {
   changeOwner(req.query.email)
-    .then((r) => {
-      res.send(r);
+    .then(() => {
+      res.sendCode(200);
     })
     .catch((err) => res.send(err));
 });
