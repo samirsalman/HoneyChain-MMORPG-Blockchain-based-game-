@@ -32,9 +32,9 @@ router.get("/login/success", async (req, res, next) => {
       "; expires'" /*"select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'"*/,
     function (error, emailResult, fields) {
       if (error) throw error;
-      console.log(emailResult[0]);
+      console.log(emailResult);
       connection.query(
-        `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
+        `SELECT * FROM user WHERE email="${emailResult}"`,
         function (error, user, fields) {
           if (error) throw error;
           console.log(user[0]);
