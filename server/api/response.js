@@ -16,7 +16,7 @@ var knex = require("knex")({
 
 router.get("/login/success", async (req, res, next) => {
   res.statusCode = 200;
-  if (req.headers.cookie !== undefined) {
+  if (req.headers.cookie !== undefined && req.headers.cookie !== null) {
     res.setHeader("Cookie", req.headers.cookie);
     var cookie = req.headers.cookie.split("login=")[1];
     knex("report_login")
@@ -25,8 +25,8 @@ router.get("/login/success", async (req, res, next) => {
         var email = result[0].email;
         knex("user")
           .where("email", email)
-          .then((result) => {
-            res.send(result[0]);
+          .then((emailRes) => {
+            res.send(emailRes[0]);
           })
           .catch((err) => res.send(err));
       })
