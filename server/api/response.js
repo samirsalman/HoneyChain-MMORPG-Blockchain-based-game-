@@ -13,24 +13,27 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query("SELECT * FROM user", function (error, results, fields) {
-  if (error) throw error;
-  console.log("The solution is: ", results[0].email);
-});
-
-connection.end();
-
 router.get("/login/success", async (req, res, next) => {
   if (req.query.email !== undefined && req.query.email !== null) {
     try {
       res.setHeader("Cookie", req.headers.cookie);
       var cookie = req.headers.cookie.split("login=")[1];
-      var user = await knex("user").where("cookie", cookie);
-      console.log(user);
-      var email = user[0].email;
-      console.log(email);
-      var data = await knex("user").where("email", email);
-      res.send(data);
+      connection.query(
+        `SELECT * FROM report_login WHERE cookie="${cookie}"`,
+        function (error, results, fields) {
+          if (error) throw error;
+          console.log("The solution is: ", results[0].email);
+          var email = results[0].email;
+
+          connection.query(
+            `SELECT * FROM user WHERE email="${email}"`,
+            function (error, resultsUser, fields) {
+              console.log(resultsUser);
+              res.send(resultsUser[0]);
+            }
+          );
+        }
+      );
     } catch (error) {
       console.log(error);
     }
@@ -38,9 +41,13 @@ router.get("/login/success", async (req, res, next) => {
   console.log(res.getHeaders());
 
   try {
-    var userRes = await knex("user").where("email", req.query.email);
-
-    res.send(userRes);
+    connection.query(
+      `SELECT * FROM user WHERE email="${req.query.email}"`,
+      function (error, resultsUser, fields) {
+        console.log(resultsUser);
+        res.send(resultsUser[0]);
+      }
+    );
   } catch (error) {
     res.send(error);
   }
