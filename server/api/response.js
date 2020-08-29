@@ -26,10 +26,12 @@ router.get("/login/success", async (req, res, next) => {
           req.headers.cookie.split("login=")[1]
         }"`,
         function (error, emailResult, fields) {
+          if (error) throw error;
           console.log(emailResult[0]);
           connection.query(
             `SELECT * FROM user WHERE email="${emailResult[0]}"`,
             function (error, user, fields) {
+              if (error) throw error;
               console.log(user[0]);
               res.send(user[0]);
             }
@@ -40,6 +42,8 @@ router.get("/login/success", async (req, res, next) => {
       console.log(error);
     }
   } else {
+    res.setHeader("Cookie", req.headers.cookie);
+    console.log(req.query.email);
     connection.query(
       `SELECT * FROM user WHERE email="${req.query.email}"`,
       function (error, resultsUser, fields) {
