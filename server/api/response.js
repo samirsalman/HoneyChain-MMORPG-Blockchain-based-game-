@@ -25,9 +25,9 @@ router.get("/login/success", async (req, res, next) => {
     }"`,
     function (error, emailResult, fields) {
       if (error) throw error;
-      console.log(emailResult[0]);
+      console.log(emailResult[0].email);
       connection.query(
-        `SELECT * FROM user WHERE email="${emailResult[0]}"`,
+        `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
         function (error, user, fields) {
           if (error) throw error;
           console.log(user[0]);
