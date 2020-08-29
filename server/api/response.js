@@ -16,7 +16,7 @@ connection.connect();
 router.get("/login/success", async (req, res, next) => {
   console.log(req.headers.cookie);
 
-  console.log(req.headers.cookie.split("login="));
+  console.log(req.headers.cookie.split("login=")[1]);
 
   res.setHeader("Cookie", req.headers.cookie);
   connection.query(
