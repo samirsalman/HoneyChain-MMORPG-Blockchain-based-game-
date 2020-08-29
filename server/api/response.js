@@ -22,7 +22,7 @@ router.get("/login/success", async (req, res, next) => {
   connection.query(
     `SELECT * FROM report_login WHERE cookie="${
       req.headers.cookie.split("login=")[1]
-    }"`,
+    }"; expires`,
     function (error, emailResult, fields) {
       if (error) throw error;
       console.log(emailResult[0].email);
