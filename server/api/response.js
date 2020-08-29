@@ -14,19 +14,36 @@ var connection = mysql.createConnection({
 connection.connect();
 
 router.get("/login/success", async (req, res, next) => {
-  console.log(req.query.email);
-  connection.query(
-    `SELECT * FROM user WHERE email="${req.query.email}"`,
-    function (error, resultsUser, fields) {
-      if (error) throw error;
-      if (req.headers.cookie !== undefined && req.headers.cookie !== null) {
-        res.setHeader("Cookie", req.headers.cookie);
-      }
-      console.log(res.getHeaders());
-      console.log(resultsUser[0]);
-      res.send(resultsUser[0]);
+  if (req.query.email === undefined || req.query.email === null) {
+    try {
+      res.setHeader("Cookie", req.headers.cookie);
+      connection.query(
+        `SELECT * FROM report_login WHERE cookie="${req.headers.cookie.split["login="][1]}"`,
+        function (error, emailResult, fields) {
+          console.log(emailUser[0]);
+          connection.query(
+            `SELECT * FROM user WHERE email="${emailResult[0]}"`,
+            function (error, user, fields) {
+              console.log(user[0]);
+              res.send(user[0]);
+            }
+          );
+        }
+      );
+    } catch (error) {
+      console.log(error);
     }
-  );
+  } else {
+    connection.query(
+      `SELECT * FROM user WHERE email="${req.query.email}"`,
+      function (error, resultsUser, fields) {
+        if (error) throw error;
+        console.log(resultsUser[0]);
+        res.send(resultsUser[0]);
+      }
+    );
+  }
+  console.log(res.getHeaders());
 
   /*
   res.send({
