@@ -21,11 +21,12 @@ router.get("/login/success", async (req, res, next) => {
   }
   console.log(res.getHeaders());
 
-  knex("users")
+  knex("user")
     .where("email", req.query.email)
     .then((result) => {
       res.send(result[0]);
-    });
+    })
+    .catch((err) => res.send(err));
   /*
   res.send({
     name: req.query.name,
