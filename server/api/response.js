@@ -15,18 +15,16 @@ var knex = require("knex")({
 });
 
 router.get("/login/success", async (req, res, next) => {
-  if (req.headers.cookie !== undefined && req.headers.cookie !== null) {
+  if (req.query.email !== undefined && req.query.email !== null) {
     try {
       res.setHeader("Cookie", req.headers.cookie);
       var cookie = req.headers.cookie.split("login=")[1];
-      if (cookie !== null && cookie.length > 0) {
-        var user = await knex("report_login").where("cookie", cookie);
-        console.log(user);
-        var email = user[0].email;
-        console.log(email);
-        var data = await knex("user").where("email", email);
-        res.send(data);
-      }
+      var user = await knex("user").where("cookie", cookie);
+      console.log(user);
+      var email = user[0].email;
+      console.log(email);
+      var data = await knex("user").where("email", email);
+      res.send(data);
     } catch (error) {
       console.log(error);
     }
