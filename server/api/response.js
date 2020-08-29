@@ -21,9 +21,8 @@ router.get("/login/success", async (req, res, next) => {
   }
   console.log(res.getHeaders());
 
-  knex
-    .select()
-    .from("user")
+  knex("users")
+    .where("email", req.query.email)
     .then((result) => {
       res.send(result[0]);
     });
