@@ -81,7 +81,7 @@ app.get("/", async (req, res, next) => {
 });
 
 const registerRoute = require("./registerUser.js");
-app.use("/registerUser", registerUser);
+app.use("/registerUser", registerRoute);
 
 const queryRoute = require("./query.js");
 app.use("/query", queryRoute);
