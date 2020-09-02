@@ -101,23 +101,18 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
     try {
       var res = await Dio()
-          .get("$HOST/user/login",
-              queryParameters: {"email": email, "password": password},
+          .get("$HOST/user/login?email=" + email + "&password=" + password,
               options: Options(
                   followRedirects: true,
+                  headers: {"Accept":"application/json"},
                   maxRedirects: 10,
                   receiveDataWhenStatusError: true))
           .catchError((err) async {})
           // ignore: missing_return
           .timeout(Duration(seconds: 5), onTimeout: () async {});
 
-      print("DATA: " + res.data);
-      print(res.statusCode);
-      print(res.headers);
-
       var cookie = res.headers.value("cookie");
       if (res.statusCode != 500) {
-        print(res.data);
         if (cookie != null) {
           print(cookie);
           try {
@@ -128,7 +123,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
             print(e);
           }
         }
-        return json.decode(res.data.toString());
+        return json.decode(res.data);
       } else {
         print("No user");
         return null;
