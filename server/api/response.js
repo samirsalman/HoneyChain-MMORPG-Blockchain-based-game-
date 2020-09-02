@@ -88,6 +88,7 @@ router.get("/registration/error", (req, res, next) => {
 });
 
 router.post("/log", (req, res, next) => {
+  console.log("---- LOGGING ----");
   console.log(req.body);
   res.send(req.body);
 });
