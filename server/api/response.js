@@ -36,7 +36,7 @@ router.get("/login/success", (req, res, next) => {
             function (error, user, fields) {
               if (error) throw error;
               console.log(user[0]);
-              res.json(user[0]);
+              res.json(JSON.parse(user[0]));
             }
           );
         }
