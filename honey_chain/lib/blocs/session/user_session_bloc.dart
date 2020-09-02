@@ -109,7 +109,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
           // ignore: missing_return
           .timeout(Duration(seconds: 5), onTimeout: () async {});
 
-      var cookie = res.headers["cookie"];
+      var cookie = res.headers["cookie"].split("login=")[1];
       if (res.statusCode != 500) {
         if (cookie != null) {
           print(cookie);
@@ -206,25 +206,15 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   Future<List<Map<String, dynamic>>> getUserObjects() async {
     var email = user["email"];
     try {
-      var res = await Dio()
-          .get("$HOST/user/getObjects?email=${email.toString().trim()}",
-              options: Options(headers: {
-                "Content-Type": "application/json",
-                "Connection": "keep-alive"
-              }))
-          .timeout(Duration(seconds: 5), onTimeout: () async {
-        await Dio().post("$HOST/response/log", data: {"response": "TIMEOUT"});
-      });
+      var res = await http
+          .get(
+            "$HOST/user/getObjects?email=${email.toString().trim()}",
+          )
+          .timeout(Duration(seconds: 5), onTimeout: () async {});
 
-      await Dio().post("$SERVER/response/log", data: {
-        "callName": "GetObjects",
-        "data": res.data,
-        "statusCode": res.statusCode,
-        "headers": res.headers
-      });
       var items = List();
 
-      var jsonData = json.decode(res.data);
+      var jsonData = json.decode(res.body);
 
       for (var item in jsonData) {
         if (item.owner == email) {
