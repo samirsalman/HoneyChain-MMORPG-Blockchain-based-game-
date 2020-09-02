@@ -42,7 +42,7 @@ router.get("/login/success", (req, res, next) => {
                 name: user[0].name,
               };
               console.log(user[0]);
-              res.send(objectToRes);
+              res.json(objectToRes);
             }
           );
         }
