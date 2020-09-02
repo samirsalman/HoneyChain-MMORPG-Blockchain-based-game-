@@ -4,7 +4,9 @@ const http = require("http");
 //Let's include the module to create quicky our  server
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
+app.use(cors({}));
 //define the port on which the server will listen
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {

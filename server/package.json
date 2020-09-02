@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "cookies": "^0.8.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
     "knex": "^0.21.2",
