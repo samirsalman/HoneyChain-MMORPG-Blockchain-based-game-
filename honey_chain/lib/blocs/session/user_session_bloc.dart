@@ -43,7 +43,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         if (user != null) {
           gameObjects = await getUserObjects();
           totalPower = 0;
-          for (var i=0; i<gameObjects.length; i++) {
+          for (var i = 0; i < gameObjects.length; i++) {
             totalPower += gameObjects[i]["Record"]["power"];
           }
           yield (Logged());
@@ -76,6 +76,8 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
   Future<bool> verifyCookie() async {
     try {
+      prefs = await SharedPreferences.getInstance();
+
       var cookie = prefs.getString("cookie");
       print(cookie);
       if (cookie == null) {
@@ -101,6 +103,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     // new MyServiceClient(client)
 
     try {
+      prefs = await SharedPreferences.getInstance();
       var res = await http
           .get(
             "$HOST/user/login?email=" + email + "&password=" + password,
@@ -138,27 +141,12 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         DateTime.now().isBefore(DateTime.parse(expiresDate))) {
       var cookie = prefs.getString("cookie");
 
-      var res = await Dio().get(
-        "$HOST/user/login",
-        options: Options(headers: {
-          cookie: "login=$cookie",
-          "Content-Type": "application/json",
-          "Connection": "keep-alive"
-        }),
-      );
-
-      await Dio().post("$SERVER/response/log", data: {
-        "callName": "Login with cookie",
-        "data": res.data,
-        "statusCode": res.statusCode,
-        "headers": res.headers
-      }).timeout(Duration(seconds: 5), onTimeout: () async {
-        await Dio().post("$HOST/response/log", data: {"response": "TIMEOUT"});
+      var res = await http.get("$HOST/user/login", headers: {
+        cookie: "login=$cookie",
       });
-      ;
 
-      print(res.data);
-      return json.decode(res.data);
+      print(res.body);
+      return json.decode(res.body);
     } else {
       return null;
     }
@@ -205,7 +193,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
       var jsonData = json.decode(res.body);
 
-      for (var i=0; i<jsonData.length; i++) {
+      for (var i = 0; i < jsonData.length; i++) {
         /* if (item.owner == email) {
           items.add(item);
         }
@@ -221,21 +209,12 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   }
 
   Future<bool> makeTransaction(id, email) async {
-    var res = await Dio()
-        .get("$HOST/user/transaction?id=$id&email=${email.toString().trim()}",
-            options: Options(headers: {
-              "Content-Type": "application/json",
-              "Connection": "keep-alive"
-            }))
-        .timeout(Duration(seconds: 5), onTimeout: () async {
-      await Dio().post("$HOST/response/log", data: {"response": "TIMEOUT"});
-    });
-    await Dio().post("$SERVER/response/log", data: {
-      "callName": "Make transaction",
-      "data": res.data,
-      "statusCode": res.statusCode,
-      "headers": res.headers
-    });
+    var res = await http
+        .get(
+          "$HOST/user/transaction?id=$id&email=${email.toString().trim()}",
+        )
+        .timeout(Duration(seconds: 5), onTimeout: () async {});
+
     if (res.statusCode != 500) {
       return true;
     } else {
