@@ -43,8 +43,8 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         if (user != null) {
           gameObjects = await getUserObjects();
           totalPower = 0;
-          for (var i in gameObjects) {
-            totalPower += i["power"];
+          for (var i=0; i<gameObjects.length; i++) {
+            totalPower += gameObjects[i]["Record"]["power"];
           }
           yield (Logged());
         }
@@ -192,7 +192,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     }
   }
 
-  Future<List<Map<String, dynamic>>> getUserObjects() async {
+  Future<List<dynamic>> getUserObjects() async {
     var email = user["email"];
     try {
       var res = await http
@@ -200,18 +200,18 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
             "$HOST/user/getObjects?email=${email.toString().trim()}",
           )
           .timeout(Duration(seconds: 5), onTimeout: () async {});
-
+      print(res.body.toString());
       var items = List();
 
       var jsonData = json.decode(res.body);
 
-      for (var item in jsonData) {
+      for (var i=0; i<jsonData.length; i++) {
         /* if (item.owner == email) {
           items.add(item);
         }
 
         */
-        items.add(item);
+        items.add(jsonData[i]);
       }
       return items;
     } catch (e) {
