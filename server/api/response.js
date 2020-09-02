@@ -87,9 +87,9 @@ router.get("/registration/error", (req, res, next) => {
   res.sendStatus(500);
 });
 
-router.get("/log", (req, res, next) => {
-  console.log(req.query);
-  res.send(req.query);
+router.post("/log", (req, res, next) => {
+  console.log(req.body);
+  res.send(req.body);
 });
 
 module.exports = router;
