@@ -66,18 +66,18 @@ router.get("/login/error", (req, res, next) => {
   res.sendStatus(500);
 });
 
-router.get("/registration/success", async (req, res, next) => {
+router.get("/registration/success", (req, res, next) => {
   res.statusCode = 200;
   if (req.headers.cookie !== undefined) {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  try {
-    await axios.default.get(`${HOST}?username=${req.query.email}`);
-    res.sendStatus(200);
-  } catch (err) {
-    res.send(err);
-  }
+  axios.default
+    .get(`${HOST}?username=${req.query.email}`)
+    .then((response) => {
+      res.sendStatus(200);
+    })
+    .catch((err) => res.send(err));
 });
 
 router.get("/registration/error", (req, res, next) => {
