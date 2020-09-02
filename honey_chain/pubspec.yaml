@@ -34,6 +34,9 @@ dependencies:
 
   dio: ^3.0.10
 
+  http: ^0.12.2
+
+
   flutter:
     sdk: flutter
 

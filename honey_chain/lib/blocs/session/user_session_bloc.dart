@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './bloc.dart';
+import "package:http/http.dart" as http;
 
 class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   UserSessionBloc(UserSessionState initialState) : super(initialState);
@@ -100,18 +101,15 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     // new MyServiceClient(client)
 
     try {
-      var res = await Dio()
-          .get("$HOST/user/login?email=" + email + "&password=" + password,
-              options: Options(
-                  followRedirects: true,
-                  headers: {"Accept":"application/json"},
-                  maxRedirects: 10,
-                  receiveDataWhenStatusError: true))
+      var res = await http
+          .get(
+            "$HOST/user/login?email=" + email + "&password=" + password,
+          )
           .catchError((err) async {})
           // ignore: missing_return
           .timeout(Duration(seconds: 5), onTimeout: () async {});
 
-      var cookie = res.headers.value("cookie");
+      var cookie = res.headers["cookie"];
       if (res.statusCode != 500) {
         if (cookie != null) {
           print(cookie);
@@ -123,7 +121,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
             print(e);
           }
         }
-        return json.decode(res.data);
+        return json.decode(res.body.toString());
       } else {
         print("No user");
         return null;
