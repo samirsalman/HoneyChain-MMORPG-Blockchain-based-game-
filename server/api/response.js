@@ -14,19 +14,21 @@ var connection = mysql.createConnection({
 connection.connect();
 
 router.get("/login/success", async (req, res, next) => {
-  console.log(req.headers);
+  console.log(req.query);
 
   setTimeout(() => {
-    res.setHeader("Cookie", req.headers.cookie);
-    console.log(`${req.headers["set-cookie"].split("login=")[1]}; expires`);
-    var cookie = req.headers["set-cookie"].split("login=")[1];
+    res.setHeader("Cookie", req.query.cookie);
+    console.log(`login=${req.query.cookie}; expires`);
+    var cookie = req.query.cookie;
 
     console.log(
-      "select email from report_login WHERE cookie = '" + cookie + "; expires'"
+      "select email from report_login WHERE cookie = 'login=" +
+        cookie +
+        "; expires'"
     );
 
     connection.query(
-      "select email from report_login WHERE cookie = '" +
+      "select email from report_login WHERE cookie = 'login=" +
         cookie +
         "; expires'" /*"select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'"*/,
       function (error, emailResult, fields) {
