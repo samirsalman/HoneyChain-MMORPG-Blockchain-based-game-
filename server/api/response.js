@@ -17,35 +17,36 @@ router.get("/login/success", async (req, res, next) => {
   console.log(req.query);
 
   setTimeout(() => {
-    res.setHeader("Cookie", `login=${req.query.cookie}`);
-    console.log(`login=${req.query.cookie}; expires`);
-    var cookie = req.query.cookie;
+    try {
+      res.setHeader("Cookie", `login=${req.query.cookie}`);
+      console.log(`login=${req.query.cookie}; expires`);
+      var cookie = req.query.cookie;
 
-    console.log(
-      "select email from report_login WHERE cookie = 'login=" +
-        cookie +
-        "; expires'"
-    );
+      console.log("select email from report_login WHERE cookie = '" + cookie);
 
-    connection.query(
-      "select email from report_login WHERE cookie = 'login=" +
-        cookie +
-        "; expires'" /*"select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'"*/,
-      function (error, emailResult, fields) {
-        if (error) throw error;
-        console.log(emailResult);
-        connection.query(
-          `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
-          function (error, user, fields) {
-            if (error) throw error;
-            console.log(user[0]);
-            res.send(user[0]);
-          }
-        );
-      }
-    );
+      connection.query(
+        "select email from report_login WHERE cookie = '" +
+          cookie +
+          "'" /*"select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'"*/,
+        function (error, emailResult, fields) {
+          if (error) throw error;
+          console.log(emailResult);
+          connection.query(
+            `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
+            function (error, user, fields) {
+              if (error) throw error;
+              console.log(user[0]);
+              res.send(user[0]);
+            }
+          );
+        }
+      );
 
-    console.log(res.getHeaders());
+      console.log(res.getHeaders());
+    } catch (err) {
+      console.log(err);
+      res.send(err);
+    }
   }, 3000);
 
   /*
