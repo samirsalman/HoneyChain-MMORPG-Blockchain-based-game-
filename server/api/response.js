@@ -72,12 +72,13 @@ router.get("/registration/success", (req, res, next) => {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  axios.default
+  try{
+  await axios.default
     .get(`${HOST}?username=${req.query.email}`)
-    .then(() => {
-      res.sendStatus(200);
-    })
-    .catch((err) => res.send(err));
+    res.sendStatus(200);
+  }catch(err){
+    res.send(err);
+  }
 });
 
 router.get("/registration/error", (req, res, next) => {
