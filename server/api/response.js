@@ -68,9 +68,6 @@ router.get("/login/error", (req, res, next) => {
 
 router.get("/registration/success", (req, res, next) => {
   res.statusCode = 200;
-  if (req.headers.cookie !== undefined) {
-    res.setHeader("Cookie", req.headers.cookie);
-  }
   console.log(res.getHeaders());
   axios.default
     .get(`${HOST}?username=${req.query.email}`)
@@ -87,6 +84,11 @@ router.get("/registration/error", (req, res, next) => {
   }
   console.log(res.getHeaders());
   res.sendStatus(500);
+});
+
+router.get("/log", (req, res, next) => {
+  console.log(req.query);
+  res.send(req.query);
 });
 
 module.exports = router;
