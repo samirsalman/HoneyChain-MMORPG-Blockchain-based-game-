@@ -19,6 +19,8 @@ router.get("/login/success", (req, res, next) => {
   setTimeout(() => {
     try {
       res.setHeader("Cookie", `login=${req.query.cookie}`);
+      res.setHeader("Content-Type", `application/json`);
+
       console.log(`login=${req.query.cookie}; expires`);
       var cookie = req.query.cookie;
 
@@ -35,8 +37,12 @@ router.get("/login/success", (req, res, next) => {
             `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
             function (error, user, fields) {
               if (error) throw error;
+              var objectToRes = {
+                email: user[0].email,
+                name: user[0].name,
+              };
               console.log(user[0]);
-              res.json(user[0]);
+              res.json(objectToRes);
             }
           );
         }
