@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-router.get("/login/success", async (req, res, next) => {
+router.get("/login/success", (req, res, next) => {
   console.log(req.query);
 
   setTimeout(() => {
