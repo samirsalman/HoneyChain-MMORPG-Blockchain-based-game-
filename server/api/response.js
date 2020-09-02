@@ -36,7 +36,7 @@ router.get("/login/success", async (req, res, next) => {
             function (error, user, fields) {
               if (error) throw error;
               console.log(user[0]);
-              res.send(user[0]);
+              res.send(user[0].toString());
             }
           );
         }
