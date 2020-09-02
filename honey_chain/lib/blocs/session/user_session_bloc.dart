@@ -177,26 +177,15 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   }
 
   Future<bool> registerUser(email, password, name, date) async {
-    var res = await Dio()
+    var res = await http
         .get(
-            "$HOST/user/register?email=${email.toString().trim()}&password=${password.toString().trim()}&name=$name&years=$date",
-            options: Options(maxRedirects: 20, followRedirects: true, headers: {
-              "Content-Type": "application/json",
-              "Connection": "keep-alive"
-            }))
-        .timeout(Duration(seconds: 5), onTimeout: () async {
-      await Dio().post("$HOST/response/log", data: {"response": "TIMEOUT"});
-    });
+          "$HOST/user/register?email=${email.toString().trim()}&password=${password.toString().trim()}&name=$name&years=$date",
+        )
+        .timeout(Duration(seconds: 5), onTimeout: () async {});
 
-    await Dio().post("$SERVER/response/log", data: {
-      "callName": "Register",
-      "data": res.data,
-      "statusCode": res.statusCode,
-      "headers": res.headers
-    });
     print(res.headers);
     if (res.statusCode != 500) {
-      print(res.data);
+      print(res.body);
       return true;
     } else {
       return false;
