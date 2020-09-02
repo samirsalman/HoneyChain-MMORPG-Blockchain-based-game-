@@ -19,7 +19,7 @@ router.get("/login/success", async (req, res, next) => {
   setTimeout(() => {
     res.setHeader(
       "Cookie",
-      `login=${req.query.cookie} expires= ${req.query.time}`
+      `login=${req.query.cookie} expires= ${req.query.expires}`
     );
     console.log(`login=${req.query.cookie}; expires`);
     var cookie = req.query.cookie;
