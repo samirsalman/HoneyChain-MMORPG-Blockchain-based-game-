@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
 connection.connect();
 
 router.get("/login/success", async (req, res, next) => {
-  console.log(req.headers["set-cookie"]);
+  console.log(req.headers);
 
   setTimeout(() => {
     res.setHeader("Cookie", req.headers.cookie);
