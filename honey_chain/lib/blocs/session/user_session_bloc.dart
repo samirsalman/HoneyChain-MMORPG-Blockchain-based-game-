@@ -217,9 +217,12 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       var jsonData = json.decode(res.body);
 
       for (var item in jsonData) {
-        if (item.owner == email) {
+        /* if (item.owner == email) {
           items.add(item);
         }
+
+        */
+        items.add(item);
       }
       return items;
     } catch (e) {
