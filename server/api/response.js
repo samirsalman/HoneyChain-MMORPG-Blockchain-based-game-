@@ -112,7 +112,9 @@ router.get("/login/error", (req, res, next) => {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  res.sendStatus(500);
+  res.status(503).send({
+    error: req.query.error,
+  });
 });
 
 router.get("/registration/success", (req, res, next) => {
