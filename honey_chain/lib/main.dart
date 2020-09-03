@@ -53,12 +53,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return BlocBuilder(
       builder: (context, state) {
-        if (state is Starting || state is Error) {
+        if (state is Starting) {
           //SplashScreen
           return SplashScreen();
         }
 
-        if (state is Logged || state is Error) {
+        if (state is Logged) {
           return HomePageScreen();
         }
 
@@ -66,9 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
           return LoginScreen();
         }
 
-        if (state is Ready || state is Error) {}
+        if (state is Ready) {}
 
-        if (state is Loading || state is Error) {}
+        if (state is Loading) {}
       },
       cubit: BlocProvider.of<UserSessionBloc>(context),
     );
