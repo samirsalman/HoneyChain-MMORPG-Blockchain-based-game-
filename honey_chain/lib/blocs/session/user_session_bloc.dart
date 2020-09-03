@@ -144,7 +144,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       var cookie = prefs.getString("cookie");
 
       var res = await http.get("$HOST/user/login", headers: {
-        cookie: "login=$cookie",
+        "cookie": "login=$cookie",
       });
 
       print(res.body);
