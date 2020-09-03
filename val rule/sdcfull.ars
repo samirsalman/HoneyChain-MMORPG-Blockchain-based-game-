@@ -1,0 +1,187 @@
+//Tutte le url sono gestite
+DEFINE urlset rootsite = { /, /* }; // */
+
+DEFINE urlset api_rootsite = { /api, /api/* }; // */
+
+DEFINE urlset api_json = { /json, /json/* }; // */
+
+DEFINE urlset give_answer = { /ans, /ans/* }; // */
+
+DEFINE set utenti_ok = { "none" } ;
+
+define set set_login = { "login" };
+
+define set set_commands = { "add", "sub", "mul", "div", "sqrt" };
+
+//Il sistema prende tutte le comunicazioni sulla porta 8000, e se sono
+//confermate le gira verso i servizi (10.211.55.180:32000)
+
+DEFINE AR "answer"
+	CONDITION
+		http.url is in give_answer
+	ACTION
+		ANSWER "Ciao"
+	;
+
+DEFINE AR "json"
+	CONDITION
+		http.url is in api_json
+	ACTION
+		MANAGE "JSON"
+	;
+
+DEFINE AR "services management"
+	CONDITION
+		http.url is in api_rootsite
+		http.query["cmd"] is in set_login
+	ACTION
+		tcp.redirect "10.211.55.180:32000"
+	;
+
+define set set_prova = { };
+
+DEFINE AR "services management ok"
+	CONDITION
+		http.url is in api_rootsite
+		http.query["cmd"] is in set_commands
+		http.query["username"] is in utenti_ok
+	ACTION
+		tcp.redirect "10.211.55.180:32000"
+	;
+
+DEFINE AR "services management all"
+	CONDITION
+		http.url is in api_rootsite
+	ACTION
+		ANSWER "<!DOCTYPE html><html><head><title> The Answer </title></head><body>ok?</body></html>"
+	;
+
+DEFINE AR "GOTOucla.edu"
+	CONDITION
+		http.url is in rootsite
+	ACTION
+		TCP.REDIRECT v1="128.97.27.37:80"
+	;
+
+//DEFINE AR "GOTOucla1.edu"
+//	CONDITION
+//		http.url is in rootsite
+//	ACTION
+//		TCP.REDIRECT "40.79.78.1:80"
+//	;
+
+DEFINE VR "PrintAll"
+	CONDITION
+		OBS.EVENT is NET.SEND
+	VAR
+		v_sid = net.sesid
+	ACTION
+		REPORT log {HTTP.HOST, HTTP.URI}
+	NEXT
+		OBS.EVENT is NET.RECV
+		net.sesid is v_sid
+	ACTION
+		REPORT log {"DATA: " , HTTP.ANSWER.HEADER["Content-Type"]}
+	;
+
+DEFINE VR "add user"
+	CONDITION
+		obs.event is net.send
+		http.url is in api_rootsite
+		http.query["cmd"] is in set_login
+	VAR
+		username = http.query["p1"]
+		v_sid = net.sesid
+	ACTION
+		REPORT log { "AAAAAAAAAAAAAA", v_sid, http.query, http.data }
+	NEXT
+	(
+			obs.event is net.recv
+			http.answer.code is "200 OK"
+			net.sesid is v_sid
+			http.answer.data["result"] is "#t"
+		ACTION
+			add CAT { username } to set set_prova
+			add username to set utenti_ok 30
+			REPORT log { CAT {"0: ", username, " ", http.answer.code, " ", http.answer.data["result"]} }
+		OR
+			obs.event is net.recv
+			http.answer.code is "200 OK"
+			net.sesid is v_sid
+			http.answer.data["result"] is "#f"
+		ACTION
+			REPORT log { CAT {"1: " , username, " ", http.answer.code, " ", http.answer.data["result"]} }
+	)
+	;
+
+DEFINE SET errori = {};
+DEFINE VR "USER-OK"
+	CONDITION
+		obs.event is net.send
+		http.url is in api_rootsite
+		http.query["username"] is in utenti_ok
+	ACTION
+		DEL CAT{http.query["username"], "-1"} from set errori
+		DEL CAT{http.query["username"], "-2"} from set errori
+		DEL CAT{http.query["username"], "-3"} from set errori
+		DEL CAT{http.query["username"], "-4"} from set errori
+		REPORT log { CAT { "Dropped all previous errors" } }
+		SET "GOTOucla.edu"@v1="128.97.27.37:80"
+		//SET "GOTOucla.edu"@v1="40.79.78.1:80"
+		//enable  AR "GOTOucla.edu"
+		//disable AR "GOTOucla1.edu"
+	;
+
+DEFINE VR "USER-ERROR-FINAL"
+	CONDITION
+		obs.event is net.send
+		http.url is in api_rootsite
+		exists http.query["username"]
+		!http.query["username"] is in utenti_ok
+		CAT{http.query["username"], "-4"} is in errori
+	ACTION
+		REPORT log { CAT {
+			" Tentativo di attacco individuato da ",
+			net.ipsrc, " => ",
+			http.query["username"]
+			}
+		}
+		SET "GOTOucla.edu"@v1="40.79.78.1:80"
+		//disable AR "GOTOucla.edu"
+		//enable  AR "GOTOucla1.edu"
+	OR
+		obs.event is net.send
+		http.url is in api_rootsite
+		exists http.query["username"]
+		!http.query["username"] is in utenti_ok
+		CAT{http.query["username"], "-3"} is in errori
+	ACTION
+		DEL CAT{http.query["username"], "-3"} from set errori
+		ADD CAT{http.query["username"], "-4"} to set errori
+	OR
+		obs.event is net.send
+		http.url is in api_rootsite
+		exists http.query["username"]
+		!http.query["username"] is in utenti_ok
+		CAT{http.query["username"], "-2"} is in errori
+	ACTION
+		DEL CAT{http.query["username"], "-2"} from set errori
+		ADD CAT{http.query["username"], "-3"} to set errori
+	OR
+		obs.event is net.send
+		http.url is in api_rootsite
+		exists http.query["username"]
+		!http.query["username"] is in utenti_ok
+		CAT{http.query["username"], "-1"} is in errori
+	ACTION
+		DEL CAT{http.query["username"], "-1"} from set errori
+		ADD CAT{http.query["username"], "-2"} to set errori
+	OR
+		obs.event is net.send
+		http.url is in api_rootsite
+		exists http.query["username"]
+		!http.query["username"] is in utenti_ok
+	ACTION
+		ADD CAT{http.query["username"], "-1"} to set errori
+	;
+

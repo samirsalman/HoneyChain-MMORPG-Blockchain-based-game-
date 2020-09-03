@@ -1,0 +1,4802 @@
+2020-04-21 13:21:59|1587475319357658|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|
+2020-04-21 13:24:19|1587475459335148|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:24:20|1587475460340856|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:31:10|1587475870617843|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:31:21|1587475881627839|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr2&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr2|
+2020-04-21 13:32:20|1587475940646764|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:32:29|1587475949665400|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:35:57|1587476157831933|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:35:57|1587476157837341|VA_ItemTypes::HTTP_COOKIES[login]=|
+2020-04-21 13:36:41|1587476201476874|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:36:41|1587476201481587|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=oJJHLzVUIYFtMPZv2WBGZoR81aKwrJWbwQvgjXPS8kl2prdZWgYZ5ubVGxhSegoDd1E8kg+SiYtUTQPNwETbfnuHEj2z9SBRtLmIqSlTTsvC9sOqRreCSQ0la+UVB3A9zPsLshvk9HTCL86zbd1OUGtdGIhJ2+5IrPJwTSzIanc|
+2020-04-21 13:38:20|1587476300537719|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=|
+2020-04-21 13:38:20|1587476300545127|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=|
+2020-04-21 13:38:20|1587476300554239|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=|
+2020-04-21 13:38:20|1587476300561068|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=|
+2020-04-21 13:49:02|1587476942889331|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=use&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:49:02|1587476942894472|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 13:49:02|1587476942901530|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=|
+2020-04-21 13:49:07|1587476947909499|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:49:07|1587476947914559|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 13:49:07|1587476947920563|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=NEbfDFYgWKNUuz+0WwqYGLmqdO/6GGqGb3yQj0SAG0gfcX48rFOaBYRtbxjBTLqpd1E8kg+SiYtUTQPNwETbfnuHEj2z9SBRtLmIqSlTTstZNbjFZsLMFS6aB3Ba1sp1JEsiWT9QljTEHIijHPU/88A/1CDq2i2vvaUM/Oxsv3U|
+2020-04-21 13:50:54|1587477054961230|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=passd&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:50:54|1587477054966518|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 13:50:54|1587477054971440|VA_ItemTypes::HTTP_ANSWER_COOKIES[login]=|
+2020-04-21 13:56:15|1587477375596432|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=passd&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 13:56:16|1587477376615912|CAT{il login di usr1 non è stato completato con successo}|
+
+2020-04-21 14:10:02|1587478202858187|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 14:10:02|1587478202863241|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 14:10:28|1587478228881756|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 14:10:28|1587478228887451|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 14:10:33|1587478233898594|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 14:10:33|1587478233903787|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 14:11:39|1587478299956749|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 14:11:39|1587478299962490|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 14:13:16|1587478396131054|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 14:13:16|1587478396136840|CAT{il login di usr1 è stato completato con successo}|
+
+2020-04-21 14:18:20|1587478700659874|VA_ItemTypes::HTTP_URI: /login/index.html?username=usr1&password=pass&btn=Invia|VA_ItemTypes::HTTP_QUERY[username]=usr1|
+2020-04-21 14:18:20|1587478700666948|CAT{il login di usr1 è stato completato con successomWMwrm6ubR30b/qL5Yu0N4gfURZV0EbZUwMmWPQiKXdOsc4OVHAAYHI4uR9Hz6kgd1E8kg+SiYtUTQPNwETbfnuHEj2z9SBRtLmIqSlTTsttkiye0IcbMMUUNzg8F2UqQe/b2oH7bGA/BZnXhVuupkvM0R0XZN9srGCluZel54c}|
+
+2020-04-21 14:23:45|1587479025266755|CAT{trovato cookie di richiesta: http.headers}|
+
+2020-04-21 14:25:28|1587479128388806|CAT{trovato cookie di richiesta: }|
+
+2020-04-21 14:26:38|1587479198409739|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 20:50:56|1588020656124936|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 21:02:17|1588021337265359|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 21:02:17|1588021337265419|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 21:02:17|1588021337265454|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 21:02:17|1588021337265483|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 21:02:17|1588021337265543|CAT{trovato cookie di richiesta: }|
+
+2020-04-27 21:02:17|1588021337265573|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 08:36:50|1588063010631201|VA_ItemTypes::HTTP_URI: /login/|VA_ItemTypes::HTTP_QUERY[email]=|
+2020-04-28 08:36:50|1588063010632824|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 08:36:50|1588063010632861|CAT{il login di  non è stato completato con successo}|
+
+2020-04-28 08:59:25|1588064365897090|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 08:59:25|1588064365897239|VA_ItemTypes::HTTP_URI: /login/|VA_ItemTypes::HTTP_QUERY[email]=|
+2020-04-28 08:59:25|1588064365897270|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 08:59:25|1588064365897309|CAT{il login di  non è stato completato con successo}|
+
+2020-04-28 09:03:02|1588064582936692|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:03:02|1588064582936747|VA_ItemTypes::HTTP_URI: /login?email=simone@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone@gmail.com|
+2020-04-28 09:03:02|1588064582936767|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:03:02|1588064582936790|CAT{il login di simone@gmail.com non è stato completato con successo}|
+
+2020-04-28 09:03:02|1588064582936818|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:03:03|1588064583937568|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 09:04:32|1588064672744662|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:04:32|1588064672744726|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 09:04:32|1588064672744762|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:04:32|1588064672744797|VA_ItemTypes::HTTP_URI: /login?email=simone@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone@gmail.com|
+2020-04-28 09:04:32|1588064672744815|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:04:32|1588064672744839|CAT{il login di simone@gmail.com non è stato completato con successo}|
+
+2020-04-28 09:04:32|1588064672744875|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:05:51|1588064751768798|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 09:15:49|1588065349444760|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:15:49|1588065349444913|VA_ItemTypes::HTTP_URI: /login?email=simone@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone@gmail.com|
+2020-04-28 09:15:49|1588065349444943|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:15:49|1588065349444967|CAT{il login di simone@gmail.com non è stato completato con successo}|
+
+2020-04-28 09:15:49|1588065349444995|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:15:49|1588065349445023|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:00|1588065360447446|VA_ItemTypes::HTTP_URI: /login?email=simone12@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone12@gmail.com|
+2020-04-28 09:16:00|1588065360447506|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:00|1588065360447557|CAT{il login di simone12@gmail.com non è stato completato con successo}|
+
+2020-04-28 09:16:09|1588065369449910|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:09|1588065369449957|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:09|1588065369449989|VA_ItemTypes::HTTP_URI: /login?email=simone@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone@gmail.com|
+2020-04-28 09:16:09|1588065369450006|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:09|1588065369450028|CAT{il login di simone@gmail.com non è stato completato con successo}|
+
+2020-04-28 09:16:14|1588065374452133|CAT{trovato cookie di richiesta: }|
+
+2020-04-28 09:16:14|1588065374452218|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:14|1588065374452275|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:14|1588065374452333|VA_ItemTypes::HTTP_URI: /login?email=simone@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone@gmail.com|
+2020-04-28 09:16:14|1588065374452374|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:16:14|1588065374452417|CAT{il login di simone@gmail.com non è stato completato con successo}|
+
+2020-04-28 09:16:15|1588065375452836|CAT{trovato cookie di richiesta: 736bde03e4870af66dd0ea79455d5b99}|
+
+2020-04-28 09:17:22|1588065442479243|CAT{trovato cookie di richiesta: }|
+
+CAT{trovato cookie di richiesta: }|
+
+VA_ItemTypes::HTTP_URI: /login?email=simone1@gmail.com|VA_ItemTypes::HTTP_QUERY[email]=simone1@gmail.com|
+CAT{trovato cookie di richiesta: }|
+
+CAT{il login di simone1@gmail.com non è stato completato con successo}|
+
+CAT{trovato cookie di richiesta: }|
+
+CAT{trovato cookie di richiesta: }|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 13818328726737962041
+IP: 10.0.2.2
+Time: 1598345850}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 13818328726737962041
+IP: 10.0.2.2
+Time: 1598345850}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 14987575242118807205
+IP: 10.0.2.2
+Time: 1598346756}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 14987575242118807205
+IP: 10.0.2.2
+Time: 1598346756}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 4409403234084581983
+IP: 10.0.2.2
+Time: 1598346767}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 4409403234084581983
+IP: 10.0.2.2
+Time: 1598346767}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 15443456838932540385
+IP: 10.0.2.2
+Time: 1598347095}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 15443456838932540385
+IP: 10.0.2.2
+Time: 1598347095}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 618546687864071162
+IP: 10.0.2.2
+Time: 1598347637}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 618546687864071162
+IP: 10.0.2.2
+Time: 1598347637}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 6529442909622745213
+IP: 10.0.2.2
+Time: 1598347783}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 6529442909622745213
+IP: 10.0.2.2
+Time: 1598347783}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 12186014250939830927
+IP: 10.0.2.2
+Time: 1598347900}|
+
+CAT{***Login fallito***
+Email: test5@ciao.it
+Sessione: 12186014250939830927
+IP: 10.0.2.2
+Time: 1598347900}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 14175812964052722657
+IP: 10.0.2.2
+Time: 1598348226}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NTYqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 14175812964052722657
+IP: 10.0.2.2
+Time: 1598348227}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 15866921842460182862
+IP: 10.0.2.2
+Time: 1598348528}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: OWEqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 15866921842460182862
+IP: 10.0.2.2
+Time: 1598348528}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 17471433907561555033
+IP: 10.0.2.2
+Time: 1598350196}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZjMqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 17471433907561555033
+IP: 10.0.2.2
+Time: 1598350196}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 2009068836834180528
+IP: 10.0.2.2
+Time: 1598350656}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MzgqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 2009068836834180528
+IP: 10.0.2.2
+Time: 1598350656}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 8086438600677230671
+IP: 10.0.2.2
+Time: 1598350760}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzAqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 8086438600677230671
+IP: 10.0.2.2
+Time: 1598350760}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 10290985994633523119
+IP: 10.0.2.2
+Time: 1598350883}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MzkqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 10290985994633523119
+IP: 10.0.2.2
+Time: 1598350883}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 6070906855820724527
+IP: 10.0.2.2
+Time: 1598351984}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MzAqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 6070906855820724527
+IP: 10.0.2.2
+Time: 1598351984}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 15401482102653458390
+IP: 10.0.2.2
+Time: 1598352064}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MWQqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 15401482102653458390
+IP: 10.0.2.2
+Time: 1598352064}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 15037080445346924299
+IP: 10.0.2.2
+Time: 1598352112}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: YmMqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 15037080445346924299
+IP: 10.0.2.2
+Time: 1598352112}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 14364117105946473036
+IP: 10.0.2.2
+Time: 1598352276}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MWQqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 14364117105946473036
+IP: 10.0.2.2
+Time: 1598352276}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 16550754939489734928
+IP: 10.0.2.2
+Time: 1598352460}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZDAqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 16550754939489734928
+IP: 10.0.2.2
+Time: 1598352460}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 3402900440891026438
+IP: 10.0.2.2
+Time: 1598352629}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZGYqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 3402900440891026438
+IP: 10.0.2.2
+Time: 1598352629}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 1931024681284355833
+IP: 10.0.2.2
+Time: 1598364924}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzQqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 1931024681284355833
+IP: 10.0.2.2
+Time: 1598364924}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 18205383117095156406
+IP: 10.0.2.2
+Time: 1598365126}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZGYqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 18205383117095156406
+IP: 10.0.2.2
+Time: 1598365126}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 11670790912340703497
+IP: 10.0.2.2
+Time: 1598365269}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZjYqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 11670790912340703497
+IP: 10.0.2.2
+Time: 1598365269}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 14409607382534418420
+IP: 10.0.2.2
+Time: 1598368143}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzEqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 14409607382534418420
+IP: 10.0.2.2
+Time: 1598368143}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 13196557827275366632
+IP: 10.0.2.2
+Time: 1598368425}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZjUqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 13196557827275366632
+IP: 10.0.2.2
+Time: 1598368426}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 18262853252645319743
+IP: 10.0.2.2
+Time: 1598369440}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzAqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 18262853252645319743
+IP: 10.0.2.2
+Time: 1598369440}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 7746391304726175203
+IP: 10.0.2.2
+Time: 1598371354}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: YjUqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 7746391304726175203
+IP: 10.0.2.2
+Time: 1598371354}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 5232165597792520862
+IP: 10.0.2.2
+Time: 1598372042}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzIqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 5232165597792520862
+IP: 10.0.2.2
+Time: 1598372042}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 12341300400774887406
+IP: 10.0.2.2
+Time: 1598435748}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MzcqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 12341300400774887406
+IP: 10.0.2.2
+Time: 1598435748}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 14272735363264337106
+IP: 10.0.2.2
+Time: 1598436530}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzcqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 14272735363264337106
+IP: 10.0.2.2
+Time: 1598436530}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 4849238441450640760
+IP: 10.0.2.2
+Time: 1598517854}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MTAqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 4849238441450640760
+IP: 10.0.2.2
+Time: 1598517854}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 8383695221706728786
+IP: 10.0.2.2
+Time: 1598517930}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: NzgqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 8383695221706728786
+IP: 10.0.2.2
+Time: 1598517930}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 15897616772500222909
+IP: 10.0.2.2
+Time: 1598518035}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: N2YqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 15897616772500222909
+IP: 10.0.2.2
+Time: 1598518035}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 10229001515100112747
+IP: 10.0.2.2
+Time: 1598518256}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: ZmMqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 10229001515100112747
+IP: 10.0.2.2
+Time: 1598518256}|
+
+CAT{***Tentativo di Login***
+Email: prova4@ciao.it
+Sessione: 7069473317746759737
+IP: 10.0.2.2
+Time: 1598696671}|
+
+CAT{***Login avvenuto con successo***
+Email: prova4@ciao.it
+Cookie_Log: MTgqcHJvdmE0QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7069473317746759737
+IP: 10.0.2.2
+Time: 1598696671}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 7819192108607053754
+IP: 10.0.2.2
+Time: 1598696814}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NzIqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7819192108607053754
+IP: 10.0.2.2
+Time: 1598696814}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 13336292160578839237
+IP: 10.0.2.2
+Time: 1598697099}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: YjUqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13336292160578839237
+IP: 10.0.2.2
+Time: 1598697099}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 3516160451875954377
+IP: 10.0.2.2
+Time: 1598697263}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NTQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3516160451875954377
+IP: 10.0.2.2
+Time: 1598697263}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 7776016230301930253
+IP: 10.0.2.2
+Time: 1598697331}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: OWUqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7776016230301930253
+IP: 10.0.2.2
+Time: 1598697331}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 18117709035753505681
+IP: 10.0.2.2
+Time: 1598697431}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZjYqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 18117709035753505681
+IP: 10.0.2.2
+Time: 1598697431}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 5354942827134547029
+IP: 10.0.2.2
+Time: 1598697708}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: OTkqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5354942827134547029
+IP: 10.0.2.2
+Time: 1598697708}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 6314917267533097305
+IP: 10.0.2.2
+Time: 1598697902}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NTkqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6314917267533097305
+IP: 10.0.2.2
+Time: 1598697902}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 13236495494670427805
+IP: 10.0.2.2
+Time: 1598698120}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZDMqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13236495494670427805
+IP: 10.0.2.2
+Time: 1598698120}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 6128083031308785180
+IP: 10.0.2.2
+Time: 1598698205}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: YmMqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6128083031308785180
+IP: 10.0.2.2
+Time: 1598698205}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 8420739081094896016
+IP: 10.0.2.2
+Time: 1598698293}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NTUqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8420739081094896016
+IP: 10.0.2.2
+Time: 1598698293}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 11467524115736570948
+IP: 10.0.2.2
+Time: 1598698407}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZDIqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11467524115736570948
+IP: 10.0.2.2
+Time: 1598698407}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 947049756708438584
+IP: 10.0.2.2
+Time: 1598698470}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZjgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 947049756708438584
+IP: 10.0.2.2
+Time: 1598698470}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 8898120274102210412
+IP: 10.0.2.2
+Time: 1598698662}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MzgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8898120274102210412
+IP: 10.0.2.2
+Time: 1598698662}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 12086813530162989024
+IP: 10.0.2.2
+Time: 1598698755}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZDUqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12086813530162989024
+IP: 10.0.2.2
+Time: 1598698755}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 11617435669180800916
+IP: 10.0.2.2
+Time: 1598698883}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NzQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11617435669180800916
+IP: 10.0.2.2
+Time: 1598698883}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 17565029045291698824
+IP: 10.0.2.2
+Time: 1598699791}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NTQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17565029045291698824
+IP: 10.0.2.2
+Time: 1598699791}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 2406378334964560475
+IP: 10.0.2.2
+Time: 1598699856}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MzIqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2406378334964560475
+IP: 10.0.2.2
+Time: 1598699856}|
+
+CAT{***Tentativo di Login***
+Email: test5@ciao.it
+Sessione: 7987204248404857699
+IP: 10.0.2.2
+Time: 1598713075}|
+
+CAT{***Login avvenuto con successo***
+Email: test5@ciao.it
+Cookie_Log: MTMqdGVzdDVAY2lhby5pdCpiMTMzYTBjMGU5YmVlM2JlMjAxNjNkMmFkMzFkNjI0OGRiMjkyYWE2ZGNiMWVlMDg3YTJhYTUwZTBmYzc1YWUy
+Sessione: 7987204248404857699
+IP: 10.0.2.2
+Time: 1598713075}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 15342067923659360460
+IP: 10.0.2.2
+Time: 1598713294}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: OTIqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15342067923659360460
+IP: 10.0.2.2
+Time: 1598713294}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 6569944610335872626
+IP: 10.0.2.2
+Time: 1598713425}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: OWYqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6569944610335872626
+IP: 10.0.2.2
+Time: 1598713425}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 6208503673691730758
+IP: 10.0.2.2
+Time: 1598713800}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZGMqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6208503673691730758
+IP: 10.0.2.2
+Time: 1598713800}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 6319848883425282081
+IP: 10.0.2.2
+Time: 1598713994}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NTgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6319848883425282081
+IP: 10.0.2.2
+Time: 1598713994}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 4444769999608488421
+IP: 10.0.2.2
+Time: 1598714073}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MzgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4444769999608488421
+IP: 10.0.2.2
+Time: 1598714073}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 13960277174714814441
+IP: 10.0.2.2
+Time: 1598714129}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MWMqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13960277174714814441
+IP: 10.0.2.2
+Time: 1598714129}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 13740249055779443274
+IP: 10.0.2.2
+Time: 1598714376}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MzUqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13740249055779443274
+IP: 10.0.2.2
+Time: 1598714377}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 17454286994119991040
+IP: 10.0.2.2
+Time: 1598714785}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MzgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17454286994119991040
+IP: 10.0.2.2
+Time: 1598714785}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 11857226086269351155
+IP: 10.0.2.2
+Time: 1598714914}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZmMqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11857226086269351155
+IP: 10.0.2.2
+Time: 1598714914}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 15155430013131470807
+IP: 10.0.2.2
+Time: 1598715310}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZjEqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15155430013131470807
+IP: 10.0.2.2
+Time: 1598715310}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 1032068202034258171
+IP: 10.0.2.2
+Time: 1598715367}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NWMqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1032068202034258171
+IP: 10.0.2.2
+Time: 1598715367}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 4297889197999608927
+IP: 10.0.2.2
+Time: 1598715547}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4297889197999608927
+IP: 10.0.2.2
+Time: 1598715547}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 6344381658910930435
+IP: 10.0.2.2
+Time: 1598715757}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: YjQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6344381658910930435
+IP: 10.0.2.2
+Time: 1598715757}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 2469182132353493479
+IP: 10.0.2.2
+Time: 1598715880}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZDcqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2469182132353493479
+IP: 10.0.2.2
+Time: 1598715880}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 8051755527266538507
+IP: 10.0.2.2
+Time: 1598716062}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: ZDgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8051755527266538507
+IP: 10.0.2.2
+Time: 1598716062}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 15913138278255204463
+IP: 10.0.2.2
+Time: 1598716144}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: M2YqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15913138278255204463
+IP: 10.0.2.2
+Time: 1598716144}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 66221160528681747
+IP: 10.0.2.2
+Time: 1598716197}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: YjgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 66221160528681747
+IP: 10.0.2.2
+Time: 1598716198}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 4541620609174306807
+IP: 10.0.2.2
+Time: 1598716332}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NzgqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4541620609174306807
+IP: 10.0.2.2
+Time: 1598716332}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 16169527759145318926
+IP: 10.0.2.2
+Time: 1598716502}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: NzIqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16169527759145318926
+IP: 10.0.2.2
+Time: 1598716502}|
+
+CAT{***Tentativo di Login***
+Email: prova2@ciao.it
+Sessione: 4354778270778102436
+IP: 10.0.2.2
+Time: 1598778005}|
+
+CAT{***Login avvenuto con successo***
+Email: prova2@ciao.it
+Cookie_Log: OTMqcHJvdmEyQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4354778270778102436
+IP: 10.0.2.2
+Time: 1598778005}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 17509751554235988487
+IP: 10.0.2.2
+Time: 1598778358}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: OTkqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17509751554235988487
+IP: 10.0.2.2
+Time: 1598778358}|
+
+CAT{***Tentativo di Login***
+Email: prova2@ciao.it
+Sessione: 16605171365290180615
+IP: 10.0.2.2
+Time: 1598779606}|
+
+CAT{***Login avvenuto con successo***
+Email: prova2@ciao.it
+Cookie_Log: NWUqcHJvdmEyQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16605171365290180615
+IP: 10.0.2.2
+Time: 1598779606}|
+
+CAT{***Tentativo di Login***
+Email: prova4@ciao.it
+Sessione: 2941809632301633365
+IP: 10.0.2.2
+Time: 1598779827}|
+
+CAT{***Login avvenuto con successo***
+Email: prova4@ciao.it
+Cookie_Log: OWUqcHJvdmE0QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2941809632301633365
+IP: 10.0.2.2
+Time: 1598779827}|
+
+CAT{***Tentativo di Login***
+Email: prova3@ciao.it
+Sessione: 10072142628684434664
+IP: 10.0.2.2
+Time: 1598780164}|
+
+CAT{***Login avvenuto con successo***
+Email: prova3@ciao.it
+Cookie_Log: YjEqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10072142628684434664
+IP: 10.0.2.2
+Time: 1598780164}|
+
+CAT{***Tentativo di Login***
+Email: prova2@ciao.it
+Sessione: 8560889401449647890
+IP: 10.0.2.2
+Time: 1598780538}|
+
+CAT{***Login avvenuto con successo***
+Email: prova2@ciao.it
+Cookie_Log: YmYqcHJvdmEyQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8560889401449647890
+IP: 10.0.2.2
+Time: 1598780538}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16727281917510920496
+IP: 10.0.2.2
+Time: 1598780911}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16727281917510920496
+IP: 10.0.2.2
+Time: 1598780911}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14262403294946023011
+IP: 10.0.2.2
+Time: 1598781117}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14262403294946023011
+IP: 10.0.2.2
+Time: 1598781117}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7436737018484944140
+IP: 10.0.2.2
+Time: 1598781347}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7436737018484944140
+IP: 10.0.2.2
+Time: 1598781347}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 14056112835990137551
+IP: 10.0.2.2
+Time: 1598781555}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: OWMqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14056112835990137551
+IP: 10.0.2.2
+Time: 1598781555}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10339132778945783081
+IP: 10.0.2.2
+Time: 1598781924}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10339132778945783081
+IP: 10.0.2.2
+Time: 1598781924}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2094273751412984748
+IP: 10.0.2.2
+Time: 1598782232}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2094273751412984748
+IP: 10.0.2.2
+Time: 1598782233}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10418525354077936348
+IP: 10.0.2.2
+Time: 1598955327}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10418525354077936348
+IP: 10.0.2.2
+Time: 1598955327}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2798030054061566544
+IP: 10.0.2.2
+Time: 1598955479}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2798030054061566544
+IP: 10.0.2.2
+Time: 1598955479}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10288214986383461499
+IP: 10.0.2.2
+Time: 1598955569}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10288214986383461499
+IP: 10.0.2.2
+Time: 1598955569}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3770359955032492029
+IP: 10.0.2.2
+Time: 1598956371}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3770359955032492029
+IP: 10.0.2.2
+Time: 1598956371}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8845710036792575272
+IP: 10.0.2.2
+Time: 1598956804}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8845710036792575272
+IP: 10.0.2.2
+Time: 1598956804}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14687049814235259228
+IP: 10.0.2.2
+Time: 1598956921}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14687049814235259228
+IP: 10.0.2.2
+Time: 1598956921}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12566581372554526761
+IP: 127.0.0.1
+Time: 1598957897}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12566581372554526761
+IP: 127.0.0.1
+Time: 1598957897}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6191442855070550637
+IP: 127.0.0.1
+Time: 1598958177}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6191442855070550637
+IP: 127.0.0.1
+Time: 1598958177}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14238027504846312843
+IP: 10.0.2.2
+Time: 1598958435}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14238027504846312843
+IP: 10.0.2.2
+Time: 1598958435}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7830328393233084911
+IP: 127.0.0.1
+Time: 1598958453}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7830328393233084911
+IP: 127.0.0.1
+Time: 1598958454}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14417477676040889044
+IP: 127.0.0.1
+Time: 1598958533}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14417477676040889044
+IP: 127.0.0.1
+Time: 1598958533}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1496327357786931656
+IP: 127.0.0.1
+Time: 1598958559}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1496327357786931656
+IP: 127.0.0.1
+Time: 1598958559}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17818147225623672193
+IP: 127.0.0.1
+Time: 1598958630}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17818147225623672193
+IP: 127.0.0.1
+Time: 1598958630}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1172964254769538373
+IP: 127.0.0.1
+Time: 1598958771}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzAqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1172964254769538373
+IP: 127.0.0.1
+Time: 1598958771}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8991341945350370338
+IP: 127.0.0.1
+Time: 1598958826}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8991341945350370338
+IP: 127.0.0.1
+Time: 1598958826}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10040277386013914531
+IP: 127.0.0.1
+Time: 1598958845}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10040277386013914531
+IP: 127.0.0.1
+Time: 1598958845}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12024903320140336664
+IP: 127.0.0.1
+Time: 1598958867}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12024903320140336664
+IP: 127.0.0.1
+Time: 1598958867}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10926726314341563921
+IP: 127.0.0.1
+Time: 1598958870}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10926726314341563921
+IP: 127.0.0.1
+Time: 1598958870}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5356794499004518238
+IP: 127.0.0.1
+Time: 1598958894}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5356794499004518238
+IP: 127.0.0.1
+Time: 1598958894}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 625324892899845647
+IP: 127.0.0.1
+Time: 1598958903}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTAqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 625324892899845647
+IP: 127.0.0.1
+Time: 1598958903}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2226381527491625651
+IP: 127.0.0.1
+Time: 1598958947}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2EqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2226381527491625651
+IP: 127.0.0.1
+Time: 1598958947}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10690745539685928552
+IP: 127.0.0.1
+Time: 1598959056}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10690745539685928552
+IP: 127.0.0.1
+Time: 1598959056}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3957772105559899804
+IP: 127.0.0.1
+Time: 1598966065}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3957772105559899804
+IP: 127.0.0.1
+Time: 1598966065}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14406947974690720272
+IP: 127.0.0.1
+Time: 1598966210}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YmEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14406947974690720272
+IP: 127.0.0.1
+Time: 1598966210}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16890094674980168297
+IP: 127.0.0.1
+Time: 1598966285}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16890094674980168297
+IP: 127.0.0.1
+Time: 1598966285}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 363786587867223958
+IP: 127.0.0.1
+Time: 1598966288}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 363786587867223958
+IP: 127.0.0.1
+Time: 1598966288}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15732032218400359335
+IP: 127.0.0.1
+Time: 1598966649}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15732032218400359335
+IP: 127.0.0.1
+Time: 1598966649}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9765544670055634924
+IP: 127.0.0.1
+Time: 1598966700}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9765544670055634924
+IP: 127.0.0.1
+Time: 1598966700}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10899455415494526453
+IP: 127.0.0.1
+Time: 1598966717}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10899455415494526453
+IP: 127.0.0.1
+Time: 1598966717}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12355308160191741074
+IP: 127.0.0.1
+Time: 1598966746}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2IqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12355308160191741074
+IP: 127.0.0.1
+Time: 1598966746}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7707596673197131987
+IP: 127.0.0.1
+Time: 1598966776}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7707596673197131987
+IP: 127.0.0.1
+Time: 1598966776}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17174865274692414216
+IP: 127.0.0.1
+Time: 1598966844}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YmUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17174865274692414216
+IP: 127.0.0.1
+Time: 1598966844}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 543222540247396289
+IP: 127.0.0.1
+Time: 1598966881}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 543222540247396289
+IP: 127.0.0.1
+Time: 1598966881}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12813596217501981902
+IP: 127.0.0.1
+Time: 1598966944}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12813596217501981902
+IP: 127.0.0.1
+Time: 1598966944}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7514632619399889471
+IP: 127.0.0.1
+Time: 1598966971}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7514632619399889471
+IP: 127.0.0.1
+Time: 1598966971}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7258926296957060952
+IP: 127.0.0.1
+Time: 1598967192}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7258926296957060952
+IP: 127.0.0.1
+Time: 1598967192}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 337990821281089617
+IP: 127.0.0.1
+Time: 1598967222}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 337990821281089617
+IP: 127.0.0.1
+Time: 1598967222}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3473140864290283166
+IP: 127.0.0.1
+Time: 1598967241}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3473140864290283166
+IP: 127.0.0.1
+Time: 1598967241}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17361641745470570063
+IP: 127.0.0.1
+Time: 1598967273}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17361641745470570063
+IP: 127.0.0.1
+Time: 1598967273}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14485058453259745972
+IP: 127.0.0.1
+Time: 1598967305}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14485058453259745972
+IP: 127.0.0.1
+Time: 1598967305}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11359097807138429916
+IP: 127.0.0.1
+Time: 1598967532}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11359097807138429916
+IP: 127.0.0.1
+Time: 1598967532}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8456932330613836453
+IP: 127.0.0.1
+Time: 1598967549}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: M2EqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8456932330613836453
+IP: 127.0.0.1
+Time: 1598967549}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16200683286645758054
+IP: 127.0.0.1
+Time: 1598969803}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16200683286645758054
+IP: 127.0.0.1
+Time: 1598969803}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1361510585091927162
+IP: 127.0.0.1
+Time: 1598969809}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1361510585091927162
+IP: 127.0.0.1
+Time: 1598969809}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7469482053773284452
+IP: 127.0.0.1
+Time: 1598970177}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7469482053773284452
+IP: 127.0.0.1
+Time: 1598970177}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12173706587595891917
+IP: 127.0.0.1
+Time: 1598970214}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12173706587595891917
+IP: 127.0.0.1
+Time: 1598970214}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11162890211340402197
+IP: 127.0.0.1
+Time: 1598970511}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11162890211340402197
+IP: 127.0.0.1
+Time: 1598970511}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6909807861153615641
+IP: 127.0.0.1
+Time: 1598970561}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6909807861153615641
+IP: 127.0.0.1
+Time: 1598970561}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12865872016713325574
+IP: 127.0.0.1
+Time: 1598970564}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12865872016713325574
+IP: 127.0.0.1
+Time: 1598970564}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10571628577539375831
+IP: 127.0.0.1
+Time: 1598970565}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10571628577539375831
+IP: 127.0.0.1
+Time: 1598970565}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9983807510690730204
+IP: 127.0.0.1
+Time: 1598970603}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9983807510690730204
+IP: 127.0.0.1
+Time: 1598970603}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13332232992410436517
+IP: 127.0.0.1
+Time: 1598970643}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YmUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13332232992410436517
+IP: 127.0.0.1
+Time: 1598970643}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16919411235099166210
+IP: 127.0.0.1
+Time: 1598970699}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: M2MqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16919411235099166210
+IP: 127.0.0.1
+Time: 1598970699}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 543157825529985580
+IP: 127.0.0.1
+Time: 1598970952}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 543157825529985580
+IP: 127.0.0.1
+Time: 1598970952}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2876595251958320437
+IP: 127.0.0.1
+Time: 1598970970}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2876595251958320437
+IP: 127.0.0.1
+Time: 1598970970}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9162814689836693011
+IP: 127.0.0.1
+Time: 1598971079}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9162814689836693011
+IP: 127.0.0.1
+Time: 1598971079}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3586078118251559240
+IP: 127.0.0.1
+Time: 1598971248}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3586078118251559240
+IP: 127.0.0.1
+Time: 1598971248}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9468989062850073345
+IP: 127.0.0.1
+Time: 1598971269}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTAqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9468989062850073345
+IP: 127.0.0.1
+Time: 1598971269}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1295746048588208837
+IP: 127.0.0.1
+Time: 1598971435}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1295746048588208837
+IP: 127.0.0.1
+Time: 1598971435}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14215431477999708066
+IP: 127.0.0.1
+Time: 1598971436}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14215431477999708066
+IP: 127.0.0.1
+Time: 1598971436}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 838092722565267235
+IP: 127.0.0.1
+Time: 1598971437}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 838092722565267235
+IP: 127.0.0.1
+Time: 1598971437}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17570852583417374104
+IP: 127.0.0.1
+Time: 1598971465}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17570852583417374104
+IP: 127.0.0.1
+Time: 1598971465}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3579817189103762321
+IP: 127.0.0.1
+Time: 1598971489}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3579817189103762321
+IP: 127.0.0.1
+Time: 1598971489}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1902129009249247531
+IP: 127.0.0.1
+Time: 1598971514}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1902129009249247531
+IP: 127.0.0.1
+Time: 1598971514}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 734898471364324437
+IP: 127.0.0.1
+Time: 1598971543}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 734898471364324437
+IP: 127.0.0.1
+Time: 1598971543}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10069006653441963634
+IP: 127.0.0.1
+Time: 1598971566}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10069006653441963634
+IP: 127.0.0.1
+Time: 1598971567}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 4257995657869968628
+IP: 127.0.0.1
+Time: 1598971597}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YmQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4257995657869968628
+IP: 127.0.0.1
+Time: 1598971597}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13539583318865944221
+IP: 127.0.0.1
+Time: 1598971617}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13539583318865944221
+IP: 127.0.0.1
+Time: 1598971617}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8890999015322182423
+IP: 127.0.0.1
+Time: 1598971652}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8890999015322182423
+IP: 127.0.0.1
+Time: 1598971652}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2040648620725759516
+IP: 127.0.0.1
+Time: 1598971670}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2040648620725759516
+IP: 127.0.0.1
+Time: 1598971670}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1264455859411468773
+IP: 127.0.0.1
+Time: 1598971716}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1264455859411468773
+IP: 127.0.0.1
+Time: 1598971716}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8685310102647200066
+IP: 127.0.0.1
+Time: 1598971735}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8685310102647200066
+IP: 127.0.0.1
+Time: 1598971735}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16980101950415027523
+IP: 127.0.0.1
+Time: 1598971753}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2MqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16980101950415027523
+IP: 127.0.0.1
+Time: 1598971753}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7708815582266399288
+IP: 127.0.0.1
+Time: 1598971786}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7708815582266399288
+IP: 127.0.0.1
+Time: 1598971786}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2980224229933195818
+IP: 127.0.0.1
+Time: 1598971811}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2980224229933195818
+IP: 127.0.0.1
+Time: 1598971811}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17170924559386535788
+IP: 127.0.0.1
+Time: 1598971838}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17170924559386535788
+IP: 127.0.0.1
+Time: 1598971838}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14412843196674726773
+IP: 127.0.0.1
+Time: 1598971853}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OWUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14412843196674726773
+IP: 127.0.0.1
+Time: 1598971853}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5756726230674899577
+IP: 127.0.0.1
+Time: 1598972019}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5756726230674899577
+IP: 127.0.0.1
+Time: 1598972019}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5625840654178698982
+IP: 127.0.0.1
+Time: 1598972029}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5625840654178698982
+IP: 127.0.0.1
+Time: 1598972029}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6789419622975916855
+IP: 127.0.0.1
+Time: 1598972033}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6789419622975916855
+IP: 127.0.0.1
+Time: 1598972033}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11865327906105300156
+IP: 127.0.0.1
+Time: 1598972061}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2EqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11865327906105300156
+IP: 127.0.0.1
+Time: 1598972061}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6197638035713360432
+IP: 127.0.0.1
+Time: 1598972222}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6197638035713360432
+IP: 127.0.0.1
+Time: 1598972222}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2881461462742738043
+IP: 127.0.0.1
+Time: 1598972373}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2881461462742738043
+IP: 127.0.0.1
+Time: 1598972374}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13590655070065447914
+IP: 127.0.0.1
+Time: 1598972461}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13590655070065447914
+IP: 127.0.0.1
+Time: 1598972461}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2311557379784171531
+IP: 127.0.0.1
+Time: 1598972478}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2311557379784171531
+IP: 127.0.0.1
+Time: 1598972478}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3979971363703399535
+IP: 127.0.0.1
+Time: 1598972526}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3979971363703399535
+IP: 127.0.0.1
+Time: 1598972526}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13867938411032906918
+IP: 127.0.0.1
+Time: 1598972754}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YmIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13867938411032906918
+IP: 127.0.0.1
+Time: 1598972754}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6610112990404217847
+IP: 127.0.0.1
+Time: 1598972806}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6610112990404217847
+IP: 127.0.0.1
+Time: 1598972806}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13214381929755872380
+IP: 127.0.0.1
+Time: 1598972873}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: M2UqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13214381929755872380
+IP: 127.0.0.1
+Time: 1598972873}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15315228031102645410
+IP: 127.0.0.1
+Time: 1598973235}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15315228031102645410
+IP: 127.0.0.1
+Time: 1598973235}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15051611910812077732
+IP: 127.0.0.1
+Time: 1598973272}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15051611910812077732
+IP: 127.0.0.1
+Time: 1598973273}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5559093701140292621
+IP: 127.0.0.1
+Time: 1598973292}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5559093701140292621
+IP: 127.0.0.1
+Time: 1598973292}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 18142266371913244108
+IP: 127.0.0.1
+Time: 1598973357}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 18142266371913244108
+IP: 127.0.0.1
+Time: 1598973357}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 4314525856795141461
+IP: 127.0.0.1
+Time: 1598973408}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4314525856795141461
+IP: 127.0.0.1
+Time: 1598973408}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5016938780438329245
+IP: 127.0.0.1
+Time: 1598974143}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 5016938780438329245
+IP: 127.0.0.1
+Time: 1598974143}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17927026441855656983
+IP: 127.0.0.1
+Time: 1598974160}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OWYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17927026441855656983
+IP: 127.0.0.1
+Time: 1598974160}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12286077932720087836
+IP: 127.0.0.1
+Time: 1598974200}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12286077932720087836
+IP: 127.0.0.1
+Time: 1598974200}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 4019794816542623903
+IP: 127.0.0.1
+Time: 1598974347}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4019794816542623903
+IP: 127.0.0.1
+Time: 1598974347}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9792675607907569453
+IP: 127.0.0.1
+Time: 1598974695}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9792675607907569453
+IP: 127.0.0.1
+Time: 1598974695}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1349729302212087594
+IP: 127.0.0.1
+Time: 1598974698}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1349729302212087594
+IP: 127.0.0.1
+Time: 1598974698}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5194266885407446091
+IP: 127.0.0.1
+Time: 1598974699}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5194266885407446091
+IP: 127.0.0.1
+Time: 1598974699}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9543701482812318944
+IP: 127.0.0.1
+Time: 1598974700}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9543701482812318944
+IP: 127.0.0.1
+Time: 1598974700}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6947191747342257017
+IP: 127.0.0.1
+Time: 1598974701}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6947191747342257017
+IP: 127.0.0.1
+Time: 1598974701}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7126643037136921574
+IP: 127.0.0.1
+Time: 1598974702}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2YqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7126643037136921574
+IP: 127.0.0.1
+Time: 1598974702}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3032136768381996087
+IP: 127.0.0.1
+Time: 1598974704}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3032136768381996087
+IP: 127.0.0.1
+Time: 1598974704}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13293753631811701180
+IP: 127.0.0.1
+Time: 1598974705}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13293753631811701180
+IP: 127.0.0.1
+Time: 1598974705}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2458561632868446725
+IP: 127.0.0.1
+Time: 1598974706}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2458561632868446725
+IP: 127.0.0.1
+Time: 1598974706}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5036293082000074722
+IP: 127.0.0.1
+Time: 1598974707}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5036293082000074722
+IP: 127.0.0.1
+Time: 1598974707}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10496345384122121315
+IP: 127.0.0.1
+Time: 1598974788}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTAqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10496345384122121315
+IP: 127.0.0.1
+Time: 1598974788}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14194368402186143339
+IP: 127.0.0.1
+Time: 1598975202}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14194368402186143339
+IP: 127.0.0.1
+Time: 1598975202}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8372788130931268992
+IP: 127.0.0.1
+Time: 1598975328}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8372788130931268992
+IP: 127.0.0.1
+Time: 1598975328}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11395987142414389044
+IP: 127.0.0.1
+Time: 1598975344}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11395987142414389044
+IP: 127.0.0.1
+Time: 1598975344}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13319443981483734056
+IP: 127.0.0.1
+Time: 1598975382}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13319443981483734056
+IP: 127.0.0.1
+Time: 1598975382}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10216729568241314657
+IP: 127.0.0.1
+Time: 1598975388}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10216729568241314657
+IP: 127.0.0.1
+Time: 1598975388}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 4390694286469118245
+IP: 127.0.0.1
+Time: 1598975530}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4390694286469118245
+IP: 127.0.0.1
+Time: 1598975530}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1131406622025054594
+IP: 127.0.0.1
+Time: 1598975568}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1131406622025054594
+IP: 127.0.0.1
+Time: 1598975568}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11180538055063152470
+IP: 127.0.0.1
+Time: 1598975877}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11180538055063152470
+IP: 127.0.0.1
+Time: 1598975877}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13863128548227143800
+IP: 127.0.0.1
+Time: 1598975906}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13863128548227143800
+IP: 127.0.0.1
+Time: 1598975906}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17198254411902577649
+IP: 127.0.0.1
+Time: 1598975909}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17198254411902577649
+IP: 127.0.0.1
+Time: 1598975909}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16943467345800033982
+IP: 127.0.0.1
+Time: 1598976086}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16943467345800033982
+IP: 127.0.0.1
+Time: 1598976086}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10020546997106955503
+IP: 127.0.0.1
+Time: 1598976106}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10020546997106955503
+IP: 127.0.0.1
+Time: 1598976106}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2648645399358775764
+IP: 127.0.0.1
+Time: 1598976134}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2648645399358775764
+IP: 127.0.0.1
+Time: 1598976134}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 90326436591041318
+IP: 127.0.0.1
+Time: 1598976185}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 90326436591041318
+IP: 127.0.0.1
+Time: 1598976185}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9000933717265264840
+IP: 127.0.0.1
+Time: 1598976215}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9000933717265264840
+IP: 127.0.0.1
+Time: 1598976215}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13712614877559290682
+IP: 127.0.0.1
+Time: 1598976264}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: M2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13712614877559290682
+IP: 127.0.0.1
+Time: 1598976264}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15659278573137479420
+IP: 127.0.0.1
+Time: 1598976303}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15659278573137479420
+IP: 127.0.0.1
+Time: 1598976303}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13358209762157285445
+IP: 127.0.0.1
+Time: 1598976320}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13358209762157285445
+IP: 127.0.0.1
+Time: 1598976320}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12974683842736888610
+IP: 127.0.0.1
+Time: 1598976343}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTAqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12974683842736888610
+IP: 127.0.0.1
+Time: 1598976343}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10760592230261981194
+IP: 127.0.0.1
+Time: 1598976595}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10760592230261981194
+IP: 127.0.0.1
+Time: 1598976595}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10212755489715263059
+IP: 127.0.0.1
+Time: 1599036114}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10212755489715263059
+IP: 127.0.0.1
+Time: 1599036114}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8696232403199891194
+IP: 127.0.0.1
+Time: 1599036193}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8696232403199891194
+IP: 127.0.0.1
+Time: 1599036193}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14941460934110227534
+IP: 127.0.0.1
+Time: 1599036225}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14941460934110227534
+IP: 127.0.0.1
+Time: 1599036225}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 876525822316582847
+IP: 127.0.0.1
+Time: 1599036253}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 876525822316582847
+IP: 127.0.0.1
+Time: 1599036253}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 18445358298247533284
+IP: 127.0.0.1
+Time: 1599036299}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 18445358298247533284
+IP: 127.0.0.1
+Time: 1599036299}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11405575694224799053
+IP: 127.0.0.1
+Time: 1599036317}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OWMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11405575694224799053
+IP: 127.0.0.1
+Time: 1599036317}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15236241718270790179
+IP: 127.0.0.1
+Time: 1599036374}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15236241718270790179
+IP: 127.0.0.1
+Time: 1599036374}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1231923873040188969
+IP: 127.0.0.1
+Time: 1599036436}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1231923873040188969
+IP: 127.0.0.1
+Time: 1599036436}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16479966768486616662
+IP: 127.0.0.1
+Time: 1599036988}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16479966768486616662
+IP: 127.0.0.1
+Time: 1599036988}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11987740217527937383
+IP: 127.0.0.1
+Time: 1599037022}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjAqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11987740217527937383
+IP: 127.0.0.1
+Time: 1599037022}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 18135432428584548524
+IP: 127.0.0.1
+Time: 1599037126}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 18135432428584548524
+IP: 127.0.0.1
+Time: 1599037126}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16642275787385281973
+IP: 127.0.0.1
+Time: 1599037303}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16642275787385281973
+IP: 127.0.0.1
+Time: 1599037303}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8636571506967930916
+IP: 127.0.0.1
+Time: 1599038789}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8636571506967930916
+IP: 127.0.0.1
+Time: 1599038789}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 12008023882023357325
+IP: 10.0.2.2
+Time: 1599038954}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: MzgqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12008023882023357325
+IP: 10.0.2.2
+Time: 1599038954}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 6800605378815743754
+IP: 10.0.2.2
+Time: 1599038985}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: N2MqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6800605378815743754
+IP: 10.0.2.2
+Time: 1599038985}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3343139492641888366
+IP: 127.0.0.1
+Time: 1599040356}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3343139492641888366
+IP: 127.0.0.1
+Time: 1599040356}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14547892200931774155
+IP: 10.0.2.2
+Time: 1599042153}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14547892200931774155
+IP: 10.0.2.2
+Time: 1599042153}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11181904059530435301
+IP: 127.0.0.1
+Time: 1599042330}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11181904059530435301
+IP: 127.0.0.1
+Time: 1599042330}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2314953895902696536
+IP: 10.0.2.2
+Time: 1599043339}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2314953895902696536
+IP: 10.0.2.2
+Time: 1599043339}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 12052433401250756910
+IP: 10.0.2.2
+Time: 1599044153}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: MzYqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12052433401250756910
+IP: 10.0.2.2
+Time: 1599044153}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 1083982477620611522
+IP: 10.0.2.2
+Time: 1599044626}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: NzcqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1083982477620611522
+IP: 10.0.2.2
+Time: 1599044626}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 8532994147551165334
+IP: 10.0.2.2
+Time: 1599044745}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: MTIqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8532994147551165334
+IP: 10.0.2.2
+Time: 1599044745}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7555608327452877482
+IP: 127.0.0.1
+Time: 1599044985}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7555608327452877482
+IP: 127.0.0.1
+Time: 1599044985}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15744186080768611070
+IP: 127.0.0.1
+Time: 1599045067}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15744186080768611070
+IP: 127.0.0.1
+Time: 1599045067}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13732982020989167865
+IP: 127.0.0.1
+Time: 1599045187}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13732982020989167865
+IP: 127.0.0.1
+Time: 1599045187}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3042164003137167421
+IP: 127.0.0.1
+Time: 1599045310}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3042164003137167421
+IP: 127.0.0.1
+Time: 1599045310}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11458566677453497210
+IP: 127.0.0.1
+Time: 1599045311}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11458566677453497210
+IP: 127.0.0.1
+Time: 1599045311}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 5606191872248492459
+IP: 10.0.2.2
+Time: 1599045598}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: YjQqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5606191872248492459
+IP: 10.0.2.2
+Time: 1599045598}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 18378230825701101583
+IP: 10.0.2.2
+Time: 1599054307}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: NTIqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 18378230825701101583
+IP: 10.0.2.2
+Time: 1599054307}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 8901254429236989107
+IP: 10.0.2.2
+Time: 1599054428}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: MzkqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8901254429236989107
+IP: 10.0.2.2
+Time: 1599054428}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 7136646060956404631
+IP: 10.0.2.2
+Time: 1599054597}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: MWEqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7136646060956404631
+IP: 10.0.2.2
+Time: 1599054597}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 12069645154909991099
+IP: 10.0.2.2
+Time: 1599054638}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: M2IqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12069645154909991099
+IP: 10.0.2.2
+Time: 1599054638}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 698447552479841468
+IP: 10.0.2.2
+Time: 1599054678}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: ZjUqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 698447552479841468
+IP: 10.0.2.2
+Time: 1599054678}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 9329760774481099076
+IP: 10.0.2.2
+Time: 1599054754}|
+
+CAT{***Login avvenuto con successo***
+Email: prova9797@ciao.it
+Cookie_Log: NzkqcHJvdmE5Nzk3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9329760774481099076
+IP: 10.0.2.2
+Time: 1599054754}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 9491882516572769339
+IP: 10.0.2.2
+Time: 1599055761}|
+
+CAT{***Login fallito***
+Email: prova9797@ciao.it
+Sessione: 9491882516572769339
+IP: 10.0.2.2
+Time: 1599055761}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 1598879133543172731
+IP: 10.0.2.2
+Time: 1599056053}|
+
+CAT{***Login fallito***
+Email: prova9797@ciao.it
+Sessione: 1598879133543172731
+IP: 10.0.2.2
+Time: 1599056053}|
+
+CAT{***Tentativo di Login***
+Email: prova9797@ciao.it
+Sessione: 7083800718457002244
+IP: 10.0.2.2
+Time: 1599056195}|
+
+CAT{***Login fallito***
+Email: prova9797@ciao.it
+Sessione: 7083800718457002244
+IP: 10.0.2.2
+Time: 1599056195}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14591647046652089155
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 14591647046652089155
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14926878558715671108
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 14926878558715671108
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6184769465488741865
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 6184769465488741865
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 263201607535746463
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 263201607535746463
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2524756694760511298
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 2524756694760511298
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6304322105203163024
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 6304322105203163024
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11285792903133431781
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 11285792903133431781
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14392290175754481326
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 14392290175754481326
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2490988345302390331
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 2490988345302390331
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2419998739152493596
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 2419998739152493596
+IP: 10.0.2.2
+Time: 1599056979}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 356991448245395212
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 356991448245395212
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12099139906509009617
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 12099139906509009617
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15609377230784198858
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 15609377230784198858
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11226065258206116423
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 11226065258206116423
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17296174145043331032
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 17296174145043331032
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12807267594590244429
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 12807267594590244429
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15248842903609659318
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 15248842903609659318
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15054616134075588707
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 15054616134075588707
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14110580219116267492
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 14110580219116267492
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14702247813547599369
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 14702247813547599369
+IP: 10.0.2.2
+Time: 1599057031}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 12020657266175121870
+IP: 10.0.2.2
+Time: 1599057340}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 12020657266175121870
+IP: 10.0.2.2
+Time: 1599057340}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14541160359328797228
+IP: 10.0.2.2
+Time: 1599057546}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 14541160359328797228
+IP: 10.0.2.2
+Time: 1599057546}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13707722588307388147
+IP: 10.0.2.2
+Time: 1599057642}|
+
+CAT{***Login fallito***
+Email: prova6@ciao.it
+Sessione: 13707722588307388147
+IP: 10.0.2.2
+Time: 1599057642}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 14554081595785727912
+IP: 10.0.2.2
+Time: 1599057747}|
+
+CAT{***Login fallito***
+Email: prova7@ciao.it
+Sessione: 14554081595785727912
+IP: 10.0.2.2
+Time: 1599057747}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 12380817770070229267
+IP: 10.0.2.2
+Time: 1599058021}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: NzQqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 12380817770070229267
+IP: 10.0.2.2
+Time: 1599058021}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 15576836402089803848
+IP: 10.0.2.2
+Time: 1599058136}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: MTgqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15576836402089803848
+IP: 10.0.2.2
+Time: 1599058136}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 17399924289902790145
+IP: 10.0.2.2
+Time: 1599058257}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: OWEqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17399924289902790145
+IP: 10.0.2.2
+Time: 1599058257}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 2518254763576969128
+IP: 10.0.2.2
+Time: 1599058591}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: OTQqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2518254763576969128
+IP: 10.0.2.2
+Time: 1599058591}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 13620057624292758781
+IP: 10.0.2.2
+Time: 1599058666}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: MzIqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13620057624292758781
+IP: 10.0.2.2
+Time: 1599058666}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7758772716682420026
+IP: 10.0.2.2
+Time: 1599059239}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7758772716682420026
+IP: 10.0.2.2
+Time: 1599059239}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2279898347932251035
+IP: 10.0.2.2
+Time: 1599059288}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2279898347932251035
+IP: 10.0.2.2
+Time: 1599059288}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10466645548811705456
+IP: 10.0.2.2
+Time: 1599059619}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10466645548811705456
+IP: 10.0.2.2
+Time: 1599059619}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6534481294634809417
+IP: 10.0.2.2
+Time: 1599059714}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6534481294634809417
+IP: 10.0.2.2
+Time: 1599059714}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7934831506318558966
+IP: 10.0.2.2
+Time: 1599059778}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OWMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7934831506318558966
+IP: 10.0.2.2
+Time: 1599059778}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11311667606480583756
+IP: 127.0.0.1
+Time: 1599060060}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11311667606480583756
+IP: 127.0.0.1
+Time: 1599060060}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16868786126617728469
+IP: 127.0.0.1
+Time: 1599060117}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16868786126617728469
+IP: 127.0.0.1
+Time: 1599060117}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9339906318473162226
+IP: 127.0.0.1
+Time: 1599060240}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2YqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9339906318473162226
+IP: 127.0.0.1
+Time: 1599060240}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7980150469896047027
+IP: 127.0.0.1
+Time: 1599060272}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7980150469896047027
+IP: 127.0.0.1
+Time: 1599060272}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 548025775436323233
+IP: 127.0.0.1
+Time: 1599060509}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 548025775436323233
+IP: 127.0.0.1
+Time: 1599060509}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5537541006062776366
+IP: 10.0.2.2
+Time: 1599060529}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5537541006062776366
+IP: 10.0.2.2
+Time: 1599060529}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 3246155817702427935
+IP: 10.0.2.2
+Time: 1599060608}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: MzgqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3246155817702427935
+IP: 10.0.2.2
+Time: 1599060608}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2215986192977586116
+IP: 127.0.0.1
+Time: 1599060807}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2215986192977586116
+IP: 127.0.0.1
+Time: 1599060807}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11599221196218789805
+IP: 127.0.0.1
+Time: 1599060832}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11599221196218789805
+IP: 127.0.0.1
+Time: 1599060832}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1636600688773589418
+IP: 127.0.0.1
+Time: 1599060895}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1636600688773589418
+IP: 127.0.0.1
+Time: 1599060895}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13727671668973121739
+IP: 127.0.0.1
+Time: 1599060995}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13727671668973121739
+IP: 127.0.0.1
+Time: 1599060995}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15620396466482610479
+IP: 10.0.2.2
+Time: 1599061091}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2IqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15620396466482610479
+IP: 10.0.2.2
+Time: 1599061091}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11496831317544696596
+IP: 127.0.0.1
+Time: 1599061152}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MzMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11496831317544696596
+IP: 127.0.0.1
+Time: 1599061152}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 3176174180670348808
+IP: 10.0.2.2
+Time: 1599061514}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: MzAqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3176174180670348808
+IP: 10.0.2.2
+Time: 1599061514}|
+
+CAT{***Tentativo di Login***
+Email: prova7@ciao.it
+Sessione: 10505037921550991041
+IP: 10.0.2.2
+Time: 1599061587}|
+
+CAT{***Login avvenuto con successo***
+Email: prova7@ciao.it
+Cookie_Log: MzUqcHJvdmE3QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10505037921550991041
+IP: 10.0.2.2
+Time: 1599061587}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10109241404124985294
+IP: 10.0.2.2
+Time: 1599061679}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10109241404124985294
+IP: 10.0.2.2
+Time: 1599061679}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1585784787135977791
+IP: 10.0.2.2
+Time: 1599062192}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1585784787135977791
+IP: 10.0.2.2
+Time: 1599062192}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13527644628136608356
+IP: 10.0.2.2
+Time: 1599063869}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2IqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13527644628136608356
+IP: 10.0.2.2
+Time: 1599063869}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 18264060135035972301
+IP: 10.0.2.2
+Time: 1599063898}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 18264060135035972301
+IP: 10.0.2.2
+Time: 1599063898}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 7574206760967307082
+IP: 10.0.2.2
+Time: 1599063991}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7574206760967307082
+IP: 10.0.2.2
+Time: 1599063991}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 176857547096384235
+IP: 10.0.2.2
+Time: 1599064040}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NzUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 176857547096384235
+IP: 10.0.2.2
+Time: 1599064040}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11055189173361533952
+IP: 10.0.2.2
+Time: 1599064088}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11055189173361533952
+IP: 10.0.2.2
+Time: 1599064088}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15289636358124680473
+IP: 10.0.2.2
+Time: 1599064107}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15289636358124680473
+IP: 10.0.2.2
+Time: 1599064107}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14252719988345747974
+IP: 10.0.2.2
+Time: 1599064234}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14252719988345747974
+IP: 10.0.2.2
+Time: 1599064234}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5515877240666192087
+IP: 10.0.2.2
+Time: 1599064275}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5515877240666192087
+IP: 10.0.2.2
+Time: 1599064275}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 5034312822882451164
+IP: 10.0.2.2
+Time: 1599064380}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OWQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5034312822882451164
+IP: 10.0.2.2
+Time: 1599064380}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16183195640978672037
+IP: 10.0.2.2
+Time: 1599064406}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZjcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16183195640978672037
+IP: 10.0.2.2
+Time: 1599064406}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16408819685452252162
+IP: 10.0.2.2
+Time: 1599065195}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: YjYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16408819685452252162
+IP: 10.0.2.2
+Time: 1599065195}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2986692963555354371
+IP: 10.0.2.2
+Time: 1599065630}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2986692963555354371
+IP: 10.0.2.2
+Time: 1599065630}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2713835432607994993
+IP: 10.0.2.2
+Time: 1599066396}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDcqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2713835432607994993
+IP: 10.0.2.2
+Time: 1599066396}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 15262508815876424061
+IP: 10.0.2.2
+Time: 1599067617}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: OTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15262508815876424061
+IP: 10.0.2.2
+Time: 1599067617}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13519107077096241409
+IP: 10.0.2.2
+Time: 1599082151}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13519107077096241409
+IP: 10.0.2.2
+Time: 1599082151}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 6896338264328388336
+IP: 10.0.2.2
+Time: 1599082958}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6896338264328388336
+IP: 10.0.2.2
+Time: 1599082958}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 3185583046627048649
+IP: 10.0.2.2
+Time: 1599083191}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTMqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 3185583046627048649
+IP: 10.0.2.2
+Time: 1599083191}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 1273673356556047734
+IP: 10.0.2.2
+Time: 1599083492}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1273673356556047734
+IP: 10.0.2.2
+Time: 1599083492}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 13652782915191470855
+IP: 10.0.2.2
+Time: 1599083571}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 13652782915191470855
+IP: 10.0.2.2
+Time: 1599083571}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 11968155225749870284
+IP: 10.0.2.2
+Time: 1599083720}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11968155225749870284
+IP: 10.0.2.2
+Time: 1599083720}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10523847268320637525
+IP: 10.0.2.2
+Time: 1599083957}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTQqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10523847268320637525
+IP: 10.0.2.2
+Time: 1599083957}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 16237178005995730034
+IP: 10.0.2.2
+Time: 1599084088}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: M2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16237178005995730034
+IP: 10.0.2.2
+Time: 1599084088}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 10415002682758365747
+IP: 10.0.2.2
+Time: 1599084283}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZmIqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10415002682758365747
+IP: 10.0.2.2
+Time: 1599084283}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2202548778409858024
+IP: 10.0.2.2
+Time: 1599084461}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: M2QqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2202548778409858024
+IP: 10.0.2.2
+Time: 1599084461}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 8548546600281886241
+IP: 10.0.2.2
+Time: 1599084564}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTgqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 8548546600281886241
+IP: 10.0.2.2
+Time: 1599084564}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 14848966243671469742
+IP: 10.0.2.2
+Time: 1599084713}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NWUqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14848966243671469742
+IP: 10.0.2.2
+Time: 1599084713}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 2506901685230181791
+IP: 10.0.2.2
+Time: 1599084912}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZDkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2506901685230181791
+IP: 10.0.2.2
+Time: 1599084912}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17762035891514618436
+IP: 10.0.2.2
+Time: 1599085010}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: NTkqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17762035891514618436
+IP: 10.0.2.2
+Time: 1599085010}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 4866774476700695597
+IP: 10.0.2.2
+Time: 1599085439}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MTEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4866774476700695597
+IP: 10.0.2.2
+Time: 1599085439}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17285668005423128618
+IP: 10.0.2.2
+Time: 1599085762}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: MWYqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17285668005423128618
+IP: 10.0.2.2
+Time: 1599085762}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 9978678819026393419
+IP: 10.0.2.2
+Time: 1599085969}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: N2EqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9978678819026393419
+IP: 10.0.2.2
+Time: 1599085969}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 649588818470003305
+IP: 10.0.2.2
+Time: 1599086688}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: OTAqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 649588818470003305
+IP: 10.0.2.2
+Time: 1599086688}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 7287894634794782893
+IP: 10.0.2.2
+Time: 1599086914}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: NWEqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 7287894634794782893
+IP: 10.0.2.2
+Time: 1599086914}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 11044404239960316721
+IP: 10.0.2.2
+Time: 1599087064}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MTQqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11044404239960316721
+IP: 10.0.2.2
+Time: 1599087064}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 11618288389802542581
+IP: 10.0.2.2
+Time: 1599087124}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: ZjgqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11618288389802542581
+IP: 10.0.2.2
+Time: 1599087124}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 2044643604474664185
+IP: 10.0.2.2
+Time: 1599087240}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: OTkqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2044643604474664185
+IP: 10.0.2.2
+Time: 1599087240}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 9217155253547912253
+IP: 10.0.2.2
+Time: 1599087474}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: OTgqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 9217155253547912253
+IP: 10.0.2.2
+Time: 1599087474}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 6018936545495508284
+IP: 10.0.2.2
+Time: 1599127293}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: ZGIqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 6018936545495508284
+IP: 10.0.2.2
+Time: 1599127293}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 15337809024716915263
+IP: 10.0.2.2
+Time: 1599127385}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: N2YqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15337809024716915263
+IP: 10.0.2.2
+Time: 1599127385}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 15122156635854062051
+IP: 10.0.2.2
+Time: 1599127497}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: OTkqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15122156635854062051
+IP: 10.0.2.2
+Time: 1599127497}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 10072776130220987466
+IP: 10.0.2.2
+Time: 1599127626}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: NWQqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10072776130220987466
+IP: 10.0.2.2
+Time: 1599127626}|
+
+CAT{***Tentativo di Login***
+Email: prova6@ciao.it
+Sessione: 17253050800384146100
+IP: 10.0.2.2
+Time: 1599128296}|
+
+CAT{***Login avvenuto con successo***
+Email: prova6@ciao.it
+Cookie_Log: ZGEqcHJvdmE2QGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17253050800384146100
+IP: 10.0.2.2
+Time: 1599128296}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 15620668483396125143
+IP: 10.0.2.2
+Time: 1599128645}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MTUqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15620668483396125143
+IP: 10.0.2.2
+Time: 1599128645}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 14209492298233318053
+IP: 10.0.2.2
+Time: 1599129117}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: NzkqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14209492298233318053
+IP: 10.0.2.2
+Time: 1599129117}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 1270821759227463558
+IP: 10.0.2.2
+Time: 1599129392}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: ZjMqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1270821759227463558
+IP: 10.0.2.2
+Time: 1599129392}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 15764112277730993239
+IP: 10.0.2.2
+Time: 1599129423}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MWUqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15764112277730993239
+IP: 10.0.2.2
+Time: 1599129423}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 15722300654401839196
+IP: 10.0.2.2
+Time: 1599129454}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: ZjkqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 15722300654401839196
+IP: 10.0.2.2
+Time: 1599129454}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 5350066818300408110
+IP: 10.0.2.2
+Time: 1599129960}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: N2MqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5350066818300408110
+IP: 10.0.2.2
+Time: 1599129960}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 5185676543369563753
+IP: 10.0.2.2
+Time: 1599130475}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MTIqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 5185676543369563753
+IP: 10.0.2.2
+Time: 1599130475}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 17289218758277470890
+IP: 10.0.2.2
+Time: 1599130726}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: N2IqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 17289218758277470890
+IP: 10.0.2.2
+Time: 1599130726}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 16963689863787835893
+IP: 10.0.2.2
+Time: 1599131826}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: NzQqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16963689863787835893
+IP: 10.0.2.2
+Time: 1599131826}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 270007815380727869
+IP: 10.0.2.2
+Time: 1599132096}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: N2UqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 270007815380727869
+IP: 10.0.2.2
+Time: 1599132096}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 14059143931849957692
+IP: 10.0.2.2
+Time: 1599132401}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: ZGIqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14059143931849957692
+IP: 10.0.2.2
+Time: 1599132401}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 16097487231253827135
+IP: 10.0.2.2
+Time: 1599139850}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: OWIqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 16097487231253827135
+IP: 10.0.2.2
+Time: 1599139850}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 4929979089900346447
+IP: 10.0.2.2
+Time: 1599140276}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: ZjQqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 4929979089900346447
+IP: 10.0.2.2
+Time: 1599140276}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 14450584272462423302
+IP: 10.0.2.2
+Time: 1599140593}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: OTUqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 14450584272462423302
+IP: 10.0.2.2
+Time: 1599140593}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 1528875130889401057
+IP: 10.0.2.2
+Time: 1599141044}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MzkqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 1528875130889401057
+IP: 10.0.2.2
+Time: 1599141044}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 10246488204163699024
+IP: 10.0.2.2
+Time: 1599141607}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MTUqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 10246488204163699024
+IP: 10.0.2.2
+Time: 1599141607}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 2734097725557966061
+IP: 10.0.2.2
+Time: 1599141901}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: NWQqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 2734097725557966061
+IP: 10.0.2.2
+Time: 1599141901}|
+
+CAT{***Tentativo di Login***
+Email: ciccia@ciao.it
+Sessione: 11434628601820761581
+IP: 10.0.2.2
+Time: 1599146118}|
+
+CAT{***Login avvenuto con successo***
+Email: ciccia@ciao.it
+Cookie_Log: MTMqY2ljY2lhQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@
+Sessione: 11434628601820761581
+IP: 10.0.2.2
+Time: 1599146118}|
+

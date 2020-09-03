@@ -1,0 +1,254 @@
+DEFINE urlset inchiaro = { 
+    /img/*, //*/
+    /bootstrap/*/*,    //*/
+    /json/* //*/
+};
+
+
+DEFINE set urlinchiaro = { "/", "/index.html" , "/login.html" };
+
+
+//		**********************************************************************
+//		FASE DI REGISTRAZIONE
+//		**********************************************************************
+
+
+DEFINE set email_esistenti = 
+   : MySql{127.0.0.1:3306, "honey", "root", "password", "select email from user"};
+
+DEFINE set dati_utenti = 
+   : MySql{127.0.0.1:3306, "honey", "root", "password", "select CONCAT(email, ' ' , name, ' ' , years) as utenti from user"};
+
+DEFINE AR "check_registration_email_non_valida"
+    CONDITION
+		http.url is "/user/register"
+		exists http.query["email"]								
+        	http.query["email"] is in email_esistenti "%40" "@"									 
+	ACTION
+		MANAGE "REGISTRATION_ERROR_MAIL"
+	;
+
+DEFINE AR "calcolo_hash"
+	CONDITION
+		http.url is "/user/register"
+		exists http.query["email"]
+        	!http.query["email"] is in email_esistenti "%40" "@"
+		exists http.query["password"]
+		exists http.query["name"]
+		exists http.query["years"]
+	ACTION
+		MANAGE "HASHPASS"
+	;
+
+DEFINE VR "aggiungi_utente"
+    CONDITION
+		http.url is "/user/hashregister"
+		exists http.query["email"]
+        	!http.query["email"] is in email_esistenti "%40" "@"
+		exists http.query["password"]
+		exists http.query["name"]
+		exists http.query["years"] 									 
+	VAR
+		email = http.query["email"] "%40" "@"
+		pass = http.query["password"]
+		name = http.query["name"]
+		years = http.query["years"]
+	ACTION
+		ADD http.query["email"] to set email_esistenti "%40" "@"
+		MySql.append (127.0.0.1:3306, "honey", "root", "password", "insert into user (email, password, name, years) values ($0, $1, $2, $3)", {email, pass, name, years})
+		REPORT registrazioni {CAT {"***Nuova registrazione effettuata***\nEmail: ", email,"\nPassword: ", pass, "\nNome: " , name, "\nAnni: " , years}}
+	;
+
+DEFINE AR "passa_registrazione"
+	CONDITION
+		http.url is "/user/hashregister"
+		exists http.query["email"]
+        	!http.query["email"] is in email_esistenti "%40" "@"
+		exists http.query["name"]
+		exists http.query["years"]
+	ACTION
+		MANAGE "SENDDATAREG"
+	;
+
+//		**********************
+//		FASE DI LOGIN IN GIOCO
+//		**********************
+
+DEFINE set utenti_registrati = 
+   : MySql{127.0.0.1:3306, "honey", "root", "password", "select CONCAT(email, password) as utenti from user"};
+
+DEFINE AR "passa_login"
+	CONDITION
+		http.url is "/login"
+		exists http.query["email"]
+		exists http.query["password"]
+		CAT{http.query["email"], http.query["password"]} is in utenti_registrati
+	ACTION
+		answer "ok"
+	;
+
+//		**********************
+//		FASE DI LOGIN SU APP
+//		**********************
+
+DEFINE set cookie_for_login = { };
+
+DEFINE AR "check_login_no_cookie_email_non_valida"
+	CONDITION
+		http.url is "/user/login"
+		!exists http.cookie["login"]
+		exists http.query["email"]
+		!http.query["email"] is in email_esistenti "%40" "@"
+	ACTION
+		MANAGE "LOGIN_ERROR_MAIL"
+	;
+
+DEFINE AR "check_login_no_cookie_email_valida"
+	CONDITION
+		http.url is "/user/login"
+		!exists http.cookie["login"]
+		exists http.query["email"]
+		http.data["email"] is in email_esistenti "%40" "@"
+		exists http.query["password"]
+	ACTION
+		MANAGE "LOGIN"
+	;
+
+DEFINE AR "check_login_cookie_non_valido"
+	CONDITION
+		http.url is "/user/login"
+		exists http.cookie["login"]
+		!http.cookie["login"] is in cookie_for_login
+	ACTION
+		MANAGE "COOKIE_ERROR"
+	;
+
+DEFINE AR "passa_login_app"
+	CONDITION
+		http.url is "/user/login"
+		exists http.cookie["login"]
+		http.cookie["login"] is in cookie_for_login
+	ACTION
+		MANAGE "DATA"
+	;
+
+DEFINE AR "setta_cookie_login"
+	CONDITION
+		http.url is "/controllo"
+		exists http.query["email"]
+		exists http.query["password"]
+		CAT{http.query["email"], http.query["password"]} is in utenti_registrati
+		!exists http.cookie["login"]
+	ACTION
+		MANAGE "COOKIE_LOG"
+	;
+
+DEFINE VR "verifica_login_e_add_cookie"
+	CONDITION
+		obs.event is net.send
+		http.url is "/controllore"
+		exists http.query["email"]
+		exists http.query["password"]
+		CAT{http.query["email"], http.query["password"]} is in utenti_registrati
+		exists http.query["cookie"]
+		!exists http.cookie["login"]
+	VAR
+		email = http.query["email"] "%40" "@"
+		cook = http.query["cookie"]
+		v_sid = net.sesid
+	ACTION
+		REPORT login {CAT { "***Tentativo di Login***\nEmail: " , email, "\nSessione: ", v_sid, "\nIP: ", net.ipsrc ":.*" "", "\nTime: ", obs.time}}
+	NEXT 
+	(
+			obs.event is net.recv
+			http.answer.code is "302 Found"
+			net.sesid is v_sid
+		ACTION
+			ADD CAT{cook "[;].*" ""} to set cookie_for_login 180
+			MySql.append (127.0.0.1:3306, "honey", "root", "password", "insert into report_login (email, cookie, sessione, ip, time) values ($0, $1, $2, $3, $4)", {email, cook, v_sid, net.ipsrc, obs.time})
+			REPORT login {CAT {"***Login avvenuto con successo***\nEmail: ", email, "\nCookie_Log: ", cook "[;].*" "", "\nSessione: ", v_sid, "\nIP: ", net.ipsrc ":.*" "", "\nTime: ", obs.time}}
+		OR
+			obs.event is net.recv
+			//http.answer.code is "200 OK"
+			net.sesid is v_sid
+			!exists http.query["cookie"]
+		ACTION
+			REPORT login {CAT {"***Login fallito***\nEmail: ", email, "\nSessione: ", v_sid ,"\nIP: ", net.ipsrc ":.*" "", "\nTime: ", obs.time}}
+	)
+	;
+
+DEFINE AR "passa_login_1"
+	CONDITION
+		http.url is "/controllore"
+		exists http.query["cookie"]
+	ACTION
+		MANAGE "LOGIN_SUCCESS"
+	;
+
+
+DEFINE AR "post_login"
+	CONDITION
+		http.url is "/user/getObjects"
+		exists http.query["email"]
+	ACTION
+		MANAGE "REDIRECT_SERVER"
+	;
+
+//		**********************************************************************
+//		VERIFICA DI ACCESSO A NUOVI LIVELLI
+//		**********************************************************************
+	
+DEFINE AR "accesso piano 2"
+	CONDITION
+		http.url is "/levelup"
+		http.query["floor"] is "2"
+		http.query["point"] is "1"
+	ACTION
+		answer "ok"
+	;
+	
+DEFINE AR "accesso piano 3"
+	CONDITION
+		http.url is "/levelup"
+		http.query["floor"] is "3"
+		http.query["point"] is "1"
+	ACTION
+		answer "ok"
+	;
+	
+DEFINE AR "accesso piano 4"
+	CONDITION
+		http.url is "/levelup"
+		http.query["floor"] is "4"
+		http.query["point"] is "1"
+	ACTION
+		answer "ok"
+	;
+	
+//		**********************************************************************
+//		GIOCARE NUOVAMENTE
+//		**********************************************************************
+
+
+
+DEFINE AR "nuova partita"
+	CONDITION
+		http.url is "/user/restart"
+		exists http.cookie["login"]
+		http.cookie["login"] is in cookie_for_login
+		
+	ACTION
+		answer "Cookie presente"
+	;
+
+DEFINE AR "nuova partita cookie scaduto"
+	CONDITION
+		!http.query["username"] is in utenti_bannati
+		http.query["floor"] is "4"
+		http.query["level"] is "15"
+		!http.cookie["user"] is in cookie_for_registration
+		
+	ACTION
+		tcp.redirect "localhost:3000"
+		answer "EFFETTUA NUOVAMENTE IL LOGIN"
+	;
