@@ -87,8 +87,10 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
         if (DateTime.parse(expires).isAfter(DateTime.now())) {
           return true;
-        } else
+        } else {
+          await prefs.clear();
           return false;
+        }
       }
     } catch (e) {
       print(e);

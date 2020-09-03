@@ -91,12 +91,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 height: 55,
                 margin: EdgeInsets.only(bottom: 24, top: 24),
                 child: RaisedButton(
-                  onPressed: () {
-                    BlocProvider.of<UserSessionBloc>(context).add(Register(
-                        email.text.trim(),
-                        password.text.trim(),
-                        name.text.trim(),
-                        years.text.trim()));
+                  onPressed: () async {
+                    await BlocProvider.of<UserSessionBloc>(context).add(
+                        Register(email.text.trim(), password.text.trim(),
+                            name.text.trim(), years.text.trim()));
 
                     Navigator.pushAndRemoveUntil(
                         context,

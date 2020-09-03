@@ -57,7 +57,7 @@ class _MakeDonationScreenState extends State<MakeDonationScreen> {
                   onTap: () async {
                     try {
                       await BlocProvider.of<UserSessionBloc>(context)
-                          .makeTransaction(objects[index]["id"],
+                          .makeTransaction(objects[index]["Key"],
                               email.text.toLowerCase().trim());
                       BlocProvider.of<UserSessionBloc>(context)
                           .gameObjects
@@ -76,7 +76,7 @@ class _MakeDonationScreenState extends State<MakeDonationScreen> {
                       child: Row(
                         children: <Widget>[
                           Image.asset(
-                            "assets/honeys/${objects[index]["color"].toString().toLowerCase()}@2x.png",
+                            "assets/honeys/${objects[index]["Record"]["color"].toString().toLowerCase()}@2x.png",
                             height: MediaQuery.of(context).size.height * 0.12,
                           ),
                           Column(
@@ -84,11 +84,11 @@ class _MakeDonationScreenState extends State<MakeDonationScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                objects[index]["id"],
+                                objects[index]["Key"],
                                 style: TextStyle(fontSize: 18),
                               ),
                               Text(
-                                objects[index]["power"].toString(),
+                                objects[index]["Record"]["power"].toString(),
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20,
