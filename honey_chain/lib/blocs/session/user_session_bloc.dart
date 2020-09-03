@@ -144,7 +144,6 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         return json.decode(res.body.toString());
       } else {
         this.add(ErrorOccourred("Utente non esistente"));
-
         print("No user");
         return null;
       }
