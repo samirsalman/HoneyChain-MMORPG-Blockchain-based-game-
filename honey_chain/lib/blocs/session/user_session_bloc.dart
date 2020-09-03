@@ -25,6 +25,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     if (event is StartApp) {
       prefs = await SharedPreferences.getInstance();
       lastHost = prefs.getString("last");
+      yield (Starting());
     }
 
     if (event is ErrorOccourred) {

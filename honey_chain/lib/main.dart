@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider<UserSessionBloc>(
-          create: (context) => UserSessionBloc(Starting()),
+          create: (context) => UserSessionBloc(Starting())..add(StartApp()),
         ),
       ],
       child: MaterialApp(
