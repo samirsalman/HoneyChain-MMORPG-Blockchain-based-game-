@@ -132,7 +132,8 @@ router.get("/registration/error", (req, res, next) => {
   if (req.headers.cookie !== undefined) {
     res.setHeader("Cookie", req.headers.cookie);
   }
-  console.log(res.getHeaders());
+  console.log(req.query.error.replace("_", " "));
+
   res.status(503).send({
     error: req.query.error.replace("_", " "),
   });
