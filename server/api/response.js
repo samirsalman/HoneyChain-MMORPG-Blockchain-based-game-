@@ -55,6 +55,48 @@ router.get("/login/success", (req, res, next) => {
     }
   }, 3000);
 
+
+  router.get("/loginCookie/success", (req, res, next) => {
+    console.log(req.headers);
+  
+    setTimeout(() => {
+      try {
+        res.setHeader("Cookie", `login=${req.headers.cookie}`);
+        res.setHeader("Content-Type", `application/json`);
+  
+        console.log(`login=${req.headers.cookie}; expires`);
+        var cookie = req.headers.cookie;
+  
+        console.log("select email from report_login WHERE cookie = '" + cookie);
+  
+        connection.query(
+          "select email from report_login WHERE cookie = '" +
+            cookie +
+            "'" /*"select email from report_login where cookie = 'MWQqcHJvdmEzQGNpYW8uaXQqYjEzM2EwYzBlOWJlZTNiZTIwMTYzZDJhZDMxZDYyNDhkYjI5MmFhNmRjYjFlZTA4N2EyYWE1MGUwZmM3NWFlMg@@; expires'"*/,
+          function (error, emailResult, fields) {
+            if (error) throw error;
+            console.log(emailResult);
+            connection.query(
+              `SELECT * FROM user WHERE email="${emailResult[0].email}"`,
+              function (error, user, fields) {
+                if (error) throw error;
+                var objectToRes = {
+                  email: user[0].email,
+                  name: user[0].name,
+                };
+                console.log(user[0]);
+                res.json(objectToRes);
+              }
+            );
+          }
+        );
+  
+        console.log(res.getHeaders());
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    }, 3000);
   /*
   res.send({
     name: req.query.name,
