@@ -157,13 +157,12 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       var res = await request.close();
       final contents = StringBuffer();
       final completer = Completer<String>();
-      res.transform(utf8.decoder).listen((event) {
+      var body = await res.transform(utf8.decoder).listen((event) {
         contents.write(event);
-      }, onDone: () async {
-        completer.complete(contents.toString());
-        print(await completer.future);
-        return json.decode(await completer.future);
-      });
+      }, onDone: () => completer.complete(contents.toString())).asFuture();
+
+      print(body);
+      return json.decode(body);
     } else {
       return null;
     }
