@@ -111,8 +111,8 @@ router.get("/login/error", (req, res, next) => {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  res.status(503).send({
-    error: req.query.error.replace("_", " "),
+  res.status(404).send({
+    error: "Utente non trovato",
   });
 });
 
