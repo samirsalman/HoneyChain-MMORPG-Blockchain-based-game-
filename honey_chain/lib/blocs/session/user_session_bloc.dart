@@ -13,10 +13,10 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   var HOST = "192.168.1.1";
   var SERVER = "http://192.168.1.2:3000";
   var user = null;
+  var lastHost = null;
   var totalPower = 0;
   SharedPreferences prefs;
   var gameObjects = List();
-  var log = "";
 
   @override
   Stream<UserSessionState> mapEventToState(
@@ -24,6 +24,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   ) async* {
     if (event is StartApp) {
       prefs = await SharedPreferences.getInstance();
+      lastHost = prefs.getString("last");
     }
 
     if (event is ErrorOccourred) {
@@ -31,6 +32,8 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     }
 
     if (event is LoadData) {
+      prefs = await SharedPreferences.getInstance();
+      prefs.setString("lastHost", HOST.trim());
       var isCookieValid = await verifyCookie();
       if (isCookieValid) {
         user = await doLoginWithCookie();
@@ -115,19 +118,10 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     // use the client, eg.:
     // new MyServiceClient(client)
 
-    if (email.toString().trim().length == 0) {
-      this.add(ErrorOccourred("Inserire un indirizzo email"));
-      return null;
-    }
-    if (password.toString().trim().length == 0) {
-      this.add(ErrorOccourred("Inserire una password"));
-      return null;
-    }
-
     prefs = await SharedPreferences.getInstance();
     var res = await http
         .get(
-      "$HOST/user/login?email=" + email + "&password=" + password,
+      "$HOST/user/login?email=$email&password=$password",
     )
         .catchError((err) {
       this.add(ErrorOccourred(err.toString()));
@@ -196,26 +190,6 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   }
 
   Future<bool> registerUser(email, password, name, date) async {
-    if (email.toString().trim().length == 0) {
-      this.add(ErrorOccourred("Inserire un indirizzo email"));
-      return null;
-    }
-
-    if (password.toString().trim().length == 0) {
-      this.add(ErrorOccourred("Inserire una password"));
-      return null;
-    }
-
-    if (name.toString().trim().length == 0) {
-      this.add(ErrorOccourred("Inserire un nome"));
-      return null;
-    }
-
-    if (date.toString().trim().length == 0) {
-      this.add(ErrorOccourred("Inserire l'età"));
-      return null;
-    }
-
     var res = await http
         .get(
           "$HOST/user/register?email=${email.toString().trim()}&password=${password.toString().trim()}&name=$name&years=$date",

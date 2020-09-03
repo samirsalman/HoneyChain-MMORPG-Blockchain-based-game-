@@ -95,20 +95,6 @@ class LoginScreen extends StatelessWidget {
                     },
                     child: Text("Registrati"),
                   )),
-              Container(
-                  width: MediaQuery.of(context).size.width * 0.8,
-                  height: 55,
-                  margin: EdgeInsets.only(bottom: 24),
-                  child: OutlineButton(
-                    borderSide:
-                        BorderSide(color: Theme.of(context).primaryColor),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(24))),
-                    onPressed: () async {
-                      await BlocProvider.of<UserSessionBloc>(context).doLog();
-                    },
-                    child: Text("LOG"),
-                  )),
             ],
           ),
         ),

@@ -79,7 +79,25 @@ class SplashScreen extends StatelessWidget {
                                   ),
                                   width:
                                       MediaQuery.of(context).size.width * 0.8,
-                                )
+                                ),
+                                BlocProvider.of<UserSessionBloc>(context)
+                                            .lastHost !=
+                                        null
+                                    ? ListTile(
+                                        title: Text("Last Host"),
+                                        subtitle: Text(
+                                            BlocProvider.of<UserSessionBloc>(
+                                                    context)
+                                                .lastHost),
+                                        onTap: () {
+                                          controller.text =
+                                              BlocProvider.of<UserSessionBloc>(
+                                                      context)
+                                                  .lastHost;
+                                        },
+                                        leading: Icon(Icons.history),
+                                      )
+                                    : Container()
                               ],
                             ),
                           );
