@@ -118,6 +118,15 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     // use the client, eg.:
     // new MyServiceClient(client)
 
+    if (email.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserisci una email"));
+      return null;
+    }
+    if (password.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserisci una password"));
+      return null;
+    }
+
     prefs = await SharedPreferences.getInstance();
     var res = await http
         .get(
@@ -125,6 +134,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     )
         .catchError((err) {
       this.add(ErrorOccourred(err.toString()));
+      return;
     })
         // ignore: missing_return
         .timeout(Duration(seconds: 5), onTimeout: () async {});
@@ -190,6 +200,23 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   }
 
   Future<bool> registerUser(email, password, name, date) async {
+    if (email.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserisci una email"));
+      return null;
+    }
+    if (password.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserisci una password"));
+      return null;
+    }
+    if (name.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserisci un nome"));
+      return null;
+    }
+    if (date.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserisci la tua età"));
+      return null;
+    }
+
     var res = await http
         .get(
           "$HOST/user/register?email=${email.toString().trim()}&password=${password.toString().trim()}&name=$name&years=$date",
