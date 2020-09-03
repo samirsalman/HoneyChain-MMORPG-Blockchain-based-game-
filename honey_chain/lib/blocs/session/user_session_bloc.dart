@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -148,13 +149,15 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         DateTime.now().isBefore(DateTime.parse(expiresDate))) {
       var cookie = prefs.getString("cookie");
 
-      var res = await http.get("$HOST/user/login", headers: {
-        "Set-Cookie": "login=$cookie;expires=$expiresDate",
-        "Connection": "keep-alive"
-      });
+      HttpClient httpClient = HttpClient();
+      var request =
+          await httpClient.openUrl("GET", Uri.parse("$HOST/user/login"));
+      request.cookies.add(Cookie("login", cookie));
 
-      print(res.body);
-      return json.decode(res.body);
+      var res = await request.close();
+
+      print(res);
+      return json.decode(res);
     } else {
       return null;
     }
