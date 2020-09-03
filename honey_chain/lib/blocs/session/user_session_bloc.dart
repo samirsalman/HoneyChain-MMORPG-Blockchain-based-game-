@@ -24,7 +24,8 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   ) async* {
     if (event is StartApp) {
       prefs = await SharedPreferences.getInstance();
-      lastHost = prefs.getString("last");
+      lastHost = prefs.getString("lastHost");
+      print(lastHost);
       yield (Starting());
     }
 
