@@ -119,7 +119,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         if (cookie != null) {
           print(cookie);
           try {
-            var expiresDate = DateTime.now().add(Duration(minutes: 30));
+            var expiresDate = DateTime.now().add(Duration(seconds: 180));
             prefs.setString("expires", expiresDate.toIso8601String());
             prefs.setString("cookie", cookie);
           } catch (e) {
