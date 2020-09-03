@@ -83,7 +83,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       if (cookie == null) {
         return false;
       } else {
-        var expires = prefs.getString("expiresDate");
+        var expires = prefs.getString("expires");
 
         if (DateTime.parse(expires).isAfter(DateTime.now())) {
           return true;
