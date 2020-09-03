@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
         centerTitle: true,
         title: Text("Honey Chain"),
       ),
-      body: BlocListener(
+      body: BlocListener<UserSessionBloc, UserSessionState>(
         listener: (context, state) {
           if (state is Error) {
             Scaffold.of(context).showSnackBar(SnackBar(
