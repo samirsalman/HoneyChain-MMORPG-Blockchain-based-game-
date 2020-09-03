@@ -37,6 +37,11 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       }
     }
 
+    if (event is UpdateObjects) {
+      gameObjects = await getUserObjects();
+      yield (DataLoaded());
+    }
+
     if (event is Login) {
       try {
         user = await doLogin(event.email, event.password);

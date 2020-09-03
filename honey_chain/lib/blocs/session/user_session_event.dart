@@ -9,6 +9,8 @@ class LoadData extends UserSessionEvent {}
 
 class GetObjects extends UserSessionEvent {}
 
+class UpdateObjects extends UserSessionEvent {}
+
 class DataLoaded extends UserSessionEvent {}
 
 class Login extends UserSessionEvent {
