@@ -61,12 +61,12 @@ router.get("/loginCookie/success", (req, res, next) => {
 
   setTimeout(() => {
     try {
-      res.setHeader("Cookie", `login=${req.headers.cookie}`);
+      res.setHeader("Cookie", `${req.headers.cookie}`);
       res.setHeader("Content-Type", `application/json`);
 
-      console.log(`login=${req.headers.cookie}; expires`);
-      var cookie = req.headers.cookie;
-
+      console.log(`${req.headers.cookie}; expires`);
+      var cookie = req.headers.cookie.split("login=")[1];
+      console.log(cookie);
       console.log("select email from report_login WHERE cookie = '" + cookie);
 
       connection.query(
