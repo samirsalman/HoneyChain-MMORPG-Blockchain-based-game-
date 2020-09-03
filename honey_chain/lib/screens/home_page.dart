@@ -28,6 +28,12 @@ class _HomePageScreenState extends State<HomePageScreen> {
                   BlocProvider.of<UserSessionBloc>(context).add(Logout());
                 })
           ],
+          leading: IconButton(
+            icon: Icon(Icons.refresh),
+            onPressed: () {
+              BlocProvider.of<UserSessionBloc>(context).add(UpdateObjects());
+            },
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: index,
