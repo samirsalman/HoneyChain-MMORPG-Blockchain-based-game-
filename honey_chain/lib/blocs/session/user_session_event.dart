@@ -13,6 +13,12 @@ class UpdateObjects extends UserSessionEvent {}
 
 class DataLoaded extends UserSessionEvent {}
 
+class ErrorOccourred extends UserSessionEvent {
+  String error;
+
+  ErrorOccourred(this.error);
+}
+
 class Login extends UserSessionEvent {
   String email;
   String password;

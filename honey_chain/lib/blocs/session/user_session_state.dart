@@ -24,6 +24,20 @@ class Loading extends UserSessionState implements Equatable {
   bool get stringify => throw UnimplementedError();
 }
 
+class Error extends UserSessionState implements Equatable {
+  String error;
+
+  Error(this.error);
+
+  @override
+  // TODO: implement props
+  List<Object> get props => throw UnimplementedError();
+
+  @override
+  // TODO: implement stringify
+  bool get stringify => throw UnimplementedError();
+}
+
 class Ready extends UserSessionState implements Equatable {
   @override
   // TODO: implement props

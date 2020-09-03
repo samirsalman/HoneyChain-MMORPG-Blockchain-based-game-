@@ -26,6 +26,10 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       prefs = await SharedPreferences.getInstance();
     }
 
+    if (event is ErrorOccourred) {
+      yield (Error(event.error));
+    }
+
     if (event is LoadData) {
       var isCookieValid = await verifyCookie();
       if (isCookieValid) {
@@ -115,9 +119,11 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       prefs = await SharedPreferences.getInstance();
       var res = await http
           .get(
-            "$HOST/user/login?email=" + email + "&password=" + password,
-          )
-          .catchError((err) async {})
+        "$HOST/user/login?email=" + email + "&password=" + password,
+      )
+          .catchError((err) {
+        this.add(ErrorOccourred(err.toString()));
+      })
           // ignore: missing_return
           .timeout(Duration(seconds: 5), onTimeout: () async {});
 
@@ -130,17 +136,21 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
             prefs.setString("expires", expiresDate.toIso8601String());
             prefs.setString("cookie", cookie);
           } catch (e) {
+            this.add(ErrorOccourred(e.toString()));
+
             print(e);
           }
         }
         return json.decode(res.body.toString());
       } else {
+        this.add(ErrorOccourred("Utente non esistente"));
+
         print("No user");
         return null;
       }
     } catch (e) {
       print(e);
-      await Dio().post("$HOST/response/log", data: {"response": e});
+      this.add(ErrorOccourred(e.toString()));
     }
   }
 
