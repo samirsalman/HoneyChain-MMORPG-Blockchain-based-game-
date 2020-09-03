@@ -19,7 +19,7 @@ class LoginScreen extends StatelessWidget {
       body: BlocListener<UserSessionBloc, UserSessionState>(
         listener: (context, state) {
           if (state is Error) {
-            Scaffold.of(context).showSnackBar(SnackBar(
+            return Scaffold.of(context).showSnackBar(SnackBar(
               content: Text(
                 state.error,
                 style: TextStyle(color: Colors.white),
