@@ -62,7 +62,7 @@ class _MakeDonationScreenState extends State<MakeDonationScreen> {
                   ),
                 ),
               ),
-              BlocProvider.of<UserSessionBloc>(context).gameObjects.length == 0
+              BlocProvider.of<UserSessionBloc>(context).gameObjects.length != 0
                   ? ListView.builder(
                       physics: NeverScrollableScrollPhysics(),
                       itemBuilder: (context, index) {

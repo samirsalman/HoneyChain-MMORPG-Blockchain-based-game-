@@ -40,7 +40,7 @@ class GameObjectsScreen extends StatelessWidget {
                 ],
               ),
             ),
-            userSessionBloc.gameObjects.length == 0
+            userSessionBloc.gameObjects.length != 0
                 ? ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (context, index) {
@@ -87,7 +87,9 @@ class GameObjectsScreen extends StatelessWidget {
                     itemCount: userSessionBloc.gameObjects.length,
                     shrinkWrap: true,
                   )
-                : Text("Non hai nessun oggetto")
+                : Text(
+                    "Non hai nessun oggetto",
+                  )
           ],
         ),
       ),
