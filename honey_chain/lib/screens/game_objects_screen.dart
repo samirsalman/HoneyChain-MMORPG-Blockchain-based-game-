@@ -9,13 +9,13 @@ class GameObjectsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     userSessionBloc = BlocProvider.of<UserSessionBloc>(context);
-    return RefreshIndicator(
-      onRefresh: () async {
-        await Future.delayed(Duration(seconds: 2));
-        BlocProvider.of<UserSessionBloc>(context).add(UpdateObjects());
-        return Future.value(true);
-      },
-      child: SingleChildScrollView(
+    return SingleChildScrollView(
+      child: RefreshIndicator(
+        onRefresh: () async {
+          await Future.delayed(Duration(seconds: 2));
+          BlocProvider.of<UserSessionBloc>(context).add(UpdateObjects());
+          return Future.value(true);
+        },
         child: Column(
           children: <Widget>[
             Padding(
