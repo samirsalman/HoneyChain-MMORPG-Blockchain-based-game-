@@ -274,6 +274,8 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         .timeout(Duration(seconds: 5), onTimeout: () async {});
 
     if (res.statusCode != 500) {
+      totalPower -= gameObjects.where((element) => element["Key"] == id).first;
+
       return true;
     } else {
       return false;

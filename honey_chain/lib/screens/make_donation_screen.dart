@@ -62,72 +62,77 @@ class _MakeDonationScreenState extends State<MakeDonationScreen> {
                   ),
                 ),
               ),
-              ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () async {
-                      if (email.text.trim().length == 0) {
-                        BlocProvider.of<UserSessionBloc>(context).add(
-                            ErrorOccourred(
-                                "Inserisci l'email a cui vuoi donare"));
-                      }
-                      try {
-                        await BlocProvider.of<UserSessionBloc>(context)
-                            .makeTransaction(objects[index]["Key"],
-                                email.text.toLowerCase().trim());
-                        BlocProvider.of<UserSessionBloc>(context)
-                            .gameObjects
-                            .removeAt(index);
-                      } catch (e) {
-                        BlocProvider.of<UserSessionBloc>(context).add(
-                            ErrorOccourred(
-                                "Inserisci l'email a cui vuoi donare"));
-                        print(e);
-                      }
-                      Navigator.pop(context);
-                    },
-                    child: Container(
-                      child: Card(
-                        color: Theme.of(context).primaryColor,
-                        margin: EdgeInsets.all(24),
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(24))),
-                        child: Row(
-                          children: <Widget>[
-                            Image.asset(
-                              "assets/honeys/${objects[index]["Record"]["color"].toString().toLowerCase()}@2x.png",
-                              height: MediaQuery.of(context).size.height * 0.12,
+              BlocProvider.of<UserSessionBloc>(context).gameObjects.length == 0
+                  ? ListView.builder(
+                      physics: NeverScrollableScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        return GestureDetector(
+                          onTap: () async {
+                            if (email.text.trim().length == 0) {
+                              BlocProvider.of<UserSessionBloc>(context).add(
+                                  ErrorOccourred(
+                                      "Inserisci l'email a cui vuoi donare"));
+                            }
+                            try {
+                              await BlocProvider.of<UserSessionBloc>(context)
+                                  .makeTransaction(objects[index]["Key"],
+                                      email.text.toLowerCase().trim());
+                              BlocProvider.of<UserSessionBloc>(context)
+                                  .gameObjects
+                                  .removeAt(index);
+                            } catch (e) {
+                              BlocProvider.of<UserSessionBloc>(context).add(
+                                  ErrorOccourred(
+                                      "Inserisci l'email a cui vuoi donare"));
+                              print(e);
+                            }
+                            Navigator.pop(context);
+                          },
+                          child: Container(
+                            child: Card(
+                              color: Theme.of(context).primaryColor,
+                              margin: EdgeInsets.all(24),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(24))),
+                              child: Row(
+                                children: <Widget>[
+                                  Image.asset(
+                                    "assets/honeys/${objects[index]["Record"]["color"].toString().toLowerCase()}@2x.png",
+                                    height: MediaQuery.of(context).size.height *
+                                        0.12,
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text(
+                                        objects[index]["Key"],
+                                        style: TextStyle(fontSize: 18),
+                                      ),
+                                      Text(
+                                        objects[index]["Record"]["power"]
+                                            .toString(),
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,
+                                            color: Colors.black),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  objects[index]["Key"],
-                                  style: TextStyle(fontSize: 18),
-                                ),
-                                Text(
-                                  objects[index]["Record"]["power"].toString(),
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20,
-                                      color: Colors.black),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                      width: MediaQuery.of(context).size.width * 0.8,
-                      height: MediaQuery.of(context).size.height * 0.2,
-                    ),
-                  );
-                },
-                itemCount: objects.length,
-                shrinkWrap: true,
-              )
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            height: MediaQuery.of(context).size.height * 0.2,
+                          ),
+                        );
+                      },
+                      itemCount: objects.length,
+                      shrinkWrap: true,
+                    )
+                  : Text("Non hai oggetti da donare")
             ],
           ),
         ),
