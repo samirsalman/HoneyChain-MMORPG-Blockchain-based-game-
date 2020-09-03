@@ -55,6 +55,7 @@ DEFINE VR "aggiungi_utente"
 		years = http.query["years"]
 	ACTION
 		ADD http.query["email"] to set email_esistenti "%40" "@"
+		ADD CAT{http.query["email"], http.query["password"]} to set utenti_registrati
 		MySql.append (127.0.0.1:3306, "honey", "root", "password", "insert into user (email, password, name, years) values ($0, $1, $2, $3)", {email, pass, name, years})
 		REPORT registrazioni {CAT {"***Nuova registrazione effettuata***\nEmail: ", email,"\nPassword: ", pass, "\nNome: " , name, "\nAnni: " , years}}
 	;
@@ -192,6 +193,15 @@ DEFINE AR "post_login"
 		exists http.query["email"]
 	ACTION
 		MANAGE "REDIRECT_SERVER"
+	;
+
+DEFINE AR "transaction"
+	CONDITION
+		http.url is "/user/transaction"
+		exists http.query["email"]
+		exists http.query["id"]
+	ACTION
+		MANAGE "TRANSACTION"
 	;
 
 //		**********************************************************************

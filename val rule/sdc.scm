@@ -195,12 +195,28 @@
   (Show "Email non disponibile")
   (eis::Redirect (string-append "http://192.168.1.2:3000/response/registration/error?error=Email_non_disponibile"))
   )
+  
+         (defun Manage::COOKIE_ERROR(actionl pbuf)
+  (eis::GiveErrorHTTP401) =>
+  (Show "Cookie non valido")
+  (eis::Redirect (string-append "http://192.168.1.2:3000/response/login/error?error=Cookie_non_valido"))
+  )
+  
+          (defun Manage::TRANSACTION(actionl pbuf)
+  (eis::GiveErrorHTTP401) =>
+  (Show "Transazione")
+    (define mail (mtfa-eis-get-value-current-query pbuf "email"))
+	(define id (mtfa-eis-get-value-current-query pbuf "id"))
+  (eis::Redirect (string-append "http://192.168.1.2:3001/query/transaction?id=" id "&email=" mail))
+  )
 
 
 ;;Add HOOK
 (eis::function-pointer-add "LOGIN" Manage::LOGIN)
+(eis::function-pointer-add "TRANSACTION" Manage::TRANSACTION)
 (eis::function-pointer-add "LOGIN_ERROR_MAIL" Manage::LOGIN_ERROR_MAIL)
 (eis::function-pointer-add "REGISTRATION_ERROR_MAIL" Manage::REGISTRATION_ERROR_MAIL)
+(eis::function-pointer-add "COOKIE_ERROR" Manage::COOKIE_ERROR)
 (eis::function-pointer-add "LOGIN_SUCCESS" Manage::LOGIN_SUCCESS)
 (eis::function-pointer-add "COOKIE_LOG" Manage::COOKIE_LOG)
 (eis::function-pointer-add "SENDDATAREG" Manage::SENDDATAREG)
