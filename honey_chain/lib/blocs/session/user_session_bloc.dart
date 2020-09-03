@@ -155,15 +155,14 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       request.cookies.add(Cookie("login", cookie));
 
       var res = await request.close();
-      final contents = StringBuffer();
-
-      var body = await res.transform(utf8.decoder).listen((data) {
+      var bodyString = "";
+      await res.transform(utf8.decoder).listen((data) {
         print(data);
-        return data;
+        bodyString = data;
       }).asFuture();
 
-      print(body);
-      return body;
+      print(bodyString);
+      return json.decode(bodyString);
     } else {
       return null;
     }
