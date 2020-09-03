@@ -30,6 +30,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       var isCookieValid = await verifyCookie();
       if (isCookieValid) {
         user = await doLoginWithCookie();
+        gameObjects = await getUserObjects();
       }
       if (user == null) {
         yield (UnLogged());
@@ -40,7 +41,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
     if (event is UpdateObjects) {
       gameObjects = await getUserObjects();
-      yield (Ready());
+      yield (Logged());
     }
 
     if (event is Login) {
@@ -210,12 +211,11 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
       var jsonData = json.decode(res.body);
 
       for (var i = 0; i < jsonData.length; i++) {
-        /* if (item.owner == email) {
-          items.add(item);
+        if (jsonData[i]["Record"]["owner"] == email) {
+          items.add(jsonData[i]);
         }
 
-        */
-        items.add(jsonData[i]);
+        //items.add(jsonData[i]);
       }
       return items;
     } catch (e) {
