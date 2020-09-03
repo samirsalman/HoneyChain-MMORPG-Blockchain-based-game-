@@ -37,12 +37,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           },
           listenWhen: (previous, current) {
             if (previous is UnLogged && current is RegistrationSuccess) {
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
-                  ),
-                  (_) => false);
+              Navigator.pop(context);
             }
           },
           child: SingleChildScrollView(
