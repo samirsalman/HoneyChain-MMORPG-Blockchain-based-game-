@@ -23,94 +23,107 @@ class _RegisterScreenState extends State<RegisterScreen> {
           elevation: 0,
           centerTitle: true,
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Image.asset("./assets/logo.png"),
-              Container(
-                margin: EdgeInsets.all(16),
-                child: TextField(
-                  controller: email,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(24)),
-                        borderSide:
-                            BorderSide(width: 3, style: BorderStyle.solid)),
-                    labelText: "Email",
-                    prefixIcon: Icon(Icons.email),
+        body: BlocListener<UserSessionBloc, UserSessionState>(
+          listener: (context, state) {
+            if (state is Error) {
+              Scaffold.of(context).showSnackBar(SnackBar(
+                content: Text(
+                  state.error,
+                  style: TextStyle(color: Colors.white),
+                ),
+                backgroundColor: Colors.red,
+              ));
+            }
+          },
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Image.asset("./assets/logo.png"),
+                Container(
+                  margin: EdgeInsets.all(16),
+                  child: TextField(
+                    controller: email,
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(24)),
+                          borderSide:
+                              BorderSide(width: 3, style: BorderStyle.solid)),
+                      labelText: "Email",
+                      prefixIcon: Icon(Icons.email),
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                margin: EdgeInsets.all(16),
-                child: TextField(
-                  controller: password,
-                  keyboardType: TextInputType.text,
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(24)),
-                        borderSide:
-                            BorderSide(width: 3, style: BorderStyle.solid)),
-                    labelText: "Password",
-                    prefixIcon: Icon(Icons.lock),
+                Container(
+                  margin: EdgeInsets.all(16),
+                  child: TextField(
+                    controller: password,
+                    keyboardType: TextInputType.text,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(24)),
+                          borderSide:
+                              BorderSide(width: 3, style: BorderStyle.solid)),
+                      labelText: "Password",
+                      prefixIcon: Icon(Icons.lock),
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                margin: EdgeInsets.all(16),
-                child: TextField(
-                  controller: name,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(24)),
-                        borderSide:
-                            BorderSide(width: 3, style: BorderStyle.solid)),
-                    labelText: "Nome Giocatore",
-                    prefixIcon: Icon(Icons.person),
+                Container(
+                  margin: EdgeInsets.all(16),
+                  child: TextField(
+                    controller: name,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(24)),
+                          borderSide:
+                              BorderSide(width: 3, style: BorderStyle.solid)),
+                      labelText: "Nome Giocatore",
+                      prefixIcon: Icon(Icons.person),
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                margin: EdgeInsets.all(16),
-                child: TextField(
-                  controller: years,
-                  keyboardType: TextInputType.number,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(24)),
-                        borderSide:
-                            BorderSide(width: 3, style: BorderStyle.solid)),
-                    labelText: "Età",
-                    prefixIcon: Icon(Icons.plus_one),
+                Container(
+                  margin: EdgeInsets.all(16),
+                  child: TextField(
+                    controller: years,
+                    keyboardType: TextInputType.number,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(24)),
+                          borderSide:
+                              BorderSide(width: 3, style: BorderStyle.solid)),
+                      labelText: "Età",
+                      prefixIcon: Icon(Icons.plus_one),
+                    ),
                   ),
                 ),
-              ),
-              Container(
-                height: 55,
-                margin: EdgeInsets.only(bottom: 24, top: 24),
-                child: RaisedButton(
-                  onPressed: () async {
-                    await BlocProvider.of<UserSessionBloc>(context).add(
-                        Register(email.text.trim(), password.text.trim(),
-                            name.text.trim(), years.text.trim()));
+                Container(
+                  height: 55,
+                  margin: EdgeInsets.only(bottom: 24, top: 24),
+                  child: RaisedButton(
+                    onPressed: () async {
+                      await BlocProvider.of<UserSessionBloc>(context).add(
+                          Register(email.text.trim(), password.text.trim(),
+                              name.text.trim(), years.text.trim()));
 
-                    Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
-                        ),
-                        null);
-                  },
-                  child: Text("Registrati"),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(24))),
-                  color: Theme.of(context).primaryColor,
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ),
+                          null);
+                    },
+                    child: Text("Registrati"),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(24))),
+                    color: Theme.of(context).primaryColor,
+                  ),
+                  width: MediaQuery.of(context).size.width * 0.8,
                 ),
-                width: MediaQuery.of(context).size.width * 0.8,
-              ),
-            ],
+              ],
+            ),
           ),
         ));
   }

@@ -112,7 +112,7 @@ router.get("/login/error", (req, res, next) => {
   }
   console.log(res.getHeaders());
   res.status(404).send({
-    error: "Utente non trovato", //req.query.error,
+    error: "Email o Password sbagliata", //req.query.error,
   });
 });
 
@@ -133,7 +133,9 @@ router.get("/registration/error", (req, res, next) => {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  res.sendStatus(500);
+  res.status(503).send({
+    error: req.query.error.replace("_", " "),
+  });
 });
 
 router.post("/log", (req, res, next) => {

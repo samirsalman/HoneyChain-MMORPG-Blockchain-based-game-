@@ -196,6 +196,26 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   }
 
   Future<bool> registerUser(email, password, name, date) async {
+    if (email.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserire un indirizzo email"));
+      return null;
+    }
+
+    if (password.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserire una password"));
+      return null;
+    }
+
+    if (name.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserire un nome"));
+      return null;
+    }
+
+    if (date.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserire l'età"));
+      return null;
+    }
+
     var res = await http
         .get(
           "$HOST/user/register?email=${email.toString().trim()}&password=${password.toString().trim()}&name=$name&years=$date",
@@ -203,10 +223,11 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         .timeout(Duration(seconds: 5), onTimeout: () async {});
 
     print(res.headers);
-    if (res.statusCode != 500) {
+    if (res.statusCode == 200) {
       print(res.body);
       return true;
     } else {
+      this.add(ErrorOccourred(json.decode(res.body)["error"]));
       return false;
     }
   }
