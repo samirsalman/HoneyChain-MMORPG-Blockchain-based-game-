@@ -62,7 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
           return HomePageScreen();
         }
 
-        if (state is UnLogged || state is Error) {
+        if (state is UnLogged ||
+            state is Error ||
+            state is RegistrationSuccess) {
           return LoginScreen();
         }
 

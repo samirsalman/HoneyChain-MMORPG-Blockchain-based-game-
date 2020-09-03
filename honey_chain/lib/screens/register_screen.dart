@@ -35,6 +35,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ));
             }
           },
+          listenWhen: (previous, current) {
+            if (previous is UnLogged && current is RegistrationSuccess) {
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginScreen(),
+                  ),
+                  null);
+            }
+          },
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
@@ -103,17 +113,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: 55,
                   margin: EdgeInsets.only(bottom: 24, top: 24),
                   child: RaisedButton(
-                    onPressed: () async {
-                      await BlocProvider.of<UserSessionBloc>(context).add(
-                          Register(email.text.trim(), password.text.trim(),
-                              name.text.trim(), years.text.trim()));
-
-                      Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => LoginScreen(),
-                          ),
-                          null);
+                    onPressed: () {
+                      BlocProvider.of<UserSessionBloc>(context).add(Register(
+                          email.text.trim(),
+                          password.text.trim(),
+                          name.text.trim(),
+                          years.text.trim()));
                     },
                     child: Text("Registrati"),
                     shape: RoundedRectangleBorder(

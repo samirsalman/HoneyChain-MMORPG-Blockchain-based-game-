@@ -77,7 +77,11 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
     if (event is Register) {
       try {
-        await registerUser(event.email, event.password, event.name, event.date);
+        var response = await registerUser(
+            event.email, event.password, event.name, event.date);
+        if (response) {
+          yield (RegistrationSuccess());
+        }
       } catch (e) {
         print(e);
       }
