@@ -30,7 +30,6 @@ class Register extends UserSessionEvent {
   String password;
   String name;
   String date;
-
   Register(this.email, this.password, this.name, this.date);
 }
 
