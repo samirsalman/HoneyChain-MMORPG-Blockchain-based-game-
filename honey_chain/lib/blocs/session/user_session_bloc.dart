@@ -89,7 +89,6 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
     if (event is GetObjects) {
       gameObjects = await getUserObjects();
-
       yield (Logged());
     }
   }
@@ -195,10 +194,10 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
   }
 
   Future<String> doLogout() async {
-    var res = await Dio().get("$HOST/user/login/logout");
-    print(res.data);
+    var res = await http.get("$HOST/user/login/logout");
+    print(res.body);
     await prefs.clear();
-    return res.data;
+    return res.body;
   }
 
   Future doLog() async {
