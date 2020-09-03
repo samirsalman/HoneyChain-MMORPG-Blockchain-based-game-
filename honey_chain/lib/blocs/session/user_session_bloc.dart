@@ -115,41 +115,46 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
     // use the client, eg.:
     // new MyServiceClient(client)
 
-    try {
-      prefs = await SharedPreferences.getInstance();
-      var res = await http
-          .get(
-        "$HOST/user/login?email=" + email + "&password=" + password,
-      )
-          .catchError((err) {
-        this.add(ErrorOccourred(err.toString()));
-      })
-          // ignore: missing_return
-          .timeout(Duration(seconds: 5), onTimeout: () async {});
+    if (email.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserire un indirizzo email"));
+      return null;
+    }
+    if (password.toString().trim().length == 0) {
+      this.add(ErrorOccourred("Inserire una password"));
+      return null;
+    }
 
-      var cookie = res.headers["cookie"].split("login=")[1];
-      if (res.statusCode != 500) {
-        if (cookie != null) {
-          print(cookie);
-          try {
-            var expiresDate = DateTime.now().add(Duration(seconds: 180));
-            prefs.setString("expires", expiresDate.toIso8601String());
-            prefs.setString("cookie", cookie);
-          } catch (e) {
-            this.add(ErrorOccourred(e.toString()));
+    prefs = await SharedPreferences.getInstance();
+    var res = await http
+        .get(
+      "$HOST/user/login?email=" + email + "&password=" + password,
+    )
+        .catchError((err) {
+      this.add(ErrorOccourred(err.toString()));
+    })
+        // ignore: missing_return
+        .timeout(Duration(seconds: 5), onTimeout: () async {});
 
-            print(e);
-          }
+    var cookie = res.headers["cookie"];
+    if (res.statusCode == 200) {
+      if (cookie != null) {
+        cookie = cookie.split("login=")[1];
+        print(cookie);
+        try {
+          var expiresDate = DateTime.now().add(Duration(seconds: 180));
+          prefs.setString("expires", expiresDate.toIso8601String());
+          prefs.setString("cookie", cookie);
+        } catch (e) {
+          this.add(ErrorOccourred(e.toString()));
+
+          print(e);
         }
-        return json.decode(res.body.toString());
-      } else {
-        this.add(ErrorOccourred("Utente non esistente"));
-        print("No user");
-        return null;
       }
-    } catch (e) {
-      print(e);
-      this.add(ErrorOccourred(e.toString()));
+      return json.decode(res.body.toString());
+    } else {
+      this.add(ErrorOccourred(json.decode(res.body)["error"]));
+      print("No user");
+      return null;
     }
   }
 
