@@ -148,9 +148,8 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
         DateTime.now().isBefore(DateTime.parse(expiresDate))) {
       var cookie = prefs.getString("cookie");
 
-      var res = await http.get("$HOST/user/login", headers: {
-        "set-cookie": "login=$cookie",
-      });
+      var res = await http.get("$HOST/user/login",
+          headers: {"set-cookie": "login=$cookie", "Connection": "keep-alive"});
 
       print(res.body);
       return json.decode(res.body);
