@@ -42,7 +42,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   MaterialPageRoute(
                     builder: (context) => LoginScreen(),
                   ),
-                  null);
+                  (_) => false);
             }
           },
           child: SingleChildScrollView(
