@@ -107,13 +107,12 @@ router.get("/loginCookie/success", (req, res, next) => {
 });
 
 router.get("/login/error", (req, res, next) => {
-  res.statusCode = 500;
   if (req.headers.cookie !== undefined) {
     res.setHeader("Cookie", req.headers.cookie);
   }
   console.log(res.getHeaders());
-  res.status(503).send({
-    error: req.query.error,
+  res.status(404).send({
+    error: "Utente non trovato", //req.query.error,
   });
 });
 
