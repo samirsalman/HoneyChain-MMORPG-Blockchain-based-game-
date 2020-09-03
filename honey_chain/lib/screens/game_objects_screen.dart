@@ -4,14 +4,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:honeychain/blocs/session/bloc.dart';
 
 class GameObjectsScreen extends StatelessWidget {
-  var objects = List();
+  UserSessionBloc userSessionBloc;
 
   @override
   Widget build(BuildContext context) {
-    objects = BlocProvider.of<UserSessionBloc>(context).gameObjects;
-
+    userSessionBloc = BlocProvider.of<UserSessionBloc>(context);
     return RefreshIndicator(
-      onRefresh: () {
+      onRefresh: () async {
+        await Future.delayed(Duration(seconds: 2));
         BlocProvider.of<UserSessionBloc>(context).add(UpdateObjects());
         return Future.value(true);
       },
@@ -52,7 +52,7 @@ class GameObjectsScreen extends StatelessWidget {
                     child: Row(
                       children: <Widget>[
                         Image.asset(
-                          "assets/honeys/${objects[index]["Record"]["color"].toString().toLowerCase()}@2x.png",
+                          "assets/honeys/${userSessionBloc.gameObjects[index]["Record"]["color"].toString().toLowerCase()}@2x.png",
                           height: MediaQuery.of(context).size.height * 0.12,
                         ),
                         Column(
@@ -60,11 +60,13 @@ class GameObjectsScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              objects[index]["Key"],
+                              userSessionBloc.gameObjects[index]["Key"],
                               style: TextStyle(fontSize: 18),
                             ),
                             Text(
-                              objects[index]["Record"]["power"].toString(),
+                              userSessionBloc.gameObjects[index]["Record"]
+                                      ["power"]
+                                  .toString(),
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -79,7 +81,7 @@ class GameObjectsScreen extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.2,
                 );
               },
-              itemCount: objects.length,
+              itemCount: userSessionBloc.gameObjects.length,
               shrinkWrap: true,
             )
           ],
