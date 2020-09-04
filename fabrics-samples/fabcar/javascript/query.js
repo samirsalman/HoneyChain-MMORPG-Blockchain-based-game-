@@ -134,7 +134,7 @@ async function changeOwner(email, id) {
   }
 }
 
-async function getHistory(id) {
+async function getHistory(id, email) {
   try {
     // load the network configuration
     const ccpPath = path.resolve(
@@ -202,7 +202,7 @@ router.get("/transaction", (req, res, next) => {
 });
 
 router.get("/history", (req, res, next) => {
-  getHistory(req.query.id)
+  getHistory(req.query.id, req.query.email)
     .then((res) => {
       res.send(res);
     })
