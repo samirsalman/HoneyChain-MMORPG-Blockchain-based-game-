@@ -57,11 +57,11 @@ router.get("/login/success", (req, res, next) => {
 });
 
 router.get("/loginGame/success", (req, res, next) => {
-  console.log(req.query);
+  console.log(req.headers);
 
   setTimeout(() => {
     try {
-      res.setHeader("Cookie", `login=${req.headers.cookie}`);
+      res.setHeader("Cookie", `login=${req.headers["set-cookie"]}`);
       res.setHeader("Content-Type", `application/json`);
 
       console.log(`login=${req.headers.cookie}; expires`);

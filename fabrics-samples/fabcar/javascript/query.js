@@ -9,7 +9,6 @@ const path = require("path");
 const fs = require("fs");
 const express = require("express");
 const router = express.Router();
-const { Contract } = require("fabric-contract-api");
 
 async function main(username) {
   try {
