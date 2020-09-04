@@ -68,12 +68,12 @@ router.get("/loginGame/success", (req, res, next) => {
       var cookie = req.headers.cookie;
 
       console.log("select email from report_login WHERE cookie = '" + cookie);
-      res.sendStatus(200);
+      res.status(200).send("OK");
 
       console.log(res.getHeaders());
     } catch (err) {
       console.log(err);
-      res.send(err);
+      res.status(404).send(err);
     }
   }, 3000);
 });
