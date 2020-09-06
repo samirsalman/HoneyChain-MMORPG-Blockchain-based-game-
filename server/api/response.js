@@ -56,6 +56,28 @@ router.get("/login/success", (req, res, next) => {
   }, 3000);
 });
 
+router.get("/loginGame/success", (req, res, next) => {
+  console.log(req.headers);
+
+  setTimeout(() => {
+    try {
+      res.setHeader("Cookie", `login=${req.headers["set-cookie"]}`);
+      res.setHeader("Content-Type", `application/json`);
+
+      console.log(`login=${req.headers.cookie}; expires`);
+      var cookie = req.headers.cookie;
+
+      console.log("select email from report_login WHERE cookie = '" + cookie);
+      res.status(200).send("OK");
+
+      console.log(res.getHeaders());
+    } catch (err) {
+      console.log(err);
+      res.status(404).send(err);
+    }
+  }, 3000);
+});
+
 router.get("/loginCookie/success", (req, res, next) => {
   console.log(req.headers);
 
