@@ -5,53 +5,28 @@ class FabHoney extends Contract {
     console.info("============= START : Initialize Ledger ===========");
     const gameObjects = [
       {
-        color: "purple",
+        color: "Yellow",
         owner: "admin",
         power: 200,
-        level: 2,
         id: 0,
       },
       {
-        color: "red",
+        color: "Red",
         owner: "admin",
-        power: 154,
-        level: 1,
+        power: 150,
         id: 1,
       },
       {
-        color: "green",
+        color: "Violet",
         owner: "admin",
-        power: 400,
-        level: 1,
+        power: 50,
         id: 2,
       },
       {
-        color: "yellow",
+        color: "Green",
         owner: "admin",
-        power: 400,
-        level: 3,
+        power: 50,
         id: 3,
-      },
-      {
-        color: "pink",
-        owner: "admin",
-        power: 210,
-        level: 2,
-        id: 4,
-      },
-      {
-        color: "blue",
-        owner: "admin",
-        power: 80,
-        level: 2,
-        id: 5,
-      },
-      {
-        color: "gold",
-        owner: "admin",
-        power: 1000,
-        level: 3,
-        id: 6,
       },
     ];
 
@@ -83,7 +58,6 @@ class FabHoney extends Contract {
       docType: "honey",
       owner,
       power,
-      level,
       id,
     };
 
