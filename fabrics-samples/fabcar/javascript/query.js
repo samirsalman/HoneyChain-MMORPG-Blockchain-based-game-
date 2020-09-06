@@ -206,7 +206,7 @@ router.get("/history", (req, res, next) => {
     .then((response) => {
       response = JSON.parse(response);
       response.map(
-        (el) => (el.data = JSON.parse(el.data.replace(/^\uFEFF/, "")))
+        (el) => (el.data = JSON.parse(el.data.replace(/^\uFEFF/, "").trim()))
       );
       res.send(JSON.parse(response));
     })
