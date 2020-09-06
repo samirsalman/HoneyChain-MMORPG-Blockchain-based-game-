@@ -111,9 +111,9 @@ class FabHoney extends Contract {
         txid: keyMod.tx_id,
       };
       if (keyMod.is_delete) {
-        resp.data = "KEY DELETED";
+        resp.data = { error: "KEY DELETED" };
       } else {
-        resp.data = keyMod.value.toString("utf8");
+        resp.data = JSON.parse(keyMod.value.toString("utf8"));
       }
       results.push(resp);
     }
