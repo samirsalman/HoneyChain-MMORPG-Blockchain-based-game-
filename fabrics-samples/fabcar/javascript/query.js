@@ -204,6 +204,7 @@ router.get("/transaction", (req, res, next) => {
 router.get("/history", (req, res, next) => {
   getHistory(req.query.id, req.query.email)
     .then((response) => {
+      response = JSON.parse(response);
       response.map(
         (el) => (el.data = JSON.parse(el.data.replace(/^\uFEFF/, "")))
       );
