@@ -58,8 +58,9 @@ class _HistoryScreenState extends State<HistoryScreen> {
                             style: TextStyle(fontSize: 18),
                           ),
                           subtitle: Text(
-                            DateTime.fromMillisecondsSinceEpoch(state
-                                    .history[index]["timestamp"]["seconds"])
+                            DateTime.fromMillisecondsSinceEpoch(
+                                    state.history[index]["timestamp"]["seconds"]
+                                        ["low"])
                                 .toIso8601String(),
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
