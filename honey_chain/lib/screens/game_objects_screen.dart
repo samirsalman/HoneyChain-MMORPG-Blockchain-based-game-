@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:honeychain/blocs/session/bloc.dart';
+import 'package:honeychain/screens/history_screen.dart';
 
 class GameObjectsScreen extends StatelessWidget {
   UserSessionBloc userSessionBloc;
@@ -44,8 +45,18 @@ class GameObjectsScreen extends StatelessWidget {
                 ? ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (context, index) {
-                      return Container(
-                        child: Card(
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HistoryScreen(
+                                    userSessionBloc.gameObjects
+                                        .elementAt(index)),
+                              ));
+                        },
+                        child: Container(
+                            child: Card(
                           color: Theme.of(context).primaryColor,
                           margin: EdgeInsets.all(24),
                           shape: RoundedRectangleBorder(
@@ -79,7 +90,7 @@ class GameObjectsScreen extends StatelessWidget {
                               )
                             ],
                           ),
-                        ),
+                        )),
                         width: MediaQuery.of(context).size.width * 0.8,
                         height: MediaQuery.of(context).size.height * 0.2,
                       );
