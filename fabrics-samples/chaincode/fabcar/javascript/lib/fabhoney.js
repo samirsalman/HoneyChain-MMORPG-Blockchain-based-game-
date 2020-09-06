@@ -113,7 +113,7 @@ class FabHoney extends Contract {
       if (keyMod.is_delete) {
         resp.data = { error: "KEY DELETED" };
       } else {
-        resp.data = JSON.parse(keyMod.value.toString("utf8"));
+        resp.data = keyMod.value;
       }
       results.push(resp);
     }
