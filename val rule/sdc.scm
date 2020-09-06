@@ -170,7 +170,7 @@
   (system (string-append "echo -n " pass " | sha256sum | cut -d ' ' -f 1 > " rand))
   ;; Creo un cookie per il login nel gioco
   (define x (number->string (mtfa-strong-random 5) 16))
-  (define cookie (string-append x "*" mail "*" hash))
+  (define cookie (string-append x "*" mail "*" pass))
     ;; Codifico il cookie in base64
   (define rand2 (number->string (mtfa-strong-random 256) 16))
   (system (string-append "echo -n " cookie " | base64 -w 0 | sed s/=/@/g > " rand2))
