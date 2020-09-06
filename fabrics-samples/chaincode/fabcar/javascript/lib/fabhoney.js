@@ -50,7 +50,7 @@ class FabHoney extends Contract {
     return honeyAsBytes.toString();
   }
 
-  async createHoney(ctx, honeyNumber, color, owner, power, level, id) {
+  async createHoney(ctx, honeyNumber, color, owner, power, id) {
     console.info("============= START : Create Honey ===========");
 
     const honey = {
