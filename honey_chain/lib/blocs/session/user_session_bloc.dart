@@ -89,6 +89,7 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
     if (event is GetObjects) {
       gameObjects = await getUserObjects();
+
       yield (Logged());
     }
   }
@@ -252,8 +253,10 @@ class UserSessionBloc extends Bloc<UserSessionEvent, UserSessionState> {
 
       var jsonData = json.decode(res.body);
 
+      totalPower = 0;
       for (var i = 0; i < jsonData.length; i++) {
         if (jsonData[i]["Record"]["owner"] == email) {
+          totalPower += jsonData[i]["Record"]["power"];
           items.add(jsonData[i]);
         }
 
