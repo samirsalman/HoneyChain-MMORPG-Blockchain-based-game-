@@ -26,7 +26,7 @@ class HistoryBloc extends Bloc<HistoryEvent, HistoryState> {
     }
   }
 
-  Future<List<Map<String, dynamic>>> getHistory(id, host, email) async {
+  Future<List<dynamic>> getHistory(id, host, email) async {
     try {
       var res = await http.get("$host/history?id=$id&email=$email");
 
