@@ -7,7 +7,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Net.Http.Headers;
 
-public class ContinueButton : MonoBehaviour {
+public class ContinueButton : MonoBehaviour
+{
 
 
     [SerializeField] InputField emailField;
@@ -15,15 +16,17 @@ public class ContinueButton : MonoBehaviour {
 
 
     string emailForDatabase = "";
-	// Use this for initialization
+    // Use this for initialization
 
 
-    string getEmail() {
+    string getEmail()
+    {
         return emailForDatabase;
     }
 
-	void Start () {
-        
+    void Start()
+    {
+
         StartCoroutine(SendPost());
 
     }
@@ -56,10 +59,11 @@ public class ContinueButton : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
-    
+    void Update()
+    {
+
+    }
+
 
     void OnButtonClick()
     {
@@ -70,10 +74,12 @@ public class ContinueButton : MonoBehaviour {
         FindObjectOfType<GameSession>().setEmail(emailText);
 
         //solo per fare prove
-        if (emailText == "prova") {
+        if (emailText == "prova")
+        {
             SceneManager.LoadScene(1);
         }
-        else {
+        else
+        {
 
 
             //fare una chiamata alla validation authoruty per convalidare
@@ -86,9 +92,9 @@ public class ContinueButton : MonoBehaviour {
 
     }
 
-    string url = "http://localhost:8888/user/login";
+    string url = "http://localhost:8888/user/loginGame";
 
-    IEnumerator SendPost(string email,string password)
+    IEnumerator SendPost(string email, string password)
     {
 
 
@@ -99,7 +105,7 @@ public class ContinueButton : MonoBehaviour {
         UnityWebRequest www = UnityWebRequest.Post(url, form);
         yield return www.SendWebRequest();
 
-       
+
 
         if (www.isNetworkError || www.isHttpError)
         {
@@ -108,15 +114,15 @@ public class ContinueButton : MonoBehaviour {
         else
         {
             Debug.Log(www.downloadHandler.text.ToString());
-            if (www.downloadHandler.text == "Login effettuato con successo")
+            if (www.downloadHandler.text == "OK")
             {
 
                 Debug.Log("Form upload complete!");
 
                 SceneManager.LoadScene(1);
             }
-            
-           
+
+
         }
     }
 }

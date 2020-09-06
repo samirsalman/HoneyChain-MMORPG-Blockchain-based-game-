@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 
-public class CoinPickup : MonoBehaviour {
+public class CoinPickup : MonoBehaviour
+{
 
     [SerializeField] AudioClip coinPickUpSFX;
     [SerializeField] int pointsForCoinPickup = 50;
@@ -18,14 +19,16 @@ public class CoinPickup : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.GetType() == typeof(CapsuleCollider2D)) {
+        if (collision.GetType() == typeof(CapsuleCollider2D))
+        {
 
             FindObjectOfType<GameSession>().AddToScore(pointsForCoinPickup);
             AudioSource.PlayClipAtPoint(coinPickUpSFX, Camera.main.transform.position);
 
         }
 
-        if (isUniqueObject){
+        if (isUniqueObject)
+        {
 
 
             emailToSend = FindObjectOfType<GameSession>().getEmail();
@@ -43,26 +46,30 @@ public class CoinPickup : MonoBehaviour {
 
 
 
-    IEnumerator ChangeOwnerOnBlockchain() {
+    IEnumerator ChangeOwnerOnBlockchain()
+    {
 
 
         WWWForm form = new WWWForm();
 
-        UnityWebRequest www = UnityWebRequest.Post(url, form);
+        UnityWebRequest www = UnityWebRequest.Get(url);
         yield return www.SendWebRequest();
 
 
 
-        if (www.isNetworkError || www.isHttpError) {
+        if (www.isNetworkError || www.isHttpError)
+        {
             Debug.Log(www.error);
         }
-        else {
+        else
+        {
             Debug.Log(www.downloadHandler.text.ToString());
-            if (www.downloadHandler.text == "Login effettuato con successo") {
+            if (www.downloadHandler.text == "Login effettuato con successo")
+            {
 
                 Debug.Log("Change Owner Complete complete!");
 
-               
+
             }
 
 

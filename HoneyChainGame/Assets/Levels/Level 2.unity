@@ -14532,7 +14532,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1398386471437734, guid: 4e4943478dbbc6c4a88489c30c0a8e5f, type: 3}
       propertyPath: m_Name
-      value: HoneyViolet
+      value: HONEY2
       objectReference: {fileID: 0}
     - target: {fileID: 4076405157003322, guid: 4e4943478dbbc6c4a88489c30c0a8e5f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20807,7 +20807,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1264445822210160, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1479269227630422, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_Name
@@ -20815,7 +20815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1958590112760752, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4026490980037816, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20843,11 +20843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4890794719571966, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.029991
+      value: 4.3014755
       objectReference: {fileID: 0}
     - target: {fileID: 4890794719571966, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.21
+      value: -0.26384252
       objectReference: {fileID: 0}
     - target: {fileID: 4890794719571966, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20904,7 +20904,7 @@ PrefabInstance:
     - target: {fileID: 20116003374553108, guid: 726cc15c5c0b3864485c5a28aa9fe65f,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114110329142666060, guid: 726cc15c5c0b3864485c5a28aa9fe65f,
         type: 3}
@@ -21115,7 +21115,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1398386471437734, guid: 4e4943478dbbc6c4a88489c30c0a8e5f, type: 3}
       propertyPath: m_Name
-      value: HoneyGreen
+      value: HONEY3
       objectReference: {fileID: 0}
     - target: {fileID: 4076405157003322, guid: 4e4943478dbbc6c4a88489c30c0a8e5f, type: 3}
       propertyPath: m_LocalPosition.x

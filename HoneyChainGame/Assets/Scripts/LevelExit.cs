@@ -90,6 +90,7 @@ public class LevelExit : MonoBehaviour {
             // if(responde == level 1){
             //loadl level 1
             //else{ load login page)
+            SceneManager.LoadScene(0);
 
             
         }

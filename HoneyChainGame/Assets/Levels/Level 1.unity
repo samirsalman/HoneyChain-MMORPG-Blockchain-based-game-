@@ -4293,7 +4293,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1264445822210160, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1479269227630422, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_Name
@@ -4301,7 +4301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1958590112760752, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4026490980037816, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4325,11 +4325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4890794719571966, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.588684
+      value: -1.6554794
       objectReference: {fileID: 0}
     - target: {fileID: 4890794719571966, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5356145
+      value: -1.5327384
       objectReference: {fileID: 0}
     - target: {fileID: 4890794719571966, guid: 726cc15c5c0b3864485c5a28aa9fe65f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4386,7 +4386,7 @@ PrefabInstance:
     - target: {fileID: 20116003374553108, guid: 726cc15c5c0b3864485c5a28aa9fe65f,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114110329142666060, guid: 726cc15c5c0b3864485c5a28aa9fe65f,
         type: 3}
@@ -4696,7 +4696,7 @@ PrefabInstance:
     - target: {fileID: 943268249133984023, guid: 312eb975621476045a71f970f6a4440d,
         type: 3}
       propertyPath: m_Name
-      value: HoneyRed
+      value: HONEY1
       objectReference: {fileID: 0}
     - target: {fileID: 1053267333288349173, guid: 312eb975621476045a71f970f6a4440d,
         type: 3}
@@ -10465,7 +10465,7 @@ PrefabInstance:
     - target: {fileID: 943268249133984023, guid: 312eb975621476045a71f970f6a4440d,
         type: 3}
       propertyPath: m_Name
-      value: HoneyYellow
+      value: HONEY0
       objectReference: {fileID: 0}
     - target: {fileID: 1053267333288349173, guid: 312eb975621476045a71f970f6a4440d,
         type: 3}
