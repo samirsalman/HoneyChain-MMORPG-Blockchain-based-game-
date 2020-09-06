@@ -145,8 +145,6 @@
   ;;Prendo i valori dalla richiesta GET
   (define mail (mtfa-eis-get-value-current-query pbuf "email"))
   (define pass (mtfa-eis-get-value-current-query pbuf "password"))
-  (define rand (number->string (mtfa-strong-random 256) 16))
-  (system (string-append "echo -n " pass " | sha256sum | cut -d ' ' -f 1 > " rand))
   ;; Creo un cookie per il login
   (define x (number->string (mtfa-strong-random 5) 16))
   (define cookie (string-append x "*" mail "*" pass))
@@ -166,8 +164,6 @@
   ;;Prendo i valori dalla richiesta GET
   (define mail (mtfa-eis-get-value-current-query pbuf "email"))
   (define pass (mtfa-eis-get-value-current-query pbuf "password"))
-  (define rand (number->string (mtfa-strong-random 256) 16))
-  (system (string-append "echo -n " pass " | sha256sum | cut -d ' ' -f 1 > " rand))
   ;; Creo un cookie per il login nel gioco
   (define x (number->string (mtfa-strong-random 5) 16))
   (define cookie (string-append x "*" mail "*" pass))
