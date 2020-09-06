@@ -203,8 +203,8 @@ router.get("/transaction", (req, res, next) => {
 
 router.get("/history", (req, res, next) => {
   getHistory(req.query.id, req.query.email)
-    .then((res) => {
-      res.send(res);
+    .then((response) => {
+      res.send(response);
     })
     .catch((err) => res.status(500).send(err));
 });
