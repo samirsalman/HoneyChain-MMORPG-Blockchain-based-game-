@@ -71,7 +71,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                           width: MediaQuery.of(context).size.width * 0.8,
                           height: MediaQuery.of(context).size.height * 0.2,
                         )
-                      : index < state.history.length
+                      : index < state.history.length - 1
                           ? Container(
                               child: Card(
                                 margin: EdgeInsets.all(24),
@@ -81,17 +81,18 @@ class _HistoryScreenState extends State<HistoryScreen> {
                                 child: ListTile(
                                     leading: Icon(Icons.compare_arrows),
                                     title: Text(
-                                      "From ${state.history[index]["data"]["owner"]} to ${state.history[index + 1]["data"]["owner"]}",
+                                      "Da ${state.history[index]["data"]["owner"]} a ${state.history[index + 1]["data"]["owner"]}",
                                       style: TextStyle(fontSize: 18),
                                     ),
                                     subtitle: Text(
                                       DateTime.fromMillisecondsSinceEpoch(
                                               state.history[index]["timestamp"]
-                                                  ["seconds"]["low"])
+                                                      ["seconds"]["low"] *
+                                                  1000)
                                           .toIso8601String(),
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 20,
+                                          fontSize: 16,
                                           color: Colors.grey),
                                     )),
                               ),
