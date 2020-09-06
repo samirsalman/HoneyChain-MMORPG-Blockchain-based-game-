@@ -39,6 +39,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
       ),
       body: BlocBuilder(
         cubit: historyBloc,
+        // ignore: missing_return
         builder: (context, state) {
           if (state is HistoryLoaded) {
             return ListView.builder(
