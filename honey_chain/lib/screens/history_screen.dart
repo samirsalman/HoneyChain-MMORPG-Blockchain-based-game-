@@ -42,7 +42,9 @@ class _HistoryScreenState extends State<HistoryScreen> {
             }
 
             if(state is HistoryError){
-
+              return Center(child: Column(crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center,children: <Widget>[
+                Icon(Icons.warning,color: Colors.red,size: MediaQuery.of(context).size.,)
+              ],),);
             }
           },
         ),
