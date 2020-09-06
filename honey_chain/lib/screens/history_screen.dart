@@ -44,33 +44,61 @@ class _HistoryScreenState extends State<HistoryScreen> {
           if (state is HistoryLoaded) {
             return ListView.builder(
                 itemBuilder: (context, index) {
-                  return Container(
-                    child: Card(
-                      margin: EdgeInsets.all(24),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(24))),
-                      child: ListTile(
-                          leading: Icon(Icons.compare_arrows),
-                          title: Text(
-                            state.history.length > 1
-                                ? "From ${state.history[index]["data"]["owner"]} to ${state.history[index + 1]["data"]["owner"]}"
-                                : "Object is of ${state.history[index]["data"]["owner"]}, only one owner from his creation",
-                            style: TextStyle(fontSize: 18),
+                  return state.history.length < 2
+                      ? Container(
+                          child: Card(
+                            margin: EdgeInsets.all(24),
+                            shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(24))),
+                            child: ListTile(
+                                leading: Icon(Icons.compare_arrows),
+                                title: Text(
+                                  "Object is of ${state.history[index]["data"]["owner"]}, only one owner from his creation",
+                                  style: TextStyle(fontSize: 18),
+                                ),
+                                subtitle: Text(
+                                  DateTime.fromMillisecondsSinceEpoch(
+                                          state.history[index]["timestamp"]
+                                              ["seconds"]["low"])
+                                      .toIso8601String(),
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                      color: Colors.grey),
+                                )),
                           ),
-                          subtitle: Text(
-                            DateTime.fromMillisecondsSinceEpoch(
-                                    state.history[index]["timestamp"]["seconds"]
-                                        ["low"])
-                                .toIso8601String(),
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Colors.grey),
-                          )),
-                    ),
-                    width: MediaQuery.of(context).size.width * 0.8,
-                    height: MediaQuery.of(context).size.height * 0.2,
-                  );
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: MediaQuery.of(context).size.height * 0.2,
+                        )
+                      : index < state.history.length
+                          ? Container(
+                              child: Card(
+                                margin: EdgeInsets.all(24),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(24))),
+                                child: ListTile(
+                                    leading: Icon(Icons.compare_arrows),
+                                    title: Text(
+                                      "From ${state.history[index]["data"]["owner"]} to ${state.history[index + 1]["data"]["owner"]}",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                    subtitle: Text(
+                                      DateTime.fromMillisecondsSinceEpoch(
+                                              state.history[index]["timestamp"]
+                                                  ["seconds"]["low"])
+                                          .toIso8601String(),
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                          color: Colors.grey),
+                                    )),
+                              ),
+                              width: MediaQuery.of(context).size.width * 0.8,
+                              height: MediaQuery.of(context).size.height * 0.2,
+                            )
+                          : Container();
                 },
                 itemCount: state.history.length);
           }
