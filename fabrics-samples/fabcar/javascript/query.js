@@ -200,15 +200,21 @@ router.get("/transaction", (req, res, next) => {
     })
     .catch((err) => res.send(err));
 });
-
 router.get("/history", (req, res, next) => {
   getHistory(req.query.id, req.query.email)
     .then((response) => {
       response = JSON.parse(response);
       response.map(
-        (el) => (el.data = JSON.parse(el.data.replace(/^\uFEFF/, "").trim()))
+        (el) =>
+          (el.data = JSON.parse(
+            el.data
+              .toString()
+              .replace(/^\uFEFF/, "")
+              .trim()
+              .replace("\\", "")
+          ))
       );
-      res.send(JSON.parse(response));
+      res.send(response);
     })
     .catch((err) => res.status(500).send(err));
 });
