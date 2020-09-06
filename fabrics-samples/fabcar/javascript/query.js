@@ -205,7 +205,7 @@ router.get("/history", (req, res, next) => {
   getHistory(req.query.id, req.query.email)
     .then((response) => {
       response = response.map(
-        (el) => (el.data = JSON.parse(el.data.data.toString()))
+        (el) => (el.data = JSON.parse(el.data.buffer.data.toString()))
       );
       response.data = JSON.parse(response.data.data.toString());
       res.send(JSON.parse(response));
