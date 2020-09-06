@@ -204,11 +204,6 @@ router.get("/transaction", (req, res, next) => {
 router.get("/history", (req, res, next) => {
   getHistory(req.query.id, req.query.email)
     .then((response) => {
-      response = response.map((el) => {
-        console.log(el);
-        el.data = Buffer.from(JSON.stringify(el.data)).toJSON();
-      });
-      //response.data = JSON.parse(response.data.data.toString());
       res.send(JSON.parse(response));
     })
     .catch((err) => res.status(500).send(err));
