@@ -6,6 +6,9 @@ abstract class HistoryEvent {
 
 class GetHistory implements HistoryEvent {
   String id;
+  String host;
+  String email;
 
-  GetHistory(this.id);
+
+  GetHistory(this.id,this.host,this.email);
 }

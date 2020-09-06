@@ -52,7 +52,7 @@ class GameObjectsScreen extends StatelessWidget {
                                 MaterialPageRoute(
                                   builder: (context) => HistoryScreen(
                                       userSessionBloc.gameObjects
-                                          .elementAt(index)),
+                                          .elementAt(index)["Key"]),
                                 ));
                           },
                           child: Container(

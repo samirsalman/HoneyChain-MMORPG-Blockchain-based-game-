@@ -1,5 +1,6 @@
 import 'dart:async';
-
+import 'dart:convert';
+import "package:http/http.dart" as http;
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -10,10 +11,12 @@ class HistoryBloc extends Bloc<HistoryEvent, HistoryState> {
   HistoryBloc() : super(HistoryInitial());
 
   @override
-  Stream<HistoryState> mapEventToState(HistoryEvent event,) async* {
+  Stream<HistoryState> mapEventToState(
+    HistoryEvent event,
+  ) async* {
     if (event is GetHistory) {
       yield HistoryLoading();
-      var history = await getHistory(event.id);
+      var history = await getHistory(event.id, event.host, event.email);
 
       if (history != null) {
         yield HistoryLoaded(history);
@@ -23,8 +26,23 @@ class HistoryBloc extends Bloc<HistoryEvent, HistoryState> {
     }
   }
 
+  Future<List<Map<String, dynamic>>> getHistory(id, host, email) async {
+    try {
+      var res = await http.get("$host/history?id=$id&email=$email");
 
-  Future<Map<String,dynamic>> getHistory(id) async{
+      print(res.body);
 
+      var responseJson = json.decode(res.body);
+      var history = List();
+
+      for (var i = 0; i < responseJson.length; i++) {
+        history.add(responseJson[i]);
+      }
+
+      return history;
+    } catch (err) {
+      print(err.toString());
+      return null;
+    }
   }
 }

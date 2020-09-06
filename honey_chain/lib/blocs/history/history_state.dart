@@ -24,7 +24,7 @@ class HistoryError extends HistoryState {
 }
 
 class HistoryLoaded extends HistoryState {
-  Map<String, dynamic> history;
+  List<Map<String, dynamic>> history;
 
   HistoryLoaded(this.history);
 

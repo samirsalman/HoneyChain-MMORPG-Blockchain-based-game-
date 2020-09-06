@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:honeychain/blocs/history/history_bloc.dart';
 import 'package:honeychain/blocs/session/bloc.dart';
 import 'package:honeychain/screens/home_page.dart';
 import 'package:honeychain/screens/login.dart';
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider<UserSessionBloc>(
           create: (context) => UserSessionBloc(Starting())..add(StartApp()),
+        ),
+        BlocProvider<HistoryBloc>(
+          create: (context) => HistoryBloc(),
         ),
       ],
       child: MaterialApp(

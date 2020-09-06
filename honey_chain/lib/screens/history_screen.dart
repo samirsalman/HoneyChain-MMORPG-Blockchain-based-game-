@@ -1,21 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:honeychain/blocs/history/history_bloc.dart';
 import 'package:honeychain/blocs/session/bloc.dart';
 
 class HistoryScreen extends StatefulWidget {
-  int index;
+  String id;
 
-  HistoryScreen(this.index);
+  HistoryScreen(this.id);
   @override
   _HistoryScreenState createState() => _HistoryScreenState();
 }
 
 class _HistoryScreenState extends State<HistoryScreen> {
+  HistoryBloc historyBloc;
   UserSessionBloc userSessionBloc;
 
   @override
   void initState() {
+    historyBloc = BlocProvider.of<HistoryBloc>(context);
     userSessionBloc = BlocProvider.of<UserSessionBloc>(context);
+
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      historyBloc.add(GetHistory(
+          widget.id, userSessionBloc.HOST, userSessionBloc.user["email"]));
+    });
+
     super.initState();
   }
 
@@ -29,43 +38,33 @@ class _HistoryScreenState extends State<HistoryScreen> {
         title: Text("Honey Chain"),
       ),
       body: BlocBuilder(
+        cubit: historyBloc,
         builder: (context, state) {
           if (state is HistoryLoaded) {
             return ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
                     child: Card(
-                      color: Theme.of(context).primaryColor,
                       margin: EdgeInsets.all(24),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(24))),
-                      child: Row(
-                        children: <Widget>[
-                          Image.asset(
-                            "assets/honeys/${userSessionBloc.gameObjects[index]["Record"]["color"].toString().toLowerCase()}@2x.png",
-                            height: MediaQuery.of(context).size.height * 0.12,
+                      child: ListTile(
+                          leading: Icon(Icons.compare_arrows),
+                          title: Text(
+                            state.history.length > 1
+                                ? "From ${state.history[index]["data"]["owner"]} to ${state.history[index + 1]["data"]["owner"]}"
+                                : "Object is of ${state.history[index]["data"]["owner"]}, only one owner from his creation",
+                            style: TextStyle(fontSize: 18),
                           ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                userSessionBloc.gameObjects[index]["Key"],
-                                style: TextStyle(fontSize: 18),
-                              ),
-                              Text(
-                                userSessionBloc.gameObjects[index]["Record"]
-                                        ["power"]
-                                    .toString(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                    color: Colors.black),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
+                          subtitle: Text(
+                            DateTime.fromMillisecondsSinceEpoch(state
+                                    .history[index]["timestamp"]["seconds"])
+                                .toIso8601String(),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.grey),
+                          )),
                     ),
                     width: MediaQuery.of(context).size.width * 0.8,
                     height: MediaQuery.of(context).size.height * 0.2,
