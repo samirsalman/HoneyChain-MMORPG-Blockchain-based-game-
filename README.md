@@ -31,14 +31,15 @@ Inoltre ogni client comunicherà con il server tramite servizi nodeJS e il ruolo
 Il client GAME corrisponde all'istanza di videogame (**Unity**), comunica mediante API HTTP con la validation authority (invisibile al client), che si occuperà di verificare il **ruolo** dell'utente e lo reindirizzerà al server.Infine utilizzeremo Hyperledger Fabric per registrare e verificare le transazioni e gli smart contract per la gestione degli oggetti di gioco.
 Il client APP è un'applicazione Android/IOS realizzata in Flutter che permette il login/registrazione/logout dell'utente, con o senza cookie e permette di consultare l'elenco degli oggetti raccolti dal giocatore nel gioco, la possibilità di effettuare **donazioni di oggetti** e di visionare le varie transizioni dei propri oggetti di gioco. La registrazione in APP equivale anche alla creazione di un wallett nella blockchain associato all'indirizzo email dell'utente.
 
-![structure](images/2020/09/structure.png)
+<img src="https://github.com/samirsalman/-Honey-Chain-MMORPG-Blockchain-based-game-/blob/master/images/2020/09/structure.png">
 
-![home_app](/images/2020/09/home@2x.png)
+<img src="https://github.com/samirsalman/-Honey-Chain-MMORPG-Blockchain-based-game-/blob/master/images/2020/09/home@2x.png">
 
 <div style="page-break-after: always;"></div>
+
 ## Scenario di Gioco
 
-![scenario](images/2020/05/scenario.png)
+<img src="https://github.com/samirsalman/-Honey-Chain-MMORPG-Blockchain-based-game-/blob/masterimages/2020/05/scenario.png">
 
 
 
