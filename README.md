@@ -74,6 +74,8 @@ Ogni azione dei client avviene mediante degli **smart contract** scritti ad-hoc.
 
 <img src="https://github.com/samirsalman/HoneyChain-MMORPG-Blockchain-based-game-/blob/master/Gifs/app_30.gif">
 <img src="https://github.com/samirsalman/HoneyChain-MMORPG-Blockchain-based-game-/blob/master/Gifs/game_30.gif">
+
+
 ## Creators
 
 
