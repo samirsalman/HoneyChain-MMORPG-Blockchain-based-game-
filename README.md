@@ -6,12 +6,12 @@ An MMORPG Blockchain based game
 
 ## Descrizione progetto
 
-Il progetto consiste nel design e lo sviluppo di un **videogame multiplayer** che permette agli utenti lo scambio e l'acquisto di oggetti di gioco. Il videogioco appartiene alla categoria dei **Multiplayer Online Role-Playing Game**. Lo scambio e l'acquisto di oggetti saranno tracciati da una Hyperledger Fabric mediante il **World State e Transaction Logs** della stessa.
+Il progetto consiste nel design e lo sviluppo di un **videogame** che permette agli utenti lo scambio e l'acquisto di oggetti di gioco. Il videogioco appartiene alla categoria dei **Online Role-Playing Game**. Lo scambio e l'acquisto di oggetti saranno tracciati da una Hyperledger Fabric mediante il **World State e Transaction Logs** della stessa.
 Inoltre ogni client comunicherà con il server tramite servizi nodeJS e il ruolo dei vari giocatori (che equivale al loro livello nel gioco e/o admin permission) verrà gestito tramite **Validation Authority** in ambiente **LISP**, la quale inoltre si occuperà di effetturà il logging degli utenti all'interno della rete.
 
 ## Glossario
 
-- **Multiplayer Online Role-Playing Game**: Videogioco multiplayer online nel quale i giocatori interagiscono tra loro tramite rete.
+- **Online Role-Playing Game**: Videogioco online nel quale i giocatori interagiscono tra loro tramite rete.
 
 - **World State**: Componente della Hyperledger Fabric. Tiene conto del valore corrente di un attributo appartenente ad un oggetto del mondo, come se fosse uno stato Ledger unico.
 
@@ -28,31 +28,30 @@ Inoltre ogni client comunicherà con il server tramite servizi nodeJS e il ruolo
 <div style="page-break-after: always;"></div>
 
 ## Architettura
-Il client corrisponde all'istanza di videogame (**Unity**), comunica mediante API HTTP con la validation authority (invisibile al client), che si occuperà di verificare il **ruolo** dell'utente e lo reindirizzerà al server. Inoltre al fine di consentire la multiplayer mode, i client comunicheranno la propria posizione all'interno del **game world** tramite **WebSocket**. Infine utilizzeremo Hyperledger Fabric per registrare e verificare le transazioni e gli smart contract per la gestione degli oggetti di gioco.   
+Il client GAME corrisponde all'istanza di videogame (**Unity**), comunica mediante API HTTP con la validation authority (invisibile al client), che si occuperà di verificare il **ruolo** dell'utente e lo reindirizzerà al server.Infine utilizzeremo Hyperledger Fabric per registrare e verificare le transazioni e gli smart contract per la gestione degli oggetti di gioco.
+Il client APP è un'applicazione Android/IOS realizzata in Flutter che permette il login/registrazione/logout dell'utente, con o senza cookie e permette di consultare l'elenco degli oggetti raccolti dal giocatore nel gioco, la possibilità di effettuare **donazioni di oggetti** e di visionare le varie transizioni dei propri oggetti di gioco. La registrazione in APP equivale anche alla creazione di un wallett nella blockchain associato all'indirizzo email dell'utente.
 
-![arch](images/2020/05/arch.png)
+![structure](images/2020/09/structure.png)
+
+![home_app](/images/2020/09/home@2x.png)
 
 <div style="page-break-after: always;"></div>
 ## Scenario di Gioco
 
 ![scenario](images/2020/05/scenario.png)
 
+
+
 Ogni giocatore avrà un proprio stato costituito da:
-- **Livello**: caratterizzato da punti esperienza, armi ecc..
-- **Armi**: ognuna avrà un proprio valore in base alla rarità
+- **Honeys**: ognuno avrà un proprio valore in base alla rarità
 - **Vita**: ogni giocatore avrà un proprio livello di vita
 - **Monete**: rappresentano la moneta all'interno del gioco, per l'acquisto e lo scambio di armi
-- **Caratteristiche generale** : come ad esempio colore dei capelli, armatura e tutto ciò che concerne la personalizzazione del personaggio
 
 
-
-### Scontro tra utenti
-
-Lo scontro tra due utenti, a seguito della vittoria di uno dei due avverrà una transazione di armi (o monete) dall'utente sconfitto al vincitore. Inoltre ogni utente potrà acquistare armi tramite le proprie monete (**transazione**). Ogni arma avrà quindi un costo che varierà in base alla rarità e alle caratteristiche della stessa.
 
 ### Scambio di oggetti tra utenti
 
-Gli utenti potranno inoltre scambiare tra loro gli oggetti collezionati durante il gioco, per farlo verranno utilizzate le **transazioni su channel privato**, in modo da creare una strategia di alleanza invisibile agli altri utenti.
+Gli utenti potranno inoltre scambiare tra loro gli oggetti collezionati durante il gioco,tramite l'app,  per farlo verranno utilizzate le **transazioni su channel privato**, in modo da creare una strategia di alleanza invisibile agli altri utenti.
 
 ### Accesso alle aree protette
 
@@ -78,4 +77,3 @@ Ogni azione dei client avviene mediante degli **smart contract** scritti ad-hoc.
 **Marcello Politi**,
 **Samir Salman**,
 **Simone Giorgioni**
-
