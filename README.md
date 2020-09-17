@@ -76,6 +76,26 @@ Ogni azione dei client avviene mediante degli **smart contract** scritti ad-hoc.
 <img src="https://github.com/samirsalman/HoneyChain-MMORPG-Blockchain-based-game-/blob/master/Gifs/game_30.gif">
 
 
+
+## Come eseguire 
+
+Per deployare tutta l'architettura, in modo che sia funzionante, bisogna eseguire i seguenti passaggi:
+
+- **Git clone dell'intera repository**
+- **Recarsi nella directory di Fabric**
+- **Eseguire il comando** `./startFabric.sh javascript`
+- **Quindi recarsi in fabcar/javascript ed eseguire nel seguente ordine**
+  - `node enrollAdmin`
+  - `node registerUser`
+- **Successivamente recarsi nella cartella di docker e lanciare il comando:** `sudo docker run -it  --network=host --volume "$PWD":/volume1/sources/NEW_DEVS/DEPLOYED/GENERAL/volume dozenapps/va:latest va sdc.conf` 
+- **Quindi recarsi nella cartella del server node ed eseguire in ordine i comandi:**
+  - `npm install`
+  - `node invoke.js`
+- **Infine installare l'APK dell'app (honey_chain.apk) sul proprio cellulare e lanciarla
+
+
+
+
 ## Creators
 
 
