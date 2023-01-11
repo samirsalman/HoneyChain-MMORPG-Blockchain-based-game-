@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
-    "knex": "^0.21.2",
+    "knex": "^2.4.0",
     "mysql": "^2.18.1",
     "nedb-promises": "^4.0.3",
     "nodemon": "^2.0.4",
